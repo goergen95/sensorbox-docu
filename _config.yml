@@ -1,0 +1,23 @@
+# Site settings
+title: Sensor Configuration
+subtitle: by Nature 4.0
+email: nature40@staff.uni-marburg.de
+description: Nature 4.0 Sensor Documentation
+baseurl: 
+url: "" # the base hostname & protocol for your site
+author: Nature40
+
+# Social settings
+500px_url:
+facebook_url:
+github_url: https://github.com/nature40
+gitlab_url: 
+googleplus_url: 
+instagram_url: https://instagram.com/sensingbiodiv
+linkedin_url: 
+pinterest_url:
+slack_url:
+twitter_url:
+
+# Build settings
+markdown: kramdown
