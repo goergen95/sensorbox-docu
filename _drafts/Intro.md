@@ -1,1 +1,14 @@
-Intro
+# Introduction
+
+The SensorBox was developed during a master's seminar at the University of Marburg. The idea of the SensorBox was to create a tool which enables the collection of some basic environmental variables along a vertical path in a forest structure. The box is part of a broader research effort to effectively monitor and assess biotic and abiotic factors to take benefits for biodiversity conversation and the sustainable management of ecosystem services. The innovation of the SensorBox lies firstly, in its cheap and reconstructable design as well as its ability to collect data in a 3D-space through the use of cable cars.
+
+This webpage reports on the materials used and the way to assembly the SensorBoxes to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment.
+
+<video width="960" height="720" controls>
+    <source src="images/intro_video.mp4" type="video/mp4"
+</video>
+
+
+
+The seminar is closely associated to the LOEWE research project Natur 4.0 which aims at innovative data acquisition and processing techniques to developed a methodology to a spatial and temporal comprehensive monitoring of landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned aerial vehicles (UAV), automatic rovers as well as low-invasive sensors placed on animals and humans moving through the landscape to be monitored. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental variables.
+
