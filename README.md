@@ -5,9 +5,9 @@
 
 
 ```
-index.md - the frontpage
+index.md - the frontpage, picture with box in a tree and info on the usage, Natur 4.0 and cable car
 /pages
-  - projectinfo.md - N40 Info
+  - projectinfo.md - N40 Info 
   /box_pages
     - TSL2561.md - documentation of temperature & humidity sensor
     - am2302.md - documentation of lumen sensor
