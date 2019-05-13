@@ -33,8 +33,8 @@
 							<ul>
 								<li><a href="#intro">Intro</a></li>
 								<li><a href="#sensors">Sensors</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
+								<li><a href="#assembly">Assembly</a></li>
+								<li><a href="#data">Data</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -55,7 +55,137 @@
 	
 						<!-- Sensors -->
 							<article id="sensors">
-								<div  id='write'  class = 'is-node'><h1><a name='header-n0' class='md-header-anchor '><h2 class="major">Sensors</h2> </a>Camera</h2><p><img src='images/camera.jpg' alt='Camera' referrerPolicy='no-referrer' class="image main"/></p><h3><a name='header-n4' class='md-header-anchor '></a>General product information: </h3><p>Raspberry Pi Camera Module v2.1</p><h3><a name='header-n6' class='md-header-anchor '></a>Technical product information:</h3><ul><li>Sensor: Sony IMX219 8 Megapixel sensor</li><li>Supported formats: 1080p30, 720p60 and VGA90 </li><li>Ribbon cable for CSI-port : 30 cm</li><li>Interface: MMAL and V4L APIs</li></ul><h3><a name='header-n16' class='md-header-anchor '></a>Manufacturer information:</h3><p><a href='https://www.raspberrypi.org/products/camera-module-v2/'>Raspberry Pi foundation</a></p><p>Depending on your local retailer available for about 26 €</p><h3><a name='header-n19' class='md-header-anchor '></a>Sensor usage:</h3><p>The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.</p><h3><a name='header-n21' class='md-header-anchor '></a>Source code:</h3><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n24' class='md-header-anchor '></a>Microphone 1 (expensive)</h2><p><img class="image main" src='images/micro1.jpg' alt='Microphone_1' referrerPolicy='no-referrer' /></p><h3><a name='header-n26' class='md-header-anchor '></a>General product information:</h3><p>&nbsp;</p><h3><a name='header-n28' class='md-header-anchor '></a>Technical product information:</h3><p>&nbsp;</p><h3><a name='header-n30' class='md-header-anchor '></a>Retailer information:</h3><p>&nbsp;</p><h3><a name='header-n32' class='md-header-anchor '></a>Sensor usage:</h3><p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p><p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p><h3><a name='header-n35' class='md-header-anchor '></a>Source code:</h3><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n38' class='md-header-anchor '></a>Microphone 2 (cheap)</h2><p><img class="image main" src='images/micro2.jpg' alt='Microphone_2' referrerPolicy='no-referrer' /></p><h3><a name='header-n40' class='md-header-anchor '></a>General product information:</h3><p>&nbsp;</p><h3><a name='header-n42' class='md-header-anchor '></a>Technical product information:</h3><p>&nbsp;</p><h3><a name='header-n44' class='md-header-anchor '></a>Retailer information:</h3><p>&nbsp;</p><h3><a name='header-n46' class='md-header-anchor '></a>Sensor usage:</h3><p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p><p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p><h3><a name='header-n49' class='md-header-anchor '></a>Source code:</h3><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n52' class='md-header-anchor '></a>Temperature &amp; Humidity Sensor</h2><p><img class="image main" src='images/temp.jpg' alt='Temperature_humidity' referrerPolicy='no-referrer' /></p><h3><a name='header-n54' class='md-header-anchor '></a>General product information:</h3><p>DHT22 (AM2302) temperature-humidity sensor</p><h3><a name='header-n56' class='md-header-anchor '></a>Technical product information:</h3><ul><li>3 to 5V power and I/O</li><li>2.5mA max current use during conversion (while requesting data)</li><li>Good for 0-100% humidity readings with 2-5% accuracy</li><li>Good for -40 to 80°C temperature readings ±0.5°C accuracy</li><li>No more than 0.5 Hz sampling rate (once every 2 seconds)</li><li>Body size 15.1mm x 25mm x 7.7mm</li><li>4 pins with 0.1&quot; spacing</li></ul><h3><a name='header-n72' class='md-header-anchor '></a>Manufacturer information:</h3><p><a href='https://www.adafruit.com/product/385'>Adafruit</a></p><p>Depending on your local retailer available for about 10 €</p><h3><a name='header-n75' class='md-header-anchor '></a>Sensor usage:</h3><p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.</p><h3><a name='header-n77' class='md-header-anchor '></a>Source code:</h3><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n81' class='md-header-anchor '></a>Light Sensor</h2><p><img class="image main" src='images/light.jpg' alt='Light' referrerPolicy='no-referrer' /></p><h3><a name='header-n83' class='md-header-anchor '></a>General product information:</h3><p>Adafruit TSL2591 High Dynamic Range Digital Light Sensor</p><h3><a name='header-n85' class='md-header-anchor '></a>Technical product information:</h3><ul><li>Extremely wide dynamic range 1 to 600,000,000 Counts</li><li>Lux Range: 188 uLux sensitivity, up to 88,000 Lux input measurements.</li><li>Temperature range: -30 to 80 *C</li><li>Voltage range: 3.3-5V into onboard regulator</li><li>Interface: I2C</li><li>This board/chip uses I2C 7-bit address 0x29 (fixed)</li><li>Dimensions: 19mm x 16mm x 1mm / .75&quot; x .63&quot; x .04&quot;</li><li>Weight: 1.1g</li></ul><h3><a name='header-n103' class='md-header-anchor '></a>Retailer information:</h3><p><a href='https://www.adafruit.com/product/1980'>Adafruit</a></p><p>Depending on your local retailer available for about 6 €</p><h3><a name='header-n106' class='md-header-anchor '></a>Sensor usage:</h3><p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels.</p><h3><a name='header-n108' class='md-header-anchor '></a>Source code:</h3><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n111' class='md-header-anchor '></a>Hall Sensor</h2><p> img class="image main" src='images/hall.jpg' alt='Hall' referrerPolicy='no-referrer' /></p><h3><a name='header-n113' class='md-header-anchor '></a>General product information:</h3><p>&nbsp;</p><h3><a name='header-n115' class='md-header-anchor '></a>Technical product information:</h3><p>&nbsp;</p><h3><a name='header-n117' class='md-header-anchor '></a>Retailer information:</h3><p>&nbsp;</p><h3><a name='header-n119' class='md-header-anchor '></a>Sensor usage:</h3><p>The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the SensorBox reaches the correct level of measurement.</p><h3><a name='header-n121' class='md-header-anchor '></a>Source code:</h3><p>&nbsp;</p><p>&nbsp;</p><h2><a name='header-n124' class='md-header-anchor '></a>Real-time clock</h2><p><img class="image main" src='images/clock.jpg' alt='Real-time clock' referrerPolicy='no-referrer' /></p><h3><a name='header-n126' class='md-header-anchor '></a>General product information:</h3><p>&nbsp;</p><h3><a name='header-n128' class='md-header-anchor '></a>Technical product information:</h3><p>&nbsp;</p><h3><a name='header-n130' class='md-header-anchor '></a>Retailer information:</h3><p>&nbsp;</p><h3><a name='header-n132' class='md-header-anchor '></a>Sensor usage:</h3><p>&nbsp;</p><h3><a name='header-n134' class='md-header-anchor '></a>Source code:</h3></div>
+								<h2 class="major">Sensors</h2>
+								<h3>Camera</h3>
+								<hr />
+								<p>&nbsp;</p>
+								<p><span class="image main"><img src="images/camera.jpg"
+								alt="" /></span></p>
+								<h4>General product information: </h4>
+								<p>Raspberry Pi Camera Module v2.1</p>
+								<h4>Technical product information:</h4>
+								<ul>
+								<li>Sensor: Sony IMX219 8 Megapixel sensor</li>
+								<li>Supported formats: 1080p30, 720p60 and VGA90 </li>
+								<li>Ribbon cable for CSI-port : 30 cm</li>
+								<li>Interface: MMAL and V4L APIs</li>
+								</ul>
+								<h4>Manufacturer information:</h4>
+								<p><a href='https://www.raspberrypi.org/products/camera
+								module-v2/'>Raspberry Pi foundation</a></p>
+								<p>Depending on your local retailer available for about 26
+								€</p>
+	<h4>Sensor usage:</h4>
+	<p>The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.</p>
+	<h4>Source code:</h4>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h3>Microphone 1 (expensive)</h3>
+	<hr />
+	<p><span class="image main"><img src="images/micro1.jpg" alt="" /></span></p>
+	<h4>General product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Technical product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Retailer information:</h4>
+	<p>&nbsp;</p>
+	<h4>Sensor usage:</h4>
+	<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
+	<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
+	<h4>Source code:</h4>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h3>Microphone 2 (cheap)</h3>
+	<hr />
+	<p><span class="image main"><img src="images/micro2.jpg" alt="" /></span></p>
+	<h4>General product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Technical product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Retailer information:</h4>
+	<h3></h3>
+	<h4>Sensor usage:</h4>
+	<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
+	<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
+	<h4>Source code:</h4>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h3>Temperature &amp; Humidity Sensor</h3>
+	<hr />
+	<p><span class="image main"><img src="images/temp.jpg" alt="" /></span></p>
+	<h4>General product information:</h4>
+	<p>DHT22 (AM2302) temperature-humidity sensor</p>
+	<h4>Technical product information:</h4>
+	<ul>
+	<li>3 to 5V power and I/O</li>
+	<li>2.5mA max current use during conversion (while requesting data)</li>
+	<li>Good for 0-100% humidity readings with 2-5% accuracy</li>
+	<li>Good for -40 to 80°C temperature readings ±0.5°C accuracy</li>
+	<li>No more than 0.5 Hz sampling rate (once every 2 seconds)</li>
+	<li>Body size 15.1mm x 25mm x 7.7mm</li>
+	<li>4 pins with 0.1&quot; spacing</li>
+	
+	</ul>
+	<h4>Manufacturer information:</h4>
+	<p><a href='https://www.adafruit.com/product/385'>Adafruit</a></p>
+	<p>Depending on your local retailer available for about 10 €</p>
+	<h4>Sensor usage:</h4>
+	<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.</p>
+	<h4>Source code:</h4>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h3>Light Sensor</h3>
+	<hr />
+	<p><span class="image main"><img src="images/light.jpg" alt="" /></span></p>
+	<h4>General product information:</h4>
+	<p>Adafruit TSL2591 High Dynamic Range Digital Light Sensor</p>
+	<h4>Technical product information:</h4>
+	<ul>
+	<li>Extremely wide dynamic range 1 to 600,000,000 Counts</li>
+	<li>Lux Range: 188 uLux sensitivity, up to 88,000 Lux input measurements.</li>
+	<li>Temperature range: -30 to 80 *C</li>
+	<li>Voltage range: 3.3-5V into onboard regulator</li>
+	<li>Interface: I2C</li>
+	<li>This board/chip uses I2C 7-bit address 0x29 (fixed)</li>
+	<li>Dimensions: 19mm x 16mm x 1mm / .75&quot; x .63&quot; x .04&quot;</li>
+	<li>Weight: 1.1g</li>
+	
+	</ul>
+	<h4>Retailer information:</h4>
+	<p><a href='https://www.adafruit.com/product/1980'>Adafruit</a></p>
+	<p>Depending on your local retailer available for about 6 €</p>
+	<h4>Sensor usage:</h4>
+	<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels.</p>
+	<h4>Source code:</h4>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h3>Hall Sensor</h3>
+	<hr />
+	<p><span class="image main"><img src="images/hall.jpg" alt="" /></span></p>
+	<h4>General product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Technical product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Retailer information:</h4>
+	<p>&nbsp;</p>
+	<h4>Sensor usage:</h4>
+	<p>The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the SensorBox reaches the correct level of measurement.</p>
+	<h4>Source code:</h4>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>
+	<h3>Real-time clock</h3>
+	<hr />
+	<p><span class="image main"><img src="images/clock.jpg" alt="" /></span></p>
+	<h4>General product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Technical product information:</h4>
+	<p>&nbsp;</p>
+	<h4>Retailer information:</h4>
+	<p>&nbsp;</p>
+	<h4>Sensor usage:</h4>
+	<p>&nbsp;</p>
+	<h4>Source code:</h4>
 							</article>
 	
 						<!-- About -->
@@ -359,3 +489,4 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 	
 	</body>
 </html>
+
