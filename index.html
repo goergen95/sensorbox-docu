@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <!--
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>SensorBox Documentation</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -24,9 +24,10 @@
 						</div>
 						<div class="content">
 							<div class="inner">
-								<h1>Dimension</h1>
-								<p>A fully responsive site template designed by <a href="https://html5up.net">HTML5 UP</a> and released<br />
-								for free under the <a href="https://html5up.net/license">Creative Commons</a> license.</p>
+								<h1>SensorBox</h1>
+								<p>Documentation of a master's seminar to build a low-cost sensor box<br />
+								to monitor basic environmental variables in forest environments.
+								</p>
 							</div>
 						</div>
 						<nav>
@@ -45,13 +46,13 @@
 	
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
+								<h2 class="major">Introduction</h2>
 								<p>The SensorBox was developed during a master&#39;s seminar at the University of Marburg. The idea of the SensorBox was to create a tool which enables the collection of some basic environmental variables along a vertical path in a forest structure. The box is part of a broader research effort to effectively monitor and assess biotic and abiotic factors to take benefits for biodiversity conversation and the sustainable management of ecosystem services. The innovation of the SensorBox lies firstly, in its cheap and reconstructable design as well as its ability to collect data in a 3D-space through the use of cable cars.</p>
 	<p>This webpage reports on the materials used and the way to assembly the SensorBoxes to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment.</p>
-	<video class="image main" controls="" onerror="this.style.display = 'none';">
+	<video height="50%" class="image main" controls="" onerror="this.style.display = 'none';">
 	    <source src="images/intro_video.mp4" type="video/mp4" <="" video=""></video>
 	<p>&nbsp;</p>
-	<p>The seminar is closely associated to the LOEWE research project Natur 4.0 which aims at innovative data acquisition and processing techniques to developed a methodology to a spatial and temporal comprehensive monitoring of landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned aerial vehicles (UAV), automatic rovers as well as low-invasive sensors placed on animals and humans moving through the landscape to be monitored. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental variables.</p>
+	<p>The seminar is closely associated to the LOEWE research project <a href="https://www.uni-marburg.de/de/fb19/natur40">Natur 4.0</a> which aims at innovative data acquisition and processing techniques to developed a methodology to a spatial and temporal comprehensive monitoring of landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned aerial vehicles (UAV), automatic rovers as well as low-invasive sensors placed on animals and humans moving through the landscape to be monitored. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental variables.</p>
 	<p>&nbsp;</p>
 							</article>
 	
@@ -59,8 +60,6 @@
 							<article id="sensors">
 								<h2 class="major">Sensors</h2>
 								<h3>Camera</h3>
-								<hr />
-								<p>&nbsp;</p>
 								<p><span class="image main"><img src="images/camera.jpg"
 								alt="" /></span></p>
 								<h4>General product information: </h4>
@@ -80,8 +79,9 @@
 	<h4>Sensor usage:</h4>
 	<p>The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.</p>
 	<h4>Source code:</h4>
+	<a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>link to camera class definition at the sensorproxy-repository</a>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
+	
 	<h3>Microphone 1 (expensive)</h3>
 	<hr />
 	<p><span class="image main"><img src="images/micro1.jpg" alt="" /></span></p>
