@@ -59,58 +59,74 @@
 						<!-- Sensors -->
 							<article id="sensors">
 								<h2 class="major">Sensors</h2>
-								<h3>Camera</h3>
-								<p><span class="image main"><img src="images/camera.jpg"
-								alt="" /></span></p>
-								<h4>General product information: </h4>
-								<p>Raspberry Pi Camera Module v2.1</p>
-								<h4>Technical product information:</h4>
-								<ul>
-								<li>Sensor: Sony IMX219 8 Megapixel sensor</li>
-								<li>Supported formats: 1080p30, 720p60 and VGA90 </li>
-								<li>Ribbon cable for CSI-port : 30 cm</li>
-								<li>Interface: MMAL and V4L APIs</li>
-								</ul>
-								<h4>Manufacturer information:</h4>
-								<p><a href='https://www.raspberrypi.org/products/camera
-								module-v2/'>Raspberry Pi foundation</a></p>
-								<p>Depending on your local retailer available for about 26
-								€</p>
+								<p>Here you will find some information on the different sensors we used in the implementation of the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.</p>
+	<h3>Camera</h3>
+	<hr />
+	<p>&nbsp;</p>
+	<p><span class="image main"><img src="images/camera.jpg" alt="" /></span></p>
+	<h4>General product information: </h4>
+	<p>Raspberry Pi Camera Module v2.1</p>
+	<h4>Technical product information:</h4>
+	<ul>
+	<li>sensor: Sony IMX219 8 Megapixel sensor</li>
+	<li>supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz </li>
+	<li>ribbon cable for CSI-port : 30 cm</li>
+	<li>dimensions: 25x24x9 (mm, HxBxD)</li>
+	
+	</ul>
+	<h4>Manufacturer information:</h4>
+	<p><a href='https://www.raspberrypi.org/products/camera-module-v2/'>Raspberry Pi foundation</a></p>
+	<p>Depending on your local retailer available for about 26 €</p>
 	<h4>Sensor usage:</h4>
 	<p>The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.</p>
 	<h4>Source code:</h4>
-	<a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>link to camera class definition at the sensorproxy-repository</a>
+	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>Link to camera class definition at the sensorproxy-repository</a></p>
 	<p>&nbsp;</p>
-	
-	<h3>Microphone 1 (expensive)</h3>
+	<h3>Microphone - expensive version</h3>
 	<hr />
 	<p><span class="image main"><img src="images/micro1.jpg" alt="" /></span></p>
 	<h4>General product information:</h4>
-	<p>&nbsp;</p>
+	<p>RØDE - Smartlav+</p>
 	<h4>Technical product information:</h4>
-	<p>&nbsp;</p>
+	<ul>
+	<li>microphone type: pressure gradient</li>
+	<li>transmission range: 20Hz to 20kHz</li>
+	<li>output impedance: 0Ω</li>
+	<li>sensitivity: -32.0dB re 1 Volt/Pascal (25.50mV @ 94 dB SPL) +/- 2 dB @ 1kHz</li>
+	<li>dimensions: 118x4.50x4.50 (mm; HxWxD)</li>
+	
+	</ul>
 	<h4>Retailer information:</h4>
-	<p>&nbsp;</p>
+	<p><a href='http://www.rode.com/microphones/smartlav'>RØDE Microphones</a></p>
+	<p>Available for approximately 50€</p>
 	<h4>Sensor usage:</h4>
 	<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
 	<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
 	<h4>Source code:</h4>
+	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
 	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<h3>Microphone 2 (cheap)</h3>
+	<h3>Microphone - cheap version</h3>
 	<hr />
 	<p><span class="image main"><img src="images/micro2.jpg" alt="" /></span></p>
 	<h4>General product information:</h4>
-	<p>&nbsp;</p>
+	<p>Foxnovo SF-555</p>
 	<h4>Technical product information:</h4>
-	<p>&nbsp;</p>
+	<ul>
+	<li>microphone type: condenser</li>
+	<li>transmission range: 50Hz to 16kHz</li>
+	<li>output impedance: &lt;2.2Ω</li>
+	<li>sensitivity: -55.0dB  +/- 2 dB @ 1kHz</li>
+	<li>dimensions: 67x12x14 (mm; HxWxD)</li>
+	
+	</ul>
 	<h4>Retailer information:</h4>
-	<h3></h3>
+	<p><a href='https://www.amazon.de/Foxnovo-Portable-USB-2-0-Kondensator-Mikrofon-Chat/dp/B00XA01IQC'>Purchased at Amazon</a></p>
+	<p>Available for approximately 10€.</p>
 	<h4>Sensor usage:</h4>
 	<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
 	<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
 	<h4>Source code:</h4>
-	<p>&nbsp;</p>
+	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
 	<p>&nbsp;</p>
 	<h3>Temperature &amp; Humidity Sensor</h3>
 	<hr />
@@ -119,13 +135,10 @@
 	<p>DHT22 (AM2302) temperature-humidity sensor</p>
 	<h4>Technical product information:</h4>
 	<ul>
-	<li>3 to 5V power and I/O</li>
-	<li>2.5mA max current use during conversion (while requesting data)</li>
-	<li>Good for 0-100% humidity readings with 2-5% accuracy</li>
-	<li>Good for -40 to 80°C temperature readings ±0.5°C accuracy</li>
-	<li>No more than 0.5 Hz sampling rate (once every 2 seconds)</li>
-	<li>Body size 15.1mm x 25mm x 7.7mm</li>
-	<li>4 pins with 0.1&quot; spacing</li>
+	<li>operating voltage: 3-5V</li>
+	<li>sensitivity humidity: 0-100% ± 2-5% </li>
+	<li>sensitivity temperature: -40-80°C ±0.5°C</li>
+	<li>dimensions: 15.1x25x7.7 (mm, HxBxD)</li>
 	
 	</ul>
 	<h4>Manufacturer information:</h4>
@@ -134,7 +147,7 @@
 	<h4>Sensor usage:</h4>
 	<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.</p>
 	<h4>Source code:</h4>
-	<p>&nbsp;</p>
+	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#13'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
 	<p>&nbsp;</p>
 	<p>&nbsp;</p>
 	<h3>Light Sensor</h3>
@@ -144,37 +157,36 @@
 	<p>Adafruit TSL2591 High Dynamic Range Digital Light Sensor</p>
 	<h4>Technical product information:</h4>
 	<ul>
-	<li>Extremely wide dynamic range 1 to 600,000,000 Counts</li>
-	<li>Lux Range: 188 uLux sensitivity, up to 88,000 Lux input measurements.</li>
-	<li>Temperature range: -30 to 80 *C</li>
-	<li>Voltage range: 3.3-5V into onboard regulator</li>
-	<li>Interface: I2C</li>
-	<li>This board/chip uses I2C 7-bit address 0x29 (fixed)</li>
-	<li>Dimensions: 19mm x 16mm x 1mm / .75&quot; x .63&quot; x .04&quot;</li>
-	<li>Weight: 1.1g</li>
+	<li>sensitivity: 188 uLux sensitivity, up to 88,000 Lux input measurements.</li>
+	<li>temperature range: -30 to 80 °C</li>
+	<li>operating voltage: 3.3-5V </li>
+	<li>dimensions: 19x16x1(mm, HxBxD)</li>
 	
 	</ul>
 	<h4>Retailer information:</h4>
 	<p><a href='https://www.adafruit.com/product/1980'>Adafruit</a></p>
 	<p>Depending on your local retailer available for about 6 €</p>
 	<h4>Sensor usage:</h4>
-	<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels.</p>
+	<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is faced upwards and takes measurements at different heights. It is planned to use to data to model forest structural parameters in conjunction with aerial images collected by UAVs. </p>
 	<h4>Source code:</h4>
-	<p>&nbsp;</p>
+	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#43'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
 	<p>&nbsp;</p>
 	<h3>Hall Sensor</h3>
 	<hr />
 	<p><span class="image main"><img src="images/hall.jpg" alt="" /></span></p>
 	<h4>General product information:</h4>
-	<p>&nbsp;</p>
+	<p>JOY-IT KY-024 Hall Sensor</p>
 	<h4>Technical product information:</h4>
-	<p>&nbsp;</p>
+	<ul>
+	<li></li>
+	
+	</ul>
 	<h4>Retailer information:</h4>
 	<p>&nbsp;</p>
 	<h4>Sensor usage:</h4>
 	<p>The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the SensorBox reaches the correct level of measurement.</p>
 	<h4>Source code:</h4>
-	<p>&nbsp;</p>
+	<p><a href='https://github.com/Nature40/pysensorproxy/blob/541eac35379bc2d4dc3b24b8412218af6f142d63/sensorproxy/lift.py#38'>Link to the lift class configuration with hall sensors for indicating upper and lower level</a></p>
 	<p>&nbsp;</p>
 	<h3>Real-time clock</h3>
 	<hr />
