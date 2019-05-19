@@ -1,4 +1,100 @@
-## Sensors
+# Hardware infrastructure
+
+### Raspberry Pi
+
+<img src="images/pi.jpg" alt="" />
+
+#### General product information:
+
+Raspberry Pi 3 Model B version 1.2
+
+#### Technical product information:
+
+- Quad Core 1.2GHz Broadcom BCM2837 64bit CPU
+- 1GB RAM
+- BCM43438 wireless LAN and Bluetooth Low Energy (BLE) on board
+- 100 Base Ethernet
+- 40-pin extended GPIO
+- 4 USB 2 ports
+- 4 Pole stereo output and composite video port
+- Full size HDMI
+- CSI camera port for connecting a Raspberry Pi camera
+- DSI display port for connecting a Raspberry Pi touchscreen display
+- Micro SD port for loading your operating system and storing data
+- Upgraded switched Micro USB power source up to 2.5A
+
+#### Retailer information:
+
+[Raspberry Pi foundation](<https://www.raspberrypi.org/products/raspberry-pi-3-model-b/>)
+
+Available for approximately 30€ depending on your local retailer
+
+#### Source code:
+
+
+
+
+
+### Powerbank
+
+<img src="images/bank.jpg" alt="" />
+
+#### General product information:
+
+EasyAcc MegaCharge Doubin 26000mAh Power bank
+
+#### Technical product information:
+
+- Battery capacity: 26000mAh x 3.7V=96.2Wh
+- Battery type: Lithium-Ion-Battery
+- Input: DC 5V 4A(max) 
+- Output: DC 5V 4.8A(max) 
+- Dimensions: 6.57 x 3.1 x 0.86 in. / 167x 80 x22 mm 
+- Weight: 454g 
+
+#### Retailer information:
+
+[Easyacc](<https://www.easyacc.com/de/670-easyacc-26000mah-power-bank.html>)
+
+Available for approximately 50€ depending on your local retailer
+
+#### Source code:
+
+
+
+
+
+
+
+### Containment box
+
+<img src="images/box.jpg" alt="" />
+
+
+
+
+
+#### General product information:
+
+### 
+
+#### Technical product information:
+
+
+
+#### Retailer information:
+
+
+
+#### Source code:
+
+
+
+
+
+
+
+# Sensors
 
 Here you will find some information on the different sensors we used in the implementation of the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.
 
@@ -189,12 +285,15 @@ JOY-IT KY-024 Hall Sensor
 
 #### Technical product information:
 
-- 
+- Chipset: A3141
+- OP-amplifier: LM393
 
 
 #### Retailer information:
 
+[SensorKit X40](<http://sensorkit.en.joy-it.net/index.php?title=KY-024_Linear_magnetic_Hall_Sensor#Technical_data_.2F_Short_description>)
 
+Available for approximately [3€](<https://www.reichelt.de/entwicklerboards-magnetischer-hallsensor-debo-sens-hall-p239090.html>) depending on your local retailer
 
 #### Sensor usage:
 
