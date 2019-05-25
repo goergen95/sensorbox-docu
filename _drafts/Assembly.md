@@ -2,12 +2,9 @@
 
 ## Prepare Casing 
 
-The casing of the SensorBox needs to be prepared to host the microcontroller as well as allowing the cables from the envrionmental sensors. We used the templates below to drill the 
+The casing of the SensorBox needs to be prepared to safely host the microcontroller from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors need to reach the microcontroller without moisture entering the inside of the casing. Thirdly, holes to attach wheels for the cable car need to be drilled. We created some [templates](assets/templates.pdf) which can be used to find the correct position for drilling the holes.
 
-- drill holes in Box (mit schablone) for cap, sensors and rolls
-- attach cap
-- attach rolls
-- ((holder cord attachment))
+
 
 ## Insert Raspberry Pi
 
