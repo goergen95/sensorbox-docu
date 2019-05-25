@@ -2,9 +2,17 @@
 
 ## Prepare Casing 
 
-The casing of the SensorBox needs to be prepared to safely host the microcontroller from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors need to reach the microcontroller without moisture entering the inside of the casing. Thirdly, holes to attach wheels for the cable car need to be drilled. We created some [templates](assets/templates.pdf) which can be used to find the correct position for drilling the holes.
+The casing of the SensorBox needs to be prepared to safely host the microcontroller and protect it from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors need to reach the microcontroller without moisture entering the inside of the casing. Thirdly, the box needs wheels attached to it to ensure it can be used as a cable car between two ropes stretched along a tree. 
 
+<span class="image main"><img src="images/box.jpg" width="50%" /></span>
 
+We created some [templates](assets/templates.pdf) which can be used to find the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of the box will be used to attach the sensor tower later. The attached wheels should look like this:
+
+<span class="image main"><img src="images/Rollen.jpeg" width="60%" /></span>
+
+The holes for entering the sensor cables into the casing should look like this:
+
+<span class="image main"><img src="images/sensor_tower_drill.jpeg" width="60%" /></span>
 
 ## Insert Raspberry Pi
 

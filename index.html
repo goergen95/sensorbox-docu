@@ -25,9 +25,8 @@
 						<div class="content">
 							<div class="inner">
 								<h1>SensorBox</h1>
-								<p>Documentation of a master's seminar to build a low-cost sensor box<br />
-								to monitor basic environmental variables in forest environments.
-								</p>
+								<p>Documentation of a master's seminar to build a low-cost 								sensor box<br />
+								to monitor basic environmental variables in forest 										environments.</p>
 							</div>
 						</div>
 						<nav>
@@ -36,6 +35,7 @@
 								<li><a href="#sensors">Sensors</a></li>
 								<li><a href="#assembly">Assembly</a></li>
 								<li><a href="#data">Data</a></li>
+								<li><a href="#test">Test</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -47,13 +47,16 @@
 						<!-- Intro -->
 							<article id="intro">
 								<h2 class="major">Introduction</h2>
-								<p>The SensorBox was developed during a master&#39;s seminar at the University of Marburg. The idea of the SensorBox was to create a tool which enables the collection of some basic environmental variables along a vertical path in a forest structure. The box is part of a broader research effort to effectively monitor and assess biotic and abiotic factors to take benefits for biodiversity conversation and the sustainable management of ecosystem services. The innovation of the SensorBox lies firstly, in its cheap and reconstructable design as well as its ability to collect data in a 3D-space through the use of cable cars.</p>
-	<p>This webpage reports on the materials used and the way to assembly the SensorBoxes to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment.</p>
+								<p>The SensorBox was developed during a master&#39;s seminar at the University of Marburg. The idea of the SensorBox was to create a tool which enables the collection of some basic environmental variables along a vertical path in forest structures. The box is part of a broader research effort to effectively monitor biotic and abiotic factors to draw benefits for biodiversity conversation and the sustainable management of ecosystem services. The innovation of the SensorBox lies in its cheap and reconstructable design as well as its ability to collect data in a 3D-space through the use of cable cars attached to individual trees in a forest. In the video below you can get the basic idea of the SensorBox moving upwards and collecting data at specified height levels.</p>
+								
 	<video height="50%" class="image main" controls="" onerror="this.style.display = 'none';">
 	    <source src="images/intro_video.mp4" type="video/mp4" <="" video=""></video>
+	    
+	 <p>This webpage reports on the materials used and the way to assembly the SensorBoxes to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment.</p>
+	 
 	<p>The seminar is closely associated to the LOEWE research project <a href="https://www.uni-marburg.de/de/fb19/natur40">Natur 4.0</a> which aims at innovative data acquisition and processing techniques to developed a methodology to a spatial and temporal comprehensive monitoring of landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned aerial vehicles (UAV), automatic rovers as well as low-invasive sensors placed on animals and humans moving through the landscape to be monitored. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental variables.</p>
 	<p>&nbsp;</p>
-							</article>
+	</article>
 	
 						<!-- Sensors -->
 							<article id="sensors">
@@ -201,15 +204,81 @@
 	<h4>Source code:</h4>
 							</article>
 	
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+	<!-- Test -->
+	<article id="test">
+	<div>
+	<iframe> 
+	src="../../_drafts/Assembly.md"
+	</iframe>
+	</div>
+
+
+​	
+	</article>
+						<!-- Assembly -->
+							<article id="assembly">
+								<h2 class="major">Assembly</h2>
+			
+	
+	<h3>Prepare Casing</h3>
+	
+	The casing of the SensorBox needs to be prepared to safely host the microcontroller and protect it from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors need to reach the microcontroller without moisture entering the inside of the casing. Thirdly, the box needs wheels attached to it to ensure it can be used as a cable car between two ropes stretched along a tree. 
+	
+	<span class="image main"><img src="images/box.jpg" width="50%" /></span>
+	
+	We created some [templates](assets/templates.pdf) which can be used to find the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of the box will be used to attach the sensor tower later. The attached wheels should look like this:
+	
+	<span class="image main"><img src="images/Rollen.jpeg" width="60%" /></span>
+	
+	The holes for entering the sensor cables into the casing should look like this:
+	
+	<span class="image main"><img src="images/sensor_tower_drill.jpeg" width="60%" /></span>
+	
+	## Insert Raspberry Pi
+	
+	- insert RasPi holder (3d print)
+	- apply powerbank (in holder)
+	- glue board and connect power and ground from raspy to board
+	- install clock 
+	
+	## Camera
+	
+	- insert cam v2 in 3d print holder(Sensorphalanx) and attach cable, close cap
+	
+	## Sensor Tower
+	
+	- insert mirco in tower (sensorphalanx)
+	- for expensiv micro attach soundcard (calbe) to raspy)
+	
+	## Lumen & Temperature Sensor
+	
+	- connect all jumpercables to lus and temp sensor
+	
+	- insert lux sensor to upper lamella (3d print)
+	- put temp sensor on lowest lamella
+	- combine all lamellas with metal spokes (metalspeichen)
+	- insert tower with reclosable repeatable seal
+	
+	## Hall Sensors
+	
+	- connect jumper calbes to sensores and raspy
+	- paste sensors 
+	
+	## Connection to Microcontroller
+	
+	- attach all cables to the raspy/clock 
+	
+	- seal cable channels with silicon
+	
+	- seal connections of phalanx to box with silikon
+	
+	- if needed paste temp tower with gluegun to phalanx
+	
+	  
 							</article>
 	
-						<!-- Contact -->
-							<article id="contact">
+						<!-- Data -->
+							<article id="data">
 								<h2 class="major">Contact</h2>
 								<form method="post" action="#">
 									<div class="fields">
