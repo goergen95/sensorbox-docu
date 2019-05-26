@@ -21,13 +21,20 @@ The casing of the SensorBox needs to be prepared to safely host the microcontrol
 
 <span class="image main"><img src="images/box.jpg" width="30%" /></span>
 
-We created some <a href="assets/templates.pdf" >templates</a> which can be used to ensure to locate the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of the box will be used to attach the sensor tower later. The attached wheels should look like this:
+We created some <a href="assets/templates.pdf" >templates</a> which can be used to ensure to locate the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of the box will be used to attach the sensor tower later. The attached wheels and the entrance of the cables from the sensor tower should look like this:
 
-<span class="image main"><img src="images/Rollen.jpeg" width="60%" /></span>
+<div class="row">
+   <div class="column">
+       <img src="images/Rollen.jpeg" width="100%" />
+    </div>
+    <div class="column">
+       <img src="images/sensor_tower_drill.jpeg" width="100%" />
+    </div>
+</div>
 
-The holes for entering the sensor cables coming from the sensor tower should look like this:
 
-<span class="image main"><img src="images/sensor_tower_drill.jpeg" width="60%" /></span>
+
+
 
 <h3>The Inlet</h3>
 
