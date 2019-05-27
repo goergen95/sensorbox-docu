@@ -104,7 +104,7 @@ Here you will find some information on the different sensors we used in the impl
 
 
 
-<span class="image main"><img src="images/camera.jpg" alt="" /></span>
+<span class="image main"><img src="images/cam.jpg" alt="" /></span>
 
 #### General product information: 
 
