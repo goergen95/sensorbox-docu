@@ -1,14 +1,16 @@
-# Hardware infrastructure
-
-### Raspberry Pi
+<h2>Hardware infrastructure<h2>
+<h3>Raspberry Pi<h3>
+------
 
 <img src="images/pi.jpg" alt="" />
 
-#### General product information:
+<h4>General product information:<h4>
+
 
 Raspberry Pi 3 Model B version 1.2
 
-#### Technical product information:
+<h4>Technical product information:<h4>
+
 
 - Quad Core 1.2GHz Broadcom BCM2837 64bit CPU
 - 1GB RAM
@@ -23,27 +25,24 @@ Raspberry Pi 3 Model B version 1.2
 - Micro SD port for loading your operating system and storing data
 - Upgraded switched Micro USB power source up to 2.5A
 
-#### Retailer information:
+<h4>Retailer information:<h4>
 
 [Raspberry Pi foundation](<https://www.raspberrypi.org/products/raspberry-pi-3-model-b/>)
 
 Available for approximately 30€ depending on your local retailer
 
-#### Source code:
-
-
-
-
-
-### Powerbank
+<h3>Powerbank<h3>
+------
 
 <img src="images/bank.jpg" alt="" />
 
-#### General product information:
+<h4>General product information:<h4>
+
 
 EasyAcc MegaCharge Doubin 26000mAh Power bank
 
-#### Technical product information:
+<h4>Technical product information:<h4>
+
 
 - Battery capacity: 26000mAh x 3.7V=96.2Wh
 - Battery type: Lithium-Ion-Battery
@@ -52,13 +51,13 @@ EasyAcc MegaCharge Doubin 26000mAh Power bank
 - Dimensions: 6.57 x 3.1 x 0.86 in. / 167x 80 x22 mm 
 - Weight: 454g 
 
-#### Retailer information:
+<h4>Retailer information:<h4>
+
 
 [Easyacc](<https://www.easyacc.com/de/670-easyacc-26000mah-power-bank.html>)
 
 Available for approximately 50€ depending on your local retailer
 
-#### Source code:
 
 
 
@@ -66,19 +65,20 @@ Available for approximately 50€ depending on your local retailer
 
 
 
-### Containment box
+
+<h3>Containment box<h3>
+------
+
 
 <img src="images/box.jpg" alt="" />
 
+<h4>General product information:<h4>
 
-
-
-
-#### General product information:
 
 Spelsberg TK PC 1811-9-m
 
-#### Technical product information:
+<h4>Technical product information:<h4>
+
 
 Dimensions:
 
@@ -114,70 +114,63 @@ Properties:
 - Fitted for outdoor application: √
 - Knockouts: √
 
-#### Retailer information:
+<h4>Retailer information:<h4>
+
 
 [ RS Components Handelsgesellschaft](<https://at.rs-online.com/web/p/universalgehause/0832605/>)
 
 Depending on your local retailer available for about 25 €
 
-#### Source code:
-
-
-
-
-
-
-
-# Sensors
+<h2>Sensors<h2>
 
 Here you will find some information on the different sensors we used in the implementation of the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.
 
-### Camera
-
+<h3> Camera<h3>
 ------
-
-
-
 <span class="image main"><img src="images/cam.jpg" alt="" /></span>
 
-#### General product information: 
+<h4>General product information:<h4>
+
 
 Raspberry Pi Camera Module v2.1
 
-#### Technical product information:
+<h4>Technical product information:<h4>
+
 
 - sensor: Sony IMX219 8 Megapixel sensor
 - supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz 
 - ribbon cable for CSI-port : 30 cm
 - dimensions: 25x24x9 (mm, HxBxD)
 
-#### Manufacturer information:
+<h4>Manufacturer information:<h4>
+
 
 [Raspberry Pi foundation](https://www.raspberrypi.org/products/camera-module-v2/)
 
 Depending on your local retailer available for about 26 €
 
-#### Sensor usage:
+<h4>Sensor usage:<h4>
+
 
 The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.
 
-#### Source code:
+<h4>Source code:<h4>
 
 <a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>Link to camera class definition at the sensorproxy-repository</a>
 
 
 
-### Microphone - expensive version
-
+<h3>Microphone - expensive version<h3>
 ------
-
 <span class="image main"><img src="images/micro1.jpg" alt="" /></span>
 
-#### General product information:
+<h4>General product information:<h4>
+
 
 RØDE - Smartlav+
 
-#### Technical product information:
+<h4>Technical product information:<h4>
+
 
 - microphone type: pressure gradient
 - transmission range: 20Hz to 20kHz
@@ -185,35 +178,40 @@ RØDE - Smartlav+
 - sensitivity: -32.0dB re 1 Volt/Pascal (25.50mV @ 94 dB SPL) +/- 2 dB @ 1kHz
 - dimensions: 118x4.50x4.50 (mm; HxWxD)
 
-#### Retailer information:
+<h4>Retailer information:<h4>
+
 
 [RØDE Microphones](http://www.rode.com/microphones/smartlav)
 
 Available for approximately 50€
 
-#### Sensor usage:
+<h4>Sensor usage:<h4>
+
 
 The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.
 
 In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.
 
-#### Source code:
+<h4>Source code:<h4>
+
 
 [Link to audio class definition at the sensorproxy-repsoitory](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py)
 
 
 
-### Microphone - cheap version
-
+<h3>Microphone - cheap version<h3>
 ------
+
 
 <span class="image main"><img src="images/micro2.jpg" alt="" /></span>
 
-#### General product information:
+<h4>General product information:<h4>
+
 
 Foxnovo SF-555
 
-#### Technical product information:
+<h4>Technical product information:<h4>
+
 
 - microphone type: condenser
 - transmission range: 50Hz to 16kHz
@@ -221,135 +219,130 @@ Foxnovo SF-555
 - sensitivity: -55.0dB  +/- 2 dB @ 1kHz
 - dimensions: 67x12x14 (mm; HxWxD)
 
-#### Retailer information:
+<h4>Retailer information:<h4>
+
 
 [Purchased at Amazon](https://www.amazon.de/Foxnovo-Portable-USB-2-0-Kondensator-Mikrofon-Chat/dp/B00XA01IQC)
 
 Available for approximately 10€.
 
-#### Sensor usage:
+<h4>Sensor usage:<h4>
 
 The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.
 
 In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.
 
-#### Source code:
+<h4>Source code:<h4>
 
 [Link to audio class definition at the sensorproxy-repsoitory](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py)
 
 
 
-### Temperature & Humidity Sensor
-
+<h3>Temperature & Humidity Sensor<h3>
 ------
+
 
 <span class="image main"><img src="images/temp.jpg" alt="" /></span>
 
-#### General product information:
+<h4>General product information:<h4>
 
 DHT22 (AM2302) temperature-humidity sensor
 
-#### Technical product information:
+<h4>Technical product information:<h4>
 
 - operating voltage: 3-5V
 - sensitivity humidity: 0-100% ± 2-5% 
 - sensitivity temperature: -40-80°C ±0.5°C
 - dimensions: 15.1x25x7.7 (mm, HxBxD)
 
-#### Manufacturer information:
+<h4>Manufacturer information:<h4>
 
 [Adafruit](<https://www.adafruit.com/product/385>)
 
 Depending on your local retailer available for about 10 €
 
-#### Sensor usage:
+<h4>Sensor usage:<h4>
 
 The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.
 
-#### Source code:
+<h4>Source code:<h4>
 
 [Link to environmental sensor class definition at the sensorproxy-repository.](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#13)
 
-
-
-
-
-### Light Sensor
-
+<h3>Light Sensor<h3>
 ------
 
 <span class="image main"><img src="images/light.jpg" alt="" /></span>
 
-#### General product information:
+<h4>General product information:<h4>
 
 Adafruit TSL2591 High Dynamic Range Digital Light Sensor
 
-#### Technical product information:
+<h4>Technical product information:<h4>
 
 - sensitivity: 188 uLux sensitivity, up to 88,000 Lux input measurements.
 - temperature range: -30 to 80 °C
 - operating voltage: 3.3-5V 
 - dimensions: 19x16x1(mm, HxBxD)
 
-#### Retailer information:
+<h4>Retailer information:<h4>
 
 [Adafruit](<https://www.adafruit.com/product/1980>)
 
 Depending on your local retailer available for about 6 €
 
-#### Sensor usage:
+<h4>Sensor usage:<h4>
 
 The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is faced upwards and takes measurements at different heights. It is planned to use to data to model forest structural parameters in conjunction with aerial images collected by UAVs. 
 
-#### Source code:
+<h4>Source code:<h4>
 
 [Link to environmental sensor class definition at the sensorproxy-repository.](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#43)
 
 
 
-### Hall Sensor
-
+<h3>Hall Sensor<h3>
 ------
 
 <span class="image main"><img src="images/hall.jpg" alt="" /></span>
 
-#### General product information:
+<h4>General product information:<h4>
 
 JOY-IT KY-024 Hall Sensor
 
-#### Technical product information:
+<h4>Technical product information:<h4>
 
 - Chipset: A3141
 - OP-amplifier: LM393
 
 
-#### Retailer information:
+<h4>Retailer information:<h4>
 
 [SensorKit X40](<http://sensorkit.en.joy-it.net/index.php?title=KY-024_Linear_magnetic_Hall_Sensor#Technical_data_.2F_Short_description>)
 
 Available for approximately [3€](<https://www.reichelt.de/entwicklerboards-magnetischer-hallsensor-debo-sens-hall-p239090.html>) depending on your local retailer
 
-#### Sensor usage:
+<h4>Sensor usage:<h4>
 
 The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the SensorBox reaches the correct level of measurement.
 
-#### Source code:
+<h4>Source code:<h4>
 
 [Link to the lift class configuration with hall sensors for indicating upper and lower level](https://github.com/Nature40/pysensorproxy/blob/541eac35379bc2d4dc3b24b8412218af6f142d63/sensorproxy/lift.py#38)
 
 
 
-### Real-time clock
-
+<h3>Real-time clock<h3>
 ------
+
 
 <span class="image main"><img src="images/clock.jpg" alt="" /></span>
 
-#### General product information:
+<h4>General product information:<h4>
 
 DS3231 real-time clock
 
-#### Technical product information:
+<h4>Technical product information:<h4>
 
 - Accuracy ±2ppm from 0°C to +40°C
 - Accuracy ±3.5ppm from -40°C to +85°C
@@ -371,14 +364,15 @@ DS3231 real-time clock
 - RST Input/Output
 - UL Recognized
 
-#### Retailer information:
+<h4>Retailer information:<h4>
 
 [Eckstein GmbH](<https://eckstein-shop.de/DS3231-RTC-Modul-LIR2032>)
 
 Available for approximately [4€](<https://eckstein-shop.de/DS3231-RTC-Modul-LIR2032>) depending on your local retailer
 
-#### Sensor usage:
+<h4>Sensor usage:<h4>
 
-###
+The real-time clock is used to synchronize the data collection of different boxes to the same timeframe. It takes care of the correct time label of the data and therefore ensures data comparability between different sensor units as well as potential aerial images collected by UAVs and satellite data.
 
-#### Source code:
+<h4>Source code:<h4>
+[Bash script use to enable the real-time clock ](https://github.com/Nature40/pysensorproxy/blob/b30c13ca864cb345ab8c8da0a4513362d07fa733/Base.Pifile#33)
