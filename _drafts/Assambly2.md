@@ -1,54 +1,54 @@
 # Assambly
 
-Full part catalog for 1x Moon bis V1.1
+Full part catalog for 1x Moon V1.1
 
 - 1x Case 
 
 - 1x Hinge Set
 
-- 2x cable Tie Sockets
+- 2x Cable tie sockets
 
-- 1x Raspy Pie
+- 1x Raspberry Pie 3 Model B V.2.1
 
-- 1x cooler set for Raspy Pie
+- 1x cooler set for Raspberry Pie
 
 - 1x Board for jumper cables
 
-- 1x Powerbank with USB Power cable
+- 1x Powerbank with USB power cable
 
 - 1x Wireless charger
 
-- 6x rolls 
+- 6x Rolls 
 
-- 1x Raspymount 3D Part
+- 1x Raspberry mount 3D printed part
 
-- 1x Temperature Sensor
+- 1x Temperature sensor
 
-- 1x Lux-Sensor
+- 1x Lux-sensor
 
-- 2x coverslip 25x25mm
+- 2x Coverslip 25x25mm
 
 - 1x MST Cover (3d Part)
 
 - 3x MST Lamella (3d Part)
 
-- 1x  ? boden 3d part?
+- 1x Raspberry ground mounting platform 3D printed part)
 
-- 1x Microphone expansive or ceap
+- 1x Microphone expansive or cheap
 
-- (1x  Soundcard for expansive microphone only)
+- (1x Soundcard for expansive microphone only)
 
 - (1x Soundcable for expansive microphone only)
 
-- 1x Raspy Camera
+- 1x Raspberry RGB Camera V.2.1
 
-- 1x 30cm Camera cable
+- 1x 30cm camera cable
 
-- 1x Cameramount (3d Part)
+- 1x Camera mounting platform (3d printed part)
 
-- 1x Realtime-Clock
+- 1x Realtime-clock
 
-- 2x Hall-Sensor
+- 2x Hall-sensor
 
 - 4x Pins ???
 
@@ -74,14 +74,14 @@ jumpercables
 ## Case Preperation
 
 - 1x Case 
-- 1x Hinge Set
-- 2x cable Tie Sockets
+- 1x Hinge-set
+- 2x Cable tie sockets
 - 1x Raspberry Pie
 - 1x Cooler set for Raspberry Pie
 - 1x Board for jumper cables (only 1x (+)/(-) part)
-- 1x Powerbank with USB Power cable
+- 1x Powerbank with USB power cable
 - 1x Wireless charger
-- 6x rolls 
+- 6x Rolls 
 - 1x Raspberry Pie mounting plate (3D Part)
 - 100 cm rope (2mm width)
 
