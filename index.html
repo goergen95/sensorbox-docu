@@ -1,388 +1,410 @@
-﻿<!DOCTYPE HTML>
+﻿
+<!DOCTYPE HTML>
 <!--
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>SensorBox Documentation</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-<style>
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-} </style>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-	
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-envira"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>SensorBox</h1>
-								<p>Documentation of a master's seminar to build a low-cost 								sensor box<br />
-								to monitor basic environmental variables in forest 										environments.</p>
-							</div>
-						</div>
-						<nav>
+<head>
+	<title>SensorBox Documentation</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<style>
+		.column {
+			float: left;
+			width: 50%;
+			padding: 5px;
+		}
+
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<div class="logo">
+				<span class="icon fa-envira"></span>
+			</div>
+			<div class="content">
+				<div class="inner">
+					<h1>SensorBox</h1>
+					<p>Documentation of a master's seminar to build a low-cost sensor box monitor basic
+						environmental variables in forest environments.</p>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#intro">Intro</a></li>
+					<li><a href="#sensors">Sensors</a></li>
+					<li><a href="#assembly">Assembly</a></li>
+					<li><a href="#data">Data</a></li>
+					<li><a href="#test">Test</a></li>
+					<!--<li><a href="#elements">Elements</a></li>-->
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Intro -->
+			<article id="intro">
+				<h2 class="major">Introduction</h2>
+				<p>The SensorBox was developed during a master&#39;s seminar at the University of Marburg. The idea of the SensorBox was to create a tool which enables the collection of some basic environmental variables along a vertical path in forest
+					structures. The box is part of a broader research effort to effectively monitor biotic and abiotic factors to draw benefits for biodiversity conversation and the sustainable management of ecosystem services. The innovation of the SensorBox
+					lies in its cheap and reconstructable design as well as its ability to collect data in a 3D-space through the use of cable cars attached to individual trees in a forest. In the video below you can get the basic idea of the SensorBox moving
+					upwards and collecting data at specified height levels.</p>
+
+				<video height="50%" class="image main" controls="" onerror="this.style.display = 'none';">
+					<source src="images/intro_video.mp4" type="video/mp4" <="" video=""></video>
+
+				<p>This webpage reports on the materials used and the way to assembly the SensorBoxes to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment.
+				</p>
+
+				<p>The seminar is closely associated to the LOEWE research project <a href="https://www.uni-marburg.de/de/fb19/natur40">Natur 4.0</a> which aims at innovative data acquisition and processing techniques to developed a methodology to a spatial
+					and temporal comprehensive monitoring of landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned aerial vehicles (UAV), automatic rovers as
+					well as low-invasive sensors placed on animals and humans moving through the landscape to be monitored. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental
+					variables.</p>
+				<p>&nbsp;</p>
+			</article>
+
+			<!-- Sensors -->
+			<article id="sensors">
+				<h2 class="major">Sensors</h2>
+				<p>Here you will find some information on the different sensors we used in the implementation of the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors
+					were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the
+					records of the cheaper microphone would prove well enough, costs could be reduced.</p>
+				<h3>Camera</h3>
+				<hr />
+				<p>&nbsp;</p>
+				<p><span class="image main"><img src="images/camera.png" alt="" /></span></p>
+				<h4>General product information: </h4>
+				<p>Raspberry Pi Camera Module v2.1</p>
+				<h4>Technical product information:</h4>
+				<ul>
+					<li>sensor: Sony IMX219 8 Megapixel sensor</li>
+					<li>supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz </li>
+					<li>ribbon cable for CSI-port : 30 cm</li>
+					<li>dimensions: 25x24x9 (mm, HxBxD)</li>
+				</ul>
+				<h4>Manufacturer information:</h4>
+				<p><a href='https://www.raspberrypi.org/products/camera-module-v2/'>Raspberry Pi foundation</a></p>
+				<p>Depending on your local retailer available for about 26 €</p>
+				<h4>Sensor usage:</h4>
+				<p>The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth
+					and animal wildlife detection.</p>
+				<h4>Source code:</h4>
+				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>Link to camera class definition at the sensorproxy-repository</a></p>
+				<p>&nbsp;</p>
+
+				<h3>Microphone - expensive version</h3>
+				<hr />
+				<p><span class="image main"><img src="images/micro1.png" alt="" /></span></p>
+				<h4>General product information:</h4>
+				<p>RØDE - Smartlav+</p>
+				<h4>Technical product information:</h4>
+				<ul>
+					<li>microphone type: pressure gradient</li>
+					<li>transmission range: 20Hz to 20kHz</li>
+					<li>output impedance: 0Ω</li>
+					<li>sensitivity: -32.0dB re 1 Volt/Pascal (25.50mV @ 94 dB SPL) +/- 2 dB @ 1kHz</li>
+					<li>dimensions: 118x4.50x4.50 (mm; HxWxD)</li>
+				</ul>
+				<h4>Retailer information:</h4>
+				<p><a href='http://www.rode.com/microphones/smartlav'>RØDE Microphones</a></p>
+				<p>Available for approximately 50€</p>
+				<h4>Sensor usage:</h4>
+				<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
+				<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
+				<h4>Source code:</h4>
+				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
+				<p>&nbsp;</p>
+
+				<h3>Microphone - cheap version</h3>
+				<hr />
+				<p><span class="image main"><img src="images/micro2.png" alt="" /></span></p>
+				<h4>General product information:</h4>
+				<p>Foxnovo SF-555</p>
+				<h4>Technical product information:</h4>
+				<ul>
+					<li>microphone type: condenser</li>
+					<li>transmission range: 50Hz to 16kHz</li>
+					<li>output impedance: &lt;2.2Ω</li>
+					<li>sensitivity: -55.0dB +/- 2 dB @ 1kHz</li>
+					<li>dimensions: 67x12x14 (mm; HxWxD)</li>
+				</ul>
+				<h4>Retailer information:</h4>
+				<p><a href='https://www.amazon.de/Foxnovo-Portable-USB-2-0-Kondensator-Mikrofon-Chat/dp/B00XA01IQC'>Purchased at Amazon</a></p>
+				<p>Available for approximately 10€.</p>
+				<h4>Sensor usage:</h4>
+				<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
+				<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
+				<h4>Source code:</h4>
+				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
+				<p>&nbsp;</p>
+
+				<h3>Temperature &amp; Humidity Sensor</h3>
+				<hr />
+				<p><span class="image main"><img src="images/temp.png" alt="" /></span></p>
+				<h4>General product information:</h4>
+				<p>DHT22 (AM2302) temperature-humidity sensor</p>
+				<h4>Technical product information:</h4>
+				<ul>
+					<li>operating voltage: 3-5V</li>
+					<li>sensitivity humidity: 0-100% ± 2-5% </li>
+					<li>sensitivity temperature: -40-80°C ±0.5°C</li>
+					<li>dimensions: 15.1x25x7.7 (mm, HxBxD)</li>
+				</ul>
+				<h4>Manufacturer information:</h4>
+				<p><a href='https://www.adafruit.com/product/385'>Adafruit</a></p>
+				<p>Depending on your local retailer for about 10 €</p>
+				<h4>Sensor usage:</h4>
+				<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.</p>
+				<h4>Source code:</h4>
+				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#13'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
+				<p>&nbsp;</p>
+
+				<h3>Light Sensor</h3>
+				<hr />
+				<p><span class="image main"><img src="images/light.png" alt="" /></span></p>
+				<h4>General product information:</h4>
+				<p>Adafruit TSL2591 High Dynamic Range Digital Light Sensor</p>
+				<h4>Technical product information:</h4>
+				<ul>
+					<li>sensitivity: 188 uLux sensitivity, up to 88,000 Lux input measurements.</li>
+					<li>temperature range: -30 to 80 °C</li>
+					<li>operating voltage: 3.3-5V </li>
+					<li>dimensions: 19x16x1(mm, HxBxD)</li>
+				</ul>
+				<h4>Retailer information:</h4>
+				<p><a href='https://www.adafruit.com/product/1980'>Adafruit</a></p>
+				<p>Depending on your local retailer available for about 6 €</p>
+				<h4>Sensor usage:</h4>
+				<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is
+					faced upwards and takes measurements at different heights. It is planned to use to data to model forest structural parameters in conjunction with aerial images collected by UAVs. </p>
+				<h4>Source code:</h4>
+				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#43'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
+				<p>&nbsp;</p>
+
+				<h3>Hall Sensor</h3>
+				<hr />
+				<p><span class="image main"><img src="images/hall.png" alt="" /></span></p>
+				<h4>General product information:</h4>
+				<p>JOY-IT KY-024 Hall Sensor</p>
+				<h4>Technical product information:</h4>
+				<ul>
+					<li></li>
+				</ul>
+				<h4>Retailer information:</h4>
+				<p>&nbsp;</p>
+				<h4>Sensor usage:</h4>
+				<p>The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the
+					SensorBox reaches the correct level of measurement.</p>
+				<h4>Source code:</h4>
+				<p><a href='https://github.com/Nature40/pysensorproxy/blob/541eac35379bc2d4dc3b24b8412218af6f142d63/sensorproxy/lift.py#38'>Link to the lift class configuration with hall sensors for indicating upper and lower level</a></p>
+				<p>&nbsp;</p>
+				<h3>Real-time clock</h3>
+				<hr />
+				<p><span class="image main"><img src="images/clock.png" alt="" /></span></p>
+				<h4>General product information:</h4>
+				<p>&nbsp;</p>
+				<h4>Technical product information:</h4>
+				<p>&nbsp;</p>
+				<h4>Retailer information:</h4>
+				<p>&nbsp;</p>
+				<h4>Sensor usage:</h4>
+				<p>&nbsp;</p>
+				<h4>Source code:</h4>
+			</article>
+
+			<!-- Assembly -->
+			<article id="assembly">
+				​ <h2 class="major">Assembly</h2>
+
+				<p>This section describes in detail the necessary steps to assemble a working SensorBox. In our opinion the order of the steps presented here represent an nearly optimal workflow. Depending on the choices on the sensors used, this workflow
+					still might look differently for other projects, though the general order should be valid for other applications as well.<p>
+						<p>
+							<h3>The Casing</h3>
+							<hr />
+							The casing of the SensorBox needs to be prepared to safely host the microcontroller and protect it from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors
+							need to reach the microcontroller without moisture entering the inside of the casing. Thirdly, the box needs wheels attached to it to ensure it can be used as a cable car between two ropes stretched along a tree.
+							<span class="image main"><img src="images/box.png" width="10%" /></span>
+							We created some [templates](assets/templates.pdf) which can be used to find the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of the box will be used
+							to attach the sensor tower later. The attached wheels should look like this:
+							<span class="image main"><img src="images/Rollen.png" width="60%" /></span>
+							The holes for entering the sensor cables into the casing should look like this:
+							<span class="image main"><img src="images/sensor_tower_drill.png" width="60%" /></span>
+							<h4>Insert Raspberry Pi</h4>
 							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#sensors">Sensors</a></li>
-								<li><a href="#assembly">Assembly</a></li>
-								<li><a href="#data">Data</a></li>
-								<li><a href="#test">Test</a></li>
-								<!--<li><a href="#elements">Elements</a></li>-->
+								<li>insert RasPi holder (3d print)</li>
+								<li>apply powerbank (in holder)</li>
+								<li>glue board and connect power and ground from raspy to board</li>
+								<li>install clock</li>
 							</ul>
-						</nav>
-					</header>
-	
-				<!-- Main -->
-					<div id="main">
-	
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Introduction</h2>
-								<p>The SensorBox was developed during a master&#39;s seminar at the University of Marburg. The idea of the SensorBox was to create a tool which enables the collection of some basic environmental variables along a vertical path in forest structures. The box is part of a broader research effort to effectively monitor biotic and abiotic factors to draw benefits for biodiversity conversation and the sustainable management of ecosystem services. The innovation of the SensorBox lies in its cheap and reconstructable design as well as its ability to collect data in a 3D-space through the use of cable cars attached to individual trees in a forest. In the video below you can get the basic idea of the SensorBox moving upwards and collecting data at specified height levels.</p>
-								
-	<video height="50%" class="image main" controls="" onerror="this.style.display = 'none';">
-	    <source src="images/intro_video.mp4" type="video/mp4" <="" video=""></video>
-	    
-	 <p>This webpage reports on the materials used and the way to assembly the SensorBoxes to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment.</p>
-	 
-	<p>The seminar is closely associated to the LOEWE research project <a href="https://www.uni-marburg.de/de/fb19/natur40">Natur 4.0</a> which aims at innovative data acquisition and processing techniques to developed a methodology to a spatial and temporal comprehensive monitoring of landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned aerial vehicles (UAV), automatic rovers as well as low-invasive sensors placed on animals and humans moving through the landscape to be monitored. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental variables.</p>
-	<p>&nbsp;</p>
-	</article>
-	
-						<!-- Sensors -->
-							<article id="sensors">
-								<h2 class="major">Sensors</h2>
-								<p>Here you will find some information on the different sensors we used in the implementation of the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.</p>
-	<h3>Camera</h3>
-	<hr />
-	<p>&nbsp;</p>
-	<p><span class="image main"><img src="images/camera.png" alt="" /></span></p>
-	<h4>General product information: </h4>
-	<p>Raspberry Pi Camera Module v2.1</p>
-	<h4>Technical product information:</h4>
-	<ul>
-	<li>sensor: Sony IMX219 8 Megapixel sensor</li>
-	<li>supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz </li>
-	<li>ribbon cable for CSI-port : 30 cm</li>
-	<li>dimensions: 25x24x9 (mm, HxBxD)</li>
-	
-	</ul>
-	<h4>Manufacturer information:</h4>
-	<p><a href='https://www.raspberrypi.org/products/camera-module-v2/'>Raspberry Pi foundation</a></p>
-	<p>Depending on your local retailer available for about 26 €</p>
-	<h4>Sensor usage:</h4>
-	<p>The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.</p>
-	<h4>Source code:</h4>
-	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>Link to camera class definition at the sensorproxy-repository</a></p>
-	<p>&nbsp;</p>
-	<h3>Microphone - expensive version</h3>
-	<hr />
-	<p><span class="image main"><img src="images/micro1.png" alt="" /></span></p>
-	<h4>General product information:</h4>
-	<p>RØDE - Smartlav+</p>
-	<h4>Technical product information:</h4>
-	<ul>
-	<li>microphone type: pressure gradient</li>
-	<li>transmission range: 20Hz to 20kHz</li>
-	<li>output impedance: 0Ω</li>
-	<li>sensitivity: -32.0dB re 1 Volt/Pascal (25.50mV @ 94 dB SPL) +/- 2 dB @ 1kHz</li>
-	<li>dimensions: 118x4.50x4.50 (mm; HxWxD)</li>
-	
-	</ul>
-	<h4>Retailer information:</h4>
-	<p><a href='http://www.rode.com/microphones/smartlav'>RØDE Microphones</a></p>
-	<p>Available for approximately 50€</p>
-	<h4>Sensor usage:</h4>
-	<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
-	<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
-	<h4>Source code:</h4>
-	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
-	<p>&nbsp;</p>
-	<h3>Microphone - cheap version</h3>
-	<hr />
-	<p><span class="image main"><img src="images/micro2.png" alt="" /></span></p>
-	<h4>General product information:</h4>
-	<p>Foxnovo SF-555</p>
-	<h4>Technical product information:</h4>
-	<ul>
-	<li>microphone type: condenser</li>
-	<li>transmission range: 50Hz to 16kHz</li>
-	<li>output impedance: &lt;2.2Ω</li>
-	<li>sensitivity: -55.0dB  +/- 2 dB @ 1kHz</li>
-	<li>dimensions: 67x12x14 (mm; HxWxD)</li>
-	
-	</ul>
-	<h4>Retailer information:</h4>
-	<p><a href='https://www.amazon.de/Foxnovo-Portable-USB-2-0-Kondensator-Mikrofon-Chat/dp/B00XA01IQC'>Purchased at Amazon</a></p>
-	<p>Available for approximately 10€.</p>
-	<h4>Sensor usage:</h4>
-	<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
-	<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
-	<h4>Source code:</h4>
-	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
-	<p>&nbsp;</p>
-	<h3>Temperature &amp; Humidity Sensor</h3>
-	<hr />
-	<p><span class="image main"><img src="images/temp.png" alt="" /></span></p>
-	<h4>General product information:</h4>
-	<p>DHT22 (AM2302) temperature-humidity sensor</p>
-	<h4>Technical product information:</h4>
-	<ul>
-	<li>operating voltage: 3-5V</li>
-	<li>sensitivity humidity: 0-100% ± 2-5% </li>
-	<li>sensitivity temperature: -40-80°C ±0.5°C</li>
-	<li>dimensions: 15.1x25x7.7 (mm, HxBxD)</li>
-	
-	</ul>
-	<h4>Manufacturer information:</h4>
-	<p><a href='https://www.adafruit.com/product/385'>Adafruit</a></p>
-	<p>Depending on your local retailer available for about 10 €</p>
-	<h4>Sensor usage:</h4>
-	<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.</p>
-	<h4>Source code:</h4>
-	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#13'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
-	<p>&nbsp;</p>
-	<p>&nbsp;</p>
-	<h3>Light Sensor</h3>
-	<hr />
-	<p><span class="image main"><img src="images/light.png" alt="" /></span></p>
-	<h4>General product information:</h4>
-	<p>Adafruit TSL2591 High Dynamic Range Digital Light Sensor</p>
-	<h4>Technical product information:</h4>
-	<ul>
-	<li>sensitivity: 188 uLux sensitivity, up to 88,000 Lux input measurements.</li>
-	<li>temperature range: -30 to 80 °C</li>
-	<li>operating voltage: 3.3-5V </li>
-	<li>dimensions: 19x16x1(mm, HxBxD)</li>
-	
-	</ul>
-	<h4>Retailer information:</h4>
-	<p><a href='https://www.adafruit.com/product/1980'>Adafruit</a></p>
-	<p>Depending on your local retailer available for about 6 €</p>
-	<h4>Sensor usage:</h4>
-	<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is faced upwards and takes measurements at different heights. It is planned to use to data to model forest structural parameters in conjunction with aerial images collected by UAVs. </p>
-	<h4>Source code:</h4>
-	<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#43'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
-	<p>&nbsp;</p>
-	<h3>Hall Sensor</h3>
-	<hr />
-	<p><span class="image main"><img src="images/hall.png" alt="" /></span></p>
-	<h4>General product information:</h4>
-	<p>JOY-IT KY-024 Hall Sensor</p>
-	<h4>Technical product information:</h4>
-	<ul>
-	<li></li>
-	
-	</ul>
-	<h4>Retailer information:</h4>
-	<p>&nbsp;</p>
-	<h4>Sensor usage:</h4>
-	<p>The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the SensorBox reaches the correct level of measurement.</p>
-	<h4>Source code:</h4>
-	<p><a href='https://github.com/Nature40/pysensorproxy/blob/541eac35379bc2d4dc3b24b8412218af6f142d63/sensorproxy/lift.py#38'>Link to the lift class configuration with hall sensors for indicating upper and lower level</a></p>
-	<p>&nbsp;</p>
-	<h3>Real-time clock</h3>
-	<hr />
-	<p><span class="image main"><img src="images/clock.png" alt="" /></span></p>
-	<h4>General product information:</h4>
-	<p>&nbsp;</p>
-	<h4>Technical product information:</h4>
-	<p>&nbsp;</p>
-	<h4>Retailer information:</h4>
-	<p>&nbsp;</p>
-	<h4>Sensor usage:</h4>
-	<p>&nbsp;</p>
-	<h4>Source code:</h4>
-							</article>
-	
-	<!-- Test -->
-	<article id="test">
-<h2>SensorBox Assembly</h2>
-<hr/>
-<h3>The Casing </h3>
-The casing of the SensorBox needs to be prepared to safely host the microcontroller and protect it from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors need to reach the microcontroller without moisture entering the inside of the casing. Thirdly, the box needs wheels attached to it to ensure it can be used as a cable car between two ropes stretched along a tree. <p>
-
-We created some <a href="assets/templates.pdf" >templates</a> which can be used to ensure to locate the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of the box will be used to attach the sensor tower later. The attached wheels and the entrance of the cables from the sensor tower should look like this:
-<div class="row">
-   <div class="column">
-       <img src="images/Rollen.png" width="100%" />
-    </div>
-    <div class="column">
-       <img src="images/sensor_tower_drill.png" width="100%" />
-    </div>
-</div>
-<p>
-<h3>The Inlet</h3>
-In the next step we attached a <a href="images/raspi_hex_mount_plate_V1.stl" >3D-printed plastic inlet</a> which is used to mount the Raspberry Pi as well as to stabilize the power-bank. After fixing the inlet, we place the Raspberry Pi with 4 small screws onto the placeholder for the microcontroller. We also stick an energy board with hot glue to connect the positive and negative line with the 3V-Input Pin and the Ground-Pin, respectively. 
-<p><span class="image main"><img src="images/assembly_inlet.png" width="60%" /></span></p>
-<h3>The Sensor Tower</h3>
-The sensor tower is attached to the box and hosts the environmental sensor: the lumen sensor, the temperature and humidity sensor as well as the camera and the microphone are all attached to the sensor tower. First, the <a href="https://github.com/Nature40/Sensorboxes-Images/tree/master/printdesigns/version_1/gondola"> 3-D printed components</a> of the sensor tower need to be assembled. 
-<p><div class="row">
-   <div class="column">
-       <img src="images/cam_rdy.png" width="100%" />
-    </div>
-    <div class="column">
-       <img src="images/mic_best_rdy.png" width="100%" />
-    </div>
-</div></p>
-<h3>Camera</h3>
-insert cam v2 in 3d print holder(Sensorphalanx) and attach cable, close cap
-
-<h3>Lumen Sensor</h3>
-connect all jumpercables to lus and temp sensor
-insert lux sensor to upper lamella (3d print)
-combine all lamellas with metal spokes (metalspeichen)
-insert tower with reclosable repeatable seal
-
-<h3>Temperature Sensor</h3>
-put temp sensor on lowest lamella
-
-<h3>The Hall Sensors</h3>
-
-- connect jumper calbes to sensores and raspy
-- paste sensors 
-
-<h3>The Real Time Clock</h3>
-attach all cables to the raspy/clock 
-seal cable channels with silicon
-seal connections of phalanx to box with silikon
-if needed paste temp tower with gluegun to phalanx
-​	</article>
-<!-- Assembly -->
-​	<article id="assembly">
-​	<h2 class="major">Assembly</h2>
-
-<p>This section describes in detail the necessary steps to assemble a working SensorBox. In our opinion the order of the steps presented here represent an nearly optimal workflow. Depending on the choices on the sensors used, this workflow still might look differently for other projects, though the general order should be valid for other applications as well.<p><p> 
-
-	<h3>The Casing</h3>
-	<hr />
-	The casing of the SensorBox needs to be prepared to safely host the microcontroller and protect it from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors need to reach the microcontroller without moisture entering the inside of the casing. Thirdly, the box needs wheels attached to it to ensure it can be used as a cable car between two ropes stretched along a tree. 
-	
-	<span class="image main"><img src="images/box.png" width="10%" /></span>
-	
-	We created some [templates](assets/templates.pdf) which can be used to find the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of the box will be used to attach the sensor tower later. The attached wheels should look like this:
-	
-	<span class="image main"><img src="images/Rollen.png" width="60%" /></span>
-	
-	The holes for entering the sensor cables into the casing should look like this:
-	
-	<span class="image main"><img src="images/sensor_tower_drill.png" width="60%" /></span>
-	
-	## Insert Raspberry Pi
-	
-	- insert RasPi holder (3d print)
-	- apply powerbank (in holder)
-	- glue board and connect power and ground from raspy to board
-	- install clock 
-	
-	## Camera
-	
-	- insert cam v2 in 3d print holder(Sensorphalanx) and attach cable, close cap
-	
-	## Sensor Tower
-	
-	- insert mirco in tower (sensorphalanx)
-	- for expensiv micro attach soundcard (calbe) to raspy)
-	
-	## Lumen & Temperature Sensor
-	
-	- connect all jumpercables to lus and temp sensor
-	
-	- insert lux sensor to upper lamella (3d print)
-	- put temp sensor on lowest lamella
-	- combine all lamellas with metal spokes (metalspeichen)
-	- insert tower with reclosable repeatable seal
-	
-	## Hall Sensors
-	
-	- connect jumper calbes to sensores and raspy
-	- paste sensors 
-	
-	## Connection to Microcontroller
-	
-	- attach all cables to the raspy/clock 
-	
-	- seal cable channels with silicon
-	
-	- seal connections of phalanx to box with silikon
-	
-	- if needed paste temp tower with gluegun to phalanx
+							<h4>Camera</h4>
+							<ul>
+								<li>insert cam v2 in 3d print holder(Sensorphalanx) and attach cable, close</li>
+							</ul>
+							<h4>Sensor Tower</h4>
+							<ul>
+								<li>insert mirco in tower (sensorphalanx)</li>
+								<li>for expensiv micro attach soundcard (calbe) to raspy)</li>
+							</ul>
+							<h4>Lumen & Temperature Sensor</h4>
+							<ul>
+								<li>connect all jumpercables to lus and temp sensor</li>
+								<li>insert lux sensor to upper lamella (3d print)</li>
+								<li>put temp sensor on lowest lamella</li>
+								<li>combine all lamellas with metal spokes (Metallspeichen)</li>
+								<li>insert tower with reclosable repeatable seal</li>
+							</ul>
+							<h4>Hall Sensors</h4>
+							<ul>
+								<li>connect jumper calbes to sensores and raspy</li>
+								<li>paste sensors</li>
+							</ul>
+							<h4>Connection to Microcontroller</h4>
+							<ul>
+								<li>attach all cables to the raspy/clock</li>
+								<li>seal cable channels with silicon</li>
+								<li>seal connections of phalanx to box with silikon</li>
+								<li>if needed paste temp tower with gluegun to phalanx</li>
+							</ul>
+			</article>
+			​
+			<!-- Data -->
+			<article id="data">
+				<h2 class="major">Contact</h2>
+				​ <form method="post" action="#">
+					​ <div class="fields">
+						​ <div class="field half">
+							​ <label for="name">Name</label>
+							​ <input type="text" name="name" id="name" />
+							​ </div>
+						​ <div class="field half">
+							​ <label for="email">Email</label>
+							​ <input type="text" name="email" id="email" />
+							​ </div>
+						​ <div class="field">
+							​ <label for="message">Message</label>
+							​ <textarea name="message" id="message" rows="4"></textarea>
+							​ </div>
+						​ </div>
+					​ <ul class="actions">
+						​ <li><input type="submit" value="Send Message" class="primary" /></li>
+						​ <li><input type="reset" value="Reset" /></li>
+						​ </ul>
+					​ </form>
+				​ <ul class="icons">
+					​ <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					​ <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					​ <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					​ <li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					​ </ul>
+				​
+			</article>
 
 
-​	  
-​							</article>
-​	
-​						<!-- Data -->
-​							<article id="data">
-​								<h2 class="major">Contact</h2>
-​								<form method="post" action="#">
-​									<div class="fields">
-​										<div class="field half">
-​											<label for="name">Name</label>
-​											<input type="text" name="name" id="name" />
-​										</div>
-​										<div class="field half">
-​											<label for="email">Email</label>
-​											<input type="text" name="email" id="email" />
-​										</div>
-​										<div class="field">
-​											<label for="message">Message</label>
-​											<textarea name="message" id="message" rows="4"></textarea>
-​										</div>
-​									</div>
-​									<ul class="actions">
-​										<li><input type="submit" value="Send Message" class="primary" /></li>
-​										<li><input type="reset" value="Reset" /></li>
-​									</ul>
-​								</form>
-​								<ul class="icons">
-​									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-​									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-​									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-​									<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-​								</ul>
-​							</article>
-​	
-​						<!-- Elements -->
-​							<article id="elements">
-​								<h2 class="major">Elements</h2>
-​	
-​								<section>
-​									<h3 class="major">Text</h3>
-​									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-​									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-​									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-​									<hr />
-​									<h2>Heading Level 2</h2>
-​									<h3>Heading Level 3</h3>
-​									<h4>Heading Level 4</h4>
-​									<h5>Heading Level 5</h5>
-​									<h6>Heading Level 6</h6>
-​									<hr />
-​									<h4>Blockquote</h4>
-​									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-​									<h4>Preformatted</h4>
-​									<pre><code>i = 0;
+			<!-- Test -->
+			<article id="test">
+				<h2>SensorBox Assembly</h2>
+				<hr />
+				<h3>The Casing </h3>
+				The casing of the SensorBox needs to be prepared to safely host the microcontroller and protect it from environmental influences such as rain and UV-radiation. Also, the cables transmitting the signals from the environmental sensors need to
+				reach the microcontroller without moisture entering the inside of the casing. Thirdly, the box needs wheels attached to it to ensure it can be used as a cable car between two ropes stretched along a tree. <p>
+
+					We created some <a href="assets/templates.pdf">templates</a> which can be used to ensure to locate the correct positions to drill the holes. Make sure you use the short sides of the boxes to attach the wheels, while the upper long side of
+					the box will be used to attach the sensor tower later. The attached wheels and the entrance of the cables from the sensor tower should look like this:
+					<div class="row">
+						<div class="column">
+							<img src="images/Rollen.png" width="100%" />
+						</div>
+						<div class="column">
+							<img src="images/sensor_tower_drill.png" width="100%" />
+						</div>
+					</div>
+					<p>
+						<h3>The Inlet</h3>
+						In the next step we attached a <a href="images/raspi_hex_mount_plate_V1.stl">3D-printed plastic inlet</a> which is used to mount the Raspberry Pi as well as to stabilize the power-bank. After fixing the inlet, we place the Raspberry Pi
+						with 4 small screws onto the placeholder for the microcontroller. We also stick an energy board with hot glue to connect the positive and negative line with the 3V-Input Pin and the Ground-Pin, respectively.
+						<p><span class="image main"><img src="images/assembly_inlet.png" width="60%" /></span></p>
+						<h3>The Sensor Tower</h3>
+						The sensor tower is attached to the box and hosts the environmental sensor: the lumen sensor, the temperature and humidity sensor as well as the camera and the microphone are all attached to the sensor tower. First, the <a
+							href="https://github.com/Nature40/Sensorboxes-Images/tree/master/printdesigns/version_1/gondola"> 3-D printed components</a> of the sensor tower need to be assembled.
+						<p>
+							<div class="row">
+								<div class="column">
+									<img src="images/cam_rdy.png" width="100%" />
+								</div>
+								<div class="column">
+									<img src="images/mic_best_rdy.png" width="100%" />
+								</div>
+							</div>
+						</p>
+						<h3>Camera</h3>
+						insert cam v2 in 3d print holder(Sensorphalanx) and attach cable, close cap
+
+						<h3>Lumen Sensor</h3>
+						connect all jumpercables to lus and temp sensor
+						insert lux sensor to upper lamella (3d print)
+						combine all lamellas with metal spokes (metalspeichen)
+						insert tower with reclosable repeatable seal
+
+						<h3>Temperature Sensor</h3>
+						put temp sensor on lowest lamella
+
+						<h3>The Hall Sensors</h3>
+
+						- connect jumper calbes to sensores and raspy
+						- paste sensors
+
+						<h3>The Real Time Clock</h3>
+						attach all cables to the raspy/clock
+						seal cable channels with silicon
+						seal connections of phalanx to box with silikon
+						if needed paste temp tower with gluegun to phalanx
+						​
+			</article>
+			​
+			​
+			<!-- Elements -->
+			​ <article id="elements">
+				​ <h2 class="major">Elements</h2>
+				​
+				​ <section>
+					​ <h3 class="major">Text</h3>
+					​ <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						​ This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						​ This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+					​
+					<hr />
+					​ <h2>Heading Level 2</h2>
+					​ <h3>Heading Level 3</h3>
+					​ <h4>Heading Level 4</h4>
+					​ <h5>Heading Level 5</h5>
+					​ <h6>Heading Level 6</h6>
+					​
+					<hr />
+					​ <h4>Blockquote</h4>
+					​ <blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan
+						faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+					​ <h4>Preformatted</h4>
+					​
+					<pre><code>i = 0;
 
 while (!deck.isInOrder()) {
     print 'Iteration ' + i;
@@ -391,239 +413,239 @@ while (!deck.isInOrder()) {
 }
 
 print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
+				</section>
 
-								<section>
-									<h3 class="major">Lists</h3>
-	
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-	
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-	
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-									</ul>
-	
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-	
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-	
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-	
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-	
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-	
-							</article>
-	
+				<section>
+					<h3 class="major">Lists</h3>
+
+					<h4>Unordered</h4>
+					<ul>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Alternate</h4>
+					<ul class="alt">
+						<li>Dolor pulvinar etiam.</li>
+						<li>Sagittis adipiscing.</li>
+						<li>Felis enim feugiat.</li>
+					</ul>
+
+					<h4>Ordered</h4>
+					<ol>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis viverra.</li>
+						<li>Felis enim feugiat.</li>
+						<li>Dolor pulvinar etiam.</li>
+						<li>Etiam vel felis lorem.</li>
+						<li>Felis enim et feugiat.</li>
+					</ol>
+					<h4>Icons</h4>
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+					</ul>
+
+					<h4>Actions</h4>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary">Default</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Table</h3>
+					<h4>Default</h4>
+					<div class="table-wrapper">
+						<table>
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
 					</div>
-	
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-	
-			</div>
-	
-		<!-- BG -->
-			<div id="bg"></div>
-	
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	
-	</body>
-</html>
 
+					<h4>Alternate</h4>
+					<div class="table-wrapper">
+						<table class="alt">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Description</th>
+									<th>Price</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Item One</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Two</td>
+									<td>Vis ac commodo adipiscing arcu aliquet.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Three</td>
+									<td> Morbi faucibus arcu accumsan lorem.</td>
+									<td>29.99</td>
+								</tr>
+								<tr>
+									<td>Item Four</td>
+									<td>Vitae integer tempus condimentum.</td>
+									<td>19.99</td>
+								</tr>
+								<tr>
+									<td>Item Five</td>
+									<td>Ante turpis integer aliquet porttitor.</td>
+									<td>29.99</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td colspan="2"></td>
+									<td>100.00</td>
+								</tr>
+							</tfoot>
+						</table>
+					</div>
+				</section>
+
+				<section>
+					<h3 class="major">Buttons</h3>
+					<ul class="actions">
+						<li><a href="#" class="button primary">Primary</a></li>
+						<li><a href="#" class="button">Default</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button">Default</a></li>
+						<li><a href="#" class="button small">Small</a></li>
+					</ul>
+					<ul class="actions">
+						<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+						<li><a href="#" class="button icon fa-download">Icon</a></li>
+					</ul>
+					<ul class="actions">
+						<li><span class="button primary disabled">Disabled</span></li>
+						<li><span class="button disabled">Disabled</span></li>
+					</ul>
+				</section>
+
+				<section>
+					<h3 class="major">Form</h3>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<label for="demo-name">Name</label>
+								<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+							</div>
+							<div class="field half">
+								<label for="demo-email">Email</label>
+								<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+							</div>
+							<div class="field">
+								<label for="demo-category">Category</label>
+								<select name="demo-category" id="demo-category">
+									<option value="">-</option>
+									<option value="1">Manufacturing</option>
+									<option value="1">Shipping</option>
+									<option value="1">Administration</option>
+									<option value="1">Human Resources</option>
+								</select>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+								<label for="demo-priority-low">Low</label>
+							</div>
+							<div class="field half">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">High</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-copy" name="demo-copy">
+								<label for="demo-copy">Email me a copy</label>
+							</div>
+							<div class="field half">
+								<input type="checkbox" id="demo-human" name="demo-human" checked>
+								<label for="demo-human">Not a robot</label>
+							</div>
+							<div class="field">
+								<label for="demo-message">Message</label>
+								<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send Message" class="primary" /></li>
+							<li><input type="reset" value="Reset" /></li>
+						</ul>
+					</form>
+				</section>
+
+			</article>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+		</footer>
+
+	</div>
+
+	<!-- BG -->
+	<div id="bg"></div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
