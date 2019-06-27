@@ -131,15 +131,16 @@ To start the Raspy Pie just connect the Powercable to the Powerbank. The Powerba
 - 1x MST Cover (3d Part)
 - 4x MST Lamella (3d Part)
 - 1x MST Bottom (3d Part)
-- Xx jumper cables 
-
-Braze = löten
-
-lenghening = verlängern
-
+- 3x jumper cables Female in blue, yellow, violet 
+- 3x jumper cables (despite if M of F, just need the cable) in blue, yellow, violet 
+- 4x jumper cables Male in white, brown, black, red
+- 4x jumper cables (despite if M of F, just need the cable) in white, brown, black, red
 
 
-insert the Lux-Sensor in the mount on the MST cover. Hint: the jumpercables should be connected an soldered before. Paste the coverslip on the mounted Lux-Sensor . Ensure that the glue (glue-gun) is sealing the space between the coverslip and the mount and . Hint: cut some grooves in the cooled off glue to secure that water can drain.
+
+First lenghening each jumper cable (by color). Therefor connet both cables and braze them. Connect the long cables to the Sensors and braze them. Hint: Use heat-shrink tubings to seal the cables form wetness.
+
+Insert the Lux-Sensor in the mount on the MST cover. Hint: the jumpercables should be connected an soldered before. Paste the coverslip on the mounted Lux-Sensor . Ensure that the glue (glue-gun) is sealing the space between the coverslip and the mount and . Hint: cut some grooves in the cooled off glue to secure that water can drain.
 
 Connect all MST Lamellas to the MST cover and lead the jumper cables through the holes.
 
@@ -192,7 +193,7 @@ Braze the Pin header to the realtime-Clock and connect the jumpercables.
 
 - 2x jumper cable F-F (1x orange, 1x green)
 
-Connect the jumpercables and adjust the sensitivity by turning the "pins". Hint: use a magnet to test if the sensor reacts.
+Connect the jumper cables and adjust the sensitivity by turning the adjusting screw on top of the sensors. Hint: use a magnet to test if the sensor reacts.
 
 
 
@@ -206,11 +207,11 @@ Connect the jumpercables and adjust the sensitivity by turning the "pins". Hint:
 
 
 
-Insert the CMPT / EMPT trought the duct in the Sensorphalanx and fix it (with glue or some tape). Attach the CAM to the Sensorphalanx and insert the Camera-cable trought the opening and trought the cable canal. Insert all jumpercables from the LMST trought the opening in the Sensorphanalx and attach the LMST  Further fix it with glue.
+Insert the CMPT / EMPT trought the duct in the Sensorphalanx and fix it (with glue or some tape). Attach the CAM to the Sensorphalanx and insert the Camera-cable trought the opening and trought the cable canal. Insert all jumpercables from the LMST trought the opening in the Sensorphanalx and attach the LMST. Further fix it with glue.
 
 
 
-Insert all cables from the Sensorphalanx trough the openings in the Case and paste the Sensorphalanx to the Case.
+Insert all cables from the Sensorphalanx trough the openings in the Case and paste the Sensorphalanx to the Case. Close the bayonet lock for the LMST.
 
 
 
