@@ -343,11 +343,33 @@
 				<p>
 					Once your device is connected to the WIFI we can use <code>ssh</code> to start a remote shell connection.
 				</p>
-				<h4>SSH:</h4>
-				<p>
-					There are two main ways to use <code>ssh</code> under Windows. The second option is to install the <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux">linux subsystem</a> from the windows store and then use ssh as on linux.
-				</p>
+				<h4>Getting SSH ready</h4>
+					<p>If you already have a working ssh environment you can skip this part.</p>
+					<h5>Linux:</h5>
+						<p>
+							Most modern distributions of Linux already have ssh installed. If ssh is not installed you can find installation instructions <a href="https://www.openssh.com/">here</a>.
+						</p>
+					<h5>Windows:</h5>
+						<p>
+							There are two main ways to use <code>ssh</code> under Windows. The first is to download and install <a href="https://www.putty.org/">PUTTY</a>. The second option is to install the <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux">linux subsystem</a> from the windows store and then use ssh as on linux.
+						</p>
+				<h4>Connecting via ssh</h4>
+					<p>
+						In order to connect to the RaspberryPi we need to find out it's Ip-address.
+						Since the RaspberryPi creates a hotspot the Ip-address sould be the same for all downloaded copies of the image: <code>192.168.4.1</code>
+						To be sure the following command returns the Ip-address and should work in Windows as well as in Bash:
+						<blockquote>
+							arp -a
+						</blockquote>
+						Will retun the local Ip-address of your router and in our case of the RaspberryPi.
+					</p>
+					<p>
+						Once we got the Ip-address we can issue the ssh command:
+						<blockquote>
+							ssh pi@192.168.4.1
+						</blockquote>
 
+					</p>
 
 			</article>
 
