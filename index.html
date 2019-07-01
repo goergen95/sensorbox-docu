@@ -314,8 +314,41 @@
 			<article id="software">
 				<h2>Software</h2>
 				<hr/>
-				<p>...</p>
-				<h3></h3>
+				<p>This page contains a brief guide to getting the Raspberry PI up and running using the custom <a href="https://github.com/Nature40/Sensorboxes-Images/releases/tag/0.9.3">image</a> developed by <a href="https://github.com/jonashoechst">Jonas Hoechst</a>.</p>
+				<p>&nbsp;</p>
+
+				<h3>Requirements:</h3>
+				<hr />
+				<ul>
+					<li>RaspberryPi</li>
+					<li>Micro-SD Card</li>
+					<li>A WIFI capable laptop or PC</li>
+					<li>(Micro-)SD card reader</li>
+				</ul>
+				<p>&nbsp;</p>
+
+				<h3>Flashing the Micro-SD Card:</h3>
+				<hr />
+				<p>
+					First we download the operating system <a href="https://github.com/Nature40/Sensorboxes-Images/releases/tag/0.9.3">here</a> and write it with the tool <a href="https://www.balena.io/etcher/">etcher</a> to the Micro-SD card.
+				</p>
+				<p>
+					The RaspberryPi can then be started from the Micro-SD card. After a few minutes of waiting the RaspberryPi will start to send a Wifi signal.
+					The password <code>natur40</code> is required to connect to the sent Wifi.
+				</p>
+				<p>&nbsp;</p>
+
+				<h3>Remote connect to the RaspberryPi:</h3>
+				<hr/>
+				<p>
+					Once your device is connected to the WIFI we can use <code>ssh</code> to start a remote shell connection.
+				</p>
+				<h4>SSH:</h4>
+				<p>
+					There are two main ways to use <code>ssh</code> under Windows. The second option is to install the <a href="https://en.wikipedia.org/wiki/Windows_Subsystem_for_Linux">linux subsystem</a> from the windows store and then use ssh as on linux.
+				</p>
+
+
 			</article>
 
 
