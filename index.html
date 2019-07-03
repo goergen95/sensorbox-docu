@@ -357,19 +357,73 @@
 					<p>
 						In order to connect to the RaspberryPi we need to find out it's Ip-address.
 						Since the RaspberryPi creates a hotspot the Ip-address sould be the same for all downloaded copies of the image: <code>192.168.4.1</code>
-						To be sure the following command returns the Ip-address and should work in Windows as well as in Bash:
-						<blockquote>
-							arp -a
-						</blockquote>
+						To be sure the following command returns the Ip-address:
+						<p></p>
+						<b>Linux:</b>
+							<blockquote>
+								arp -a
+							</blockquote>
+						<b>Windows:</b>
+							<blockquote>
+								ipconfig | findstr /i "Gateway"
+							</blockquote>
 						Will retun the local Ip-address of your router and in our case of the RaspberryPi.
 					</p>
 					<p>
-						Once we got the Ip-address we can issue the ssh command:
+						Once we got the Ip-address we can issue the ssh command (replace "192.168.4.1" with whatever IP-adrress you got):
 						<blockquote>
 							ssh pi@192.168.4.1
 						</blockquote>
-
+						After the connection is established ssh the RaspberryPi will ask for authentication. <code>natur</code> is the pi's user password.
 					</p>
+					<p>
+						The first thing we should do after a successful login is to log back out so we can calibrate the connected <a href="https://goergen95.github.io/sensorbox-docu/#sensors">realtimeclock (RTC)</a>
+						To log back out simply type: <code>exit</code>. When we are no longer connected to the PI we can execute the following command to copy the systemtime of our laptop/pc to the PI's RTC: <blockquote>date | ssh pi@192.168.4.1 'sudo hwclock --set --date "`cat`"; echo "hwclock set to: `sudo hwclock`"'</blockquote>
+					</p>
+				<h4>Controlling measurements:</h4>
+					<p>
+						In this build the measurement protocol is implemented as a <a href="https://www.freedesktop.org/software/systemd/man/systemd.html#">systemd service</a>.
+					</p>
+					<p>
+						Therefore we can control the service using the <a href="https://www.freedesktop.org/software/systemd/man/systemctl.html">systemctl</a> command.<br>
+						The measurement unit is called <b>sensorproxy</b>.
+						<br>
+						<br>
+						To check the current <b>status</b> of sensorproxy type:<blockquote>sudo systemctl status sensorproxy</blockquote>
+						In order to <b>start</b> sensorproxy type:<blockquote>sudo systemctl start sensorproxy</blockquote>
+						To <b>stop</b> sensorproxy type:<blockquote>sudo systemctl stop sensorproxy</blockquote>
+						Stopping and starting can be done at the same time using the <b>restart</b> option:<blockquote>sudo systemctl restart sensorproxy</blockquote>
+					</p>
+					<p>
+						With each start of the service a full measurement with all connected sensors will carried out.
+						Given the case a sensor doesn't send it's readings there is the option to check the systemlogs with: <blockquote>sudo journalctl -u sensorproxy</blockquote>
+					</p>
+					<p>
+						The <i>sensorproxy</i> service as a build in tool to check all connected sensors. To execute the check type: <blockquote>sensorproxy -t</blockquote>
+						To increase <a href="https://en.wikipedia.org/wiki/Verbosity">verbosity</a> simply add between one or four "v" like so: <blockquote>sensorproxy -tvv</blockquote>
+					</p>
+				<p>&nbsp;</p>
+
+				<h3>Copying files:</h3>
+				<hr/>
+				<p>
+					The easiest way to copy files from and to the RaspberryPi is by using the <a href="http://man7.org/linux/man-pages/man1/scp.1.html"><code>scp</code></a> command.
+					A simple example would be:
+					<blockquote>scp /path/to/file.txt pi@192.168.4.1:/path/to/destinationfolder/</blockquote>
+					This command copies a single file to the given destination directory on the RaspberryPi.
+					<br>
+					<br>
+					To copy entire folders and subfolders we have to use the <code>-r</code> option like so:
+					<blockquote>scp -r pi@192.168.4.1:/path/to/sourcefolder/ /path/to/destination/</blockquote>
+					This command will copy the entire <i>sourcefolder</i> including every subdirectory in <i>sourcefolder</i> to the destination directory.
+					<br>
+					<br>
+					<b>Notice: </b>With the first command we copied a file <b>from</b> our local laptop/pc <b>to</b> the RaspberryPi while the second command copied a directory <b>from</b> the RaspberryPi <b>to</b> our local laptop/pc
+
+				</p>
+
+
+
 
 			</article>
 
