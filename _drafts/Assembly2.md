@@ -2,7 +2,7 @@
 
 Full part catalog for 1x Moon V1.1
 
-- 1x Containment box 
+- 1x Case 
 
 - 1x Hinge Set
 
@@ -10,7 +10,7 @@ Full part catalog for 1x Moon V1.1
 
 - 1x Raspberry Pie 3 Model B V.2.1
 
-- 1x Cooler set for Raspberry Pie
+- 1x cooler set for Raspberry Pie
 
 - 1x Board for jumper cables
 
@@ -46,23 +46,23 @@ Full part catalog for 1x Moon V1.1
 
 - 1x Camera mounting platform (3d printed part)
 
-- 1x Real-time clock
+- 1x Realtime-clock
 
 - 2x Hall-sensor
 
-- 1x Pin header with 4 pin
+- 4x Pins ???
 
   
 
-Screws
+screws
 
 - 4x M4x12 screws
 - 4x C2,9x13 screws
 - 6x M4x16 raised countersunk-head screws
-- 6x M4 safety nut
+- 6x M4 safty nut
 - 6x M4 washers
 
-Jumpercables
+jumpercables
 
 - Xx jumpercable M-F red
 - Xx jumpercable M-F black
@@ -71,11 +71,9 @@ Jumpercables
 
 
 
-## 1. Containment box preparation (in build)
+## 1. Case preparation (in build)
 
-
-
-- 1x Containment box
+- 1x Case 
 - 1x Hinge-set
 - 2x Cable tie sockets
 - 1x Raspberry Pie
@@ -99,7 +97,7 @@ Jumpercables
 
 ### Drilling holes
 
-First drill the holes for the hinges (with stencil from set, outter holes). Hint: first use 5mm drill (fit in stencil) and than use 6mm drill to expand the holes. Install hinges. Than drill the holes for the sensors on front of the containment box with stencil """X""". Further drill the holes for the rolls on the sides with stencil """X""" (3,5 mm drill).
+First drill the holes for the hinges (with stencil from set, outter holes). Hint: first use 5mm drill (fit in stencil) and than use 6mm drill to expand the holes. Install hinges. Than drill the holes for the sensors on front of case with stencil """X""". Further drill the holes for the rolls on the sides with stencil """X""" (3,5 mm drill).
 
 At least drill the holes for the suspension cable with stencil """X"""" (4mm drill). Insert the rope in both holes. Form a triangle with both parts 40cm long and fix the ropes with glue. Hint: make sure the holes are sealed completely.
 
@@ -113,7 +111,7 @@ Use M4x16 raised countersunk-head screws with washer from inside to attach the r
 
 ### Install Raspy Pie and Power
 
-Use M4x12 screws to attatch the Raspymount to the containment box (the 4 sockets should be on the right side). Attach the coolers on the Raspy Pie. Put the raspy on the sockets (USB Ports to the right side) and fix it with C2,9x13 screws.
+Use M4x12 screws to attatch the Raspymount to the Case (the 4 sockets should be on the right side). Attach the coolers on the Raspy Pie. Put the raspy on the sockets (USB Ports to the right side) and fix it with C2,9x13 screws.
 
 Paste the board on the bottom side of the Raspymount and connect it with the jumper-cables, red for + / black for -. Hint: leave 6 ports on the right out.
 
@@ -162,7 +160,7 @@ Does not need any preparation.
 
 EMPT bis V1.1
 
-- 1x Microphone expansive version
+- 1x Microphone expansive
 - 1x  Soundcard
 - 1x Soundcable
 
@@ -205,7 +203,7 @@ Connect the jumper cables and adjust the sensitivity by turning the adjusting sc
 - 1x LMST (prebuild Sensor)
 - 1x CMPT / EMPT (prebuild Sensor)
 - 1x CAM (prebuild Sensor)
-- 1x prepared containment box
+- 1x prepared Case
 
 
 
@@ -213,11 +211,11 @@ Insert the CMPT / EMPT trought the duct in the Sensorphalanx and fix it (with gl
 
 
 
-Insert all cables from the Sensorphalanx trough the openings in the containment box and paste the Sensorphalanx to the containment box. Close the bayonet lock for the LMST.
+Insert all cables from the Sensorphalanx trough the openings in the Case and paste the Sensorphalanx to the Case. Close the bayonet lock for the LMST.
 
 
 
-Seal all space betwenn the Sensorphalanx and the containment box with silicon/glue. Further seal all openings from the inner side of the containment box leading to the Sensors with silicon/glue.
+Seal all space betwenn the Sensorphalanx and the Case with silicon/glue. Further seal all openings from the inner side of the Case leading to the Sensors with silicon/glue.
 
 
 
