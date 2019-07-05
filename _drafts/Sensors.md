@@ -4,7 +4,7 @@
 
 <img src="images/pi.jpg" alt="" />
 
-#### General product information:
+#### Manufacturer product description:
 
 Raspberry Pi 3 Model B version 1.2
 
@@ -29,8 +29,6 @@ Raspberry Pi 3 Model B version 1.2
 
 Available for approximately 30€ depending on your local retailer
 
-#### Source code:
-
 
 
 
@@ -39,7 +37,7 @@ Available for approximately 30€ depending on your local retailer
 
 <img src="images/bank.jpg" alt="" />
 
-#### General product information:
+#### Manufacturer product description:
 
 EasyAcc MegaCharge Doubin 26000mAh Power bank
 
@@ -58,10 +56,6 @@ EasyAcc MegaCharge Doubin 26000mAh Power bank
 
 Available for approximately 50€ depending on your local retailer
 
-#### Source code:
-
-
-
 
 
 
@@ -72,9 +66,7 @@ Available for approximately 50€ depending on your local retailer
 
 
 
-
-
-#### General product information:
+#### Manufacturer product description:
 
 Spelsberg TK PC 1811-9-m
 
@@ -104,15 +96,15 @@ Properties:
 - Rated insulation voltage AC: 690V
 - Impact restistance: {IK08 nach DIN EN 5012 / VDE 0470 Teil 100 }
 - Protection class: II - isolate protection acc. VDE 0106 Protective
-- PVC-free: √
-- Silicone-free: √
-- UV resistance: √
-- Weatherproof: √
+- PVC-free
+- Silicone-free
+- UV resistance
+- Weatherproof
 - Combustion behaviour to UL: 5VA nach UL 50 / UL 746C
 - Combustion behaviour to UL: {V-2 nach UL 94}
 - Combustion behaviour to VDE: 960°C acc. VDE 0471/ EN 60695
-- Fitted for outdoor application: √
-- Knockouts: √
+- Fitted for outdoor application
+- Knockouts
 
 #### Retailer information:
 
@@ -120,17 +112,13 @@ Properties:
 
 Depending on your local retailer available for about 25 €
 
-#### Source code:
-
-
-
 
 
 
 
 # Sensors
 
-Here you will find some information on the different sensors we used in the implementation of the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.
+Here you will find some information on the different sensors we used in the implementation of the Sensorbox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.
 
 ### Camera
 
@@ -140,7 +128,7 @@ Here you will find some information on the different sensors we used in the impl
 
 <span class="image main"><img src="images/cam.jpg" alt="" /></span>
 
-#### General product information: 
+#### Manufacturer product description:
 
 Raspberry Pi Camera Module v2.1
 
@@ -149,7 +137,7 @@ Raspberry Pi Camera Module v2.1
 - sensor: Sony IMX219 8 Megapixel sensor
 - supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz 
 - ribbon cable for CSI-port : 30 cm
-- dimensions: 25x24x9 (mm, HxBxD)
+- dimensions: 25x24x9 (mm, HxWxL)
 
 #### Manufacturer information:
 
@@ -161,9 +149,7 @@ Depending on your local retailer available for about 26 €
 
 The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.
 
-#### Source code:
 
-<a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>Link to camera class definition at the sensorproxy-repository</a>
 
 
 
@@ -173,7 +159,7 @@ The camera is used to monitor the canopy from below crown surface. The collected
 
 <span class="image main"><img src="images/micro1.jpg" alt="" /></span>
 
-#### General product information:
+#### Manufacturer product description:
 
 RØDE - Smartlav+
 
@@ -197,9 +183,7 @@ The microphone is used to record the singing of birds. This data can be used by 
 
 In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.
 
-#### Source code:
 
-[Link to audio class definition at the sensorproxy-repsoitory](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py)
 
 
 
@@ -209,7 +193,7 @@ In the first stage of development two different models of microphones are tested
 
 <span class="image main"><img src="images/micro2.jpg" alt="" /></span>
 
-#### General product information:
+#### Manufacturer product description:
 
 Foxnovo SF-555
 
@@ -233,10 +217,6 @@ The microphone is used to record the singing of birds. This data can be used by 
 
 In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.
 
-#### Source code:
-
-[Link to audio class definition at the sensorproxy-repsoitory](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py)
-
 
 
 ### Temperature & Humidity Sensor
@@ -245,7 +225,7 @@ In the first stage of development two different models of microphones are tested
 
 <span class="image main"><img src="images/temp.jpg" alt="" /></span>
 
-#### General product information:
+#### Manufacturer product description:
 
 DHT22 (AM2302) temperature-humidity sensor
 
@@ -266,10 +246,6 @@ Depending on your local retailer available for about 10 €
 
 The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.
 
-#### Source code:
-
-[Link to environmental sensor class definition at the sensorproxy-repository.](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#13)
-
 
 
 
@@ -280,7 +256,7 @@ The temperature and humidity sensor is used to measure micro-climatic data. The 
 
 <span class="image main"><img src="images/light.jpg" alt="" /></span>
 
-#### General product information:
+#### Manufacturer product description:
 
 Adafruit TSL2591 High Dynamic Range Digital Light Sensor
 
@@ -301,10 +277,6 @@ Depending on your local retailer available for about 6 €
 
 The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is faced upwards and takes measurements at different heights. It is planned to use to data to model forest structural parameters in conjunction with aerial images collected by UAVs. 
 
-#### Source code:
-
-[Link to environmental sensor class definition at the sensorproxy-repository.](https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#43)
-
 
 
 ### Hall Sensor
@@ -313,7 +285,7 @@ The digital light sensor gathers information about the light intensity in the vi
 
 <span class="image main"><img src="images/hall.jpg" alt="" /></span>
 
-#### General product information:
+#### Manufacturer product description:
 
 JOY-IT KY-024 Hall Sensor
 
@@ -333,10 +305,6 @@ Available for approximately [3€](<https://www.reichelt.de/entwicklerboards-mag
 
 The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the SensorBox reaches the correct level of measurement.
 
-#### Source code:
-
-[Link to the lift class configuration with hall sensors for indicating upper and lower level](https://github.com/Nature40/pysensorproxy/blob/541eac35379bc2d4dc3b24b8412218af6f142d63/sensorproxy/lift.py#38)
-
 
 
 ### Real-time clock
@@ -345,7 +313,7 @@ The hall sensor are responsible to control the lift system. The attached magnets
 
 <span class="image main"><img src="images/clock.jpg" alt="" /></span>
 
-#### General product information:
+#### Manufacturer product description:
 
 DS3231 real-time clock
 
@@ -379,6 +347,6 @@ Available for approximately [4€](<https://eckstein-shop.de/DS3231-RTC-Modul-LI
 
 #### Sensor usage:
 
-###
+The real-time clock is used to ensure that the Raspberry Pi always uses the correct physical time.
 
-#### Source code:
+This is important that even after a system restart the sensors work with the correct timestamp. 
