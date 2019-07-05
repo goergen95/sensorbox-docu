@@ -1,5 +1,4 @@
 <h2 class = "major"> Data </h2>
-
 In a simple test run of our sensorboxes we placed all of them next to each other overnight. In total, we placed six boxes. One box showed issues in saving the data to disk, so we could not include it's results in the analysis. Another box did not collect temperature and humidity data, so we only have 4 boxes to compare the measurements for these two variables.  The illuminance sensor worked for all boxes, but since we made our test run overnight, there are not as many observations to compare.
 
 <h3>Temperature</h3>
@@ -18,7 +17,7 @@ The sensors show a greater level of agreement at the beginning of the measuremen
 | **S3**  | 0.52 | 0.36 | 0    | 0.37 |
 | **S4**  | 0.17 | 0.06 | 0.37 | 0    |
 
-This is also indicated by the RMSE comparison between the sensors. While S2 and S4 only show an RMSE of 0.6°C, S3 has an RMSE of about 0.36°C to S2 and S4 and even 0.52°C to S1. The RMSE between S1 and S2 and S4 is comparatively low with only 0.17°C. This analysis shows that S3 most probably should be replaced if RMSE below 0.5°C is desired. Another option could be to calculate a calibration curve for the specific sensor since the correlation coefficients to the over sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration function.
+This is also indicated by the RMSE comparison between the sensors. While S2 and S4 only show an RMSE of 0.06°C, S3 has an RMSE of about 0.36°C to S2 and S4 and even 0.52°C to S1. The RMSE between S1 and S2 and S4 is comparatively low with only 0.17°C. This analysis shows that S3 most probably should be replaced if RMSE below 0.5°C is desired. Another option could be to calculate a calibration curve for the specific sensor since the correlation coefficients to the over sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration function.
 
 <h3>Humidity</h3>
 The measurement of the relative air humidity shows a similar pattern of sensor differences like the temperature. The first three hours of the measurement, the level of agreement between the sensor is higher than after 5 pm. However, compared to the temperature measurements, even within the first three hours the standard deviation of the mean is with approximately +-2.5% substantially larger than the standard deviation of the temperature. The standard deviation of the measurements increases over time and reaches a level of +- 5%.
