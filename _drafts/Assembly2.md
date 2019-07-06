@@ -1,6 +1,6 @@
 # Assembly
 
-Full part catalog for 1x Moon V1.1
+Full part catalog for 1x Moon v1.1
 
 - 1x Containment box 
 
