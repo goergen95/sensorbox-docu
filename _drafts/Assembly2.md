@@ -119,6 +119,8 @@ Take one +/- part from the Breadboard and paste it on the bottom side of the Ras
 
 Paste Duallock-tape on the inner side of the cover using template """X""""  and on the backside of  the Powerbank. Attach the wireless charger on the Powerbank and connect the USB-power-cable to the Raspberry Pie. Put the Powerbank on the inner side of the containment box cover.
 
+<img src="images/pi_mount_rdy.jpg" alt="" />
+
 ## 2. Sensor preparation
 
 ### 2.1 Lux-Microclimate-Sensor-Tower (LMST) (bis V1.1)
@@ -133,10 +135,6 @@ Paste Duallock-tape on the inner side of the cover using template """X""""  and 
 - 3x Jumper-cables male/female in blue, yellow, violet 
 - 8x Jumper-cables male/female in white, brown, black, red
 
-  
-
-
-
 First the jumper-cables need to be lengthened. Therefore connect the jumper-cables of  each color with female to male.
 
 Alternatively the jumper-cables can be connected by soldering to improve durability. Here heat-shrink tubings are recommended to seal the cables form wetness. 
@@ -149,25 +147,11 @@ Connect all MST-lamellas to the MST cover and lead the jumper cables through the
 
 Paste the Temperature-sensor on the inner side of the mount plate in the MST-bottom and connect it to the MST-lamellas while leading the cables trough the holes.
 
-
-
-### 2.2 Cheap-microphone-tower (CMPT)
-
-- 1x Mircophone cheap version
-
-Does not need any preparation.
-
-### 2.3 / Expensive-mircophone-tower (EMPT)
-
-- 1x Microphone expensive version
-- 1x  Soundcard
-- 1x  Soundcable
-
-Connect the soundcard and the soundcable to the expensive microphone version.
+<img src="images/lmst.jpg" alt="" />
 
 
 
-### 2.4 Camera (CAM)
+### 2.2 Camera (CAM)
 
 - 1x Raspberry Pie camera module v.1.2
 - 1x 30cm camera-cable
@@ -176,15 +160,19 @@ Connect the soundcard and the soundcable to the expensive microphone version.
 
 First connect the 30cm camera-cable to the Raspberry Pie camera module and put it into the Camera-mount. Then close the cap on the backside and paste the cover-slip on the front. Ensure that the glue (glue-gun) is sealing the space between the cover-slip and the Camera-mount. Finally cut some grooves in the cooled off glue to ensure that water can drain if the camera is adjusted horizontally.
 
-### 2.5 Real-time-clock (RTC)
+<img src="images/cam_rdy2.jpg" alt="" />
+
+### 2.3 Real-time-clock (RTC)
 
 - 1x Real-time-clock
 - 4x Jumper-cables female/female in red, black, yellow, blue
-- 1x Pin-header with 4 pins
+- 1x Pin-header with 2 pins
 
 Solder the Pin-header to the Real-time-clock and connect the jumper-cables.
 
-### 2.6 Hall-sensors
+<img src="images/RTC_rdy.jpg" alt="" />
+
+### 2.4 Hall-sensors set
 
 - 2x Hall-sensor
 
@@ -192,29 +180,36 @@ Solder the Pin-header to the Real-time-clock and connect the jumper-cables.
 
 - 2x Jumper-cable female/female 1x orange, 1x green
 
-Connect the Jumper-cables and adjust the sensitivity by turning the adjusting-screw on top of the sensors. Use a magnet to test the reaction: The Hall-sensors lamp should glow if it senses a magnetic field
+Connect the jumper-cables and adjust the sensitivity by turning the adjusting-screw on top of the sensors. Use a magnet to test the reaction: The Hall-sensor's lamp should glow if it senses a magnetic field.
+
+<img src="images/hall_rdy.jpg" alt="" />
 
 
 
-## Sensor installation and sealing (till V 1.1)
+## 3. Sensor installation and sealing
 
-- 1x Sensor-phalanx (with duct depended on desired Microphone) (3d Part)
-- 1x LMST (prebuild Sensor)
-- 1x CMPT / EMPT (prebuild Sensor)
-- 1x CAM (prebuild Sensor)
-- 1x prepared containment box
+- 1x Sensor-phalanx depend on desired microphone (3d part)
+- 1x LMST (prebuild sensor)
+- 1x Mircophone expensiv or cheap version
+- 1x Soundcard for expensive microphone only
+- 1x Soundcable for expensive microphone only
+- 1x CAM (prebuild sensor)
+- 1x Containment box prepared
+- 1x Hall-sensor set
 
+First paste both Hall-sensors with glue (gluegun) on the right inner side of the containment box below the screws from the rolls. The one with green jumper-cable in front the one with orange jumper-cable in the back.  
 
+<img src="images/inst_hall.jpg" alt="" />
 
-Insert the CMPT / EMPT trough the duct in the Sensor-phalanx and fix it (with glue or some tape). Attach the CAM to the Sensor-phalanx and insert the Camera-cable trough the opening and trough the cable canal. Insert all Jumper-cables from the LMST trough the opening in the Sensor-phalanx and attach the LMST. Further fix it with glue.
+Than paste the RTC in the mount on the Raspberry Pie mounting plate with the battery to the top. At least connect the jumper-cables from the Hall-sensors and RTC to the Raspberry Pie.
 
+Further insert the mircophone (both versions) trough the duct in the Sensor-phalanx and fix it with glue or some tape. For expensive microphone only: connect the soundcard and soundcable to the microphone. Then connect the microphone to the Raspberry Pie. Next attach the CAM to the Sensor-phalanx and insert the Camera-cable trough the opening and trough the cable canal. Insert all jumper-cables from the LMST trough the opening in the Sensor-phalanx and attach the LMST. Further fix it with glue.
 
+Insert all cables from the Sensor-phalanx trough the openings in the containment box and paste the Sensor-phalanx to the containment box. Close the bayonet-lock for the LMST by turning it.
 
-Insert all cables from the Sensor-phalanx trough the openings in the Containment box and paste the Sensor-phalanx to the Containment box. Close the bayonet-lock for the LMST by turning.
+Connect all jumper-cables from the sensors to the Raspberry Pie. 
 
+Seal all space between the Sensor-phalanx and the containment box with silicon or glue. Further seal all openings from the inner side of the containment box leading to the sensors with silicon or glue.
 
-
-Seal all space between the Sensor-phalanx and the Containment box with silicon or glue. Further seal all openings from the inner side of the containment box leading to the Sensors with silicon or glue.
-
-
+<img src="images/final.jpg" alt="" />
 
