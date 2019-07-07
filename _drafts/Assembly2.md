@@ -94,8 +94,8 @@ Jumpercables
 - 6x M4x16 raised countersunk-head screws
 - 6x M4 safty nut
 - 6x M4 washers
-- 1x jumpercable M-F red
-- 1x jumpercable M-F black
+- 1x Jumpercable M-F red
+- 1x Jumpercable M-F black
 
 ### 1.1 Drilling holes and attachments
 
@@ -208,6 +208,8 @@ Further insert the mircophone (both versions) trough the duct in the Sensor-phal
 Insert all cables from the Sensor-phalanx trough the openings in the containment box and paste the Sensor-phalanx to the containment box. Close the bayonet-lock for the LMST by turning it.
 
 Connect all jumper-cables from the sensors to the Raspberry Pie. 
+
+<img src="images/frizzing.PNG" alt="" />
 
 Seal all space between the Sensor-phalanx and the containment box with silicon or glue. Further seal all openings from the inner side of the containment box leading to the sensors with silicon or glue.
 
