@@ -12,7 +12,16 @@
 <tr><th><span>Sensors</span></th><th><span>S1</span></th><th><span>S2</span></th><th><span>S3</span></th><th><span>S4</span></th></tr></thead>
 <tbody><tr><td><strong><span>S1</span></strong></td><td><span>0</span></td><td><span>0.17</span></td><td><span>0.52</span></td><td><span>0.17</span></td></tr><tr><td><strong><span>S2</span></strong></td><td><span>0.17</span></td><td><span>0</span></td><td><span>0.36</span></td><td><span>0.06</span></td></tr><tr><td><strong><span>S3</span></strong></td><td><span>0.52</span></td><td><span>0.36</span></td><td><span>0</span></td><td><span>0.37</span></td></tr><tr><td><strong><span>S4</span></strong></td><td><span>0.17</span></td><td><span>0.06</span></td><td><span>0.37</span></td><td><span>0</span></td></tr></tbody>
 </table></figure>
-<p><span>This is also indicated by the RMSE comparison between the sensors. While S2 and S4 only show an RMSE of 0.6°C, S3 has an RMSE of about 0.36°C to S2 and S4 and even 0.52°C to S1. The RMSE between S1 and S2 and S4 is comparatively low with only 0.17°C. This analysis shows that S3 most probably should be replaced if RMSE below 0.5°C is desired. Another option could be to calculate a calibration curve for the specific sensor since the correlation coefficients to the over sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration function.</span></p>
+<p><span>This is also indicated by the RMSE comparison between the sensors. While S2 and S4 only show an RMSE of 0.06°C, S3 has an RMSE of about 0.36°C to S2 and S4 and even 0.52°C to S1. The RMSE between S1 and S2 and S4 is comparatively low with only 0.17°C. This analysis shows that S3 most probably should be replaced if RMSE below 0.5°C is desired. Another option could be to calculate a calibration curve for the specific sensor since the correlation coefficients to the over sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration function.</span></p>
+<p><span>An exemplary calibration of sensor S3 for the variable air temperature would look like this: </span></p>
+<div class="row">
+<div class="column">
+<img src="images/calibration_curve.png" width="100%" onerror="this.style.display = 'none';">
+</div>
+<div class="colum">
+<img src="images/calibrated.png" width="100%" onerror="this.style.display = 'none';">
+</div>
+</div>
 <h3>Humidity</h3>
 <p><span>The measurement of the relative air humidity shows a similar pattern of sensor differences like the temperature. The first three hours of the measurement, the level of agreement between the sensor is higher than after 5 pm. However, compared to the temperature measurements, even within the first three hours the standard deviation of the mean is with approximately +-2.5% substantially larger than the standard deviation of the temperature. The standard deviation of the measurements increases over time and reaches a level of +- 5%.</span></p>
 <p>
