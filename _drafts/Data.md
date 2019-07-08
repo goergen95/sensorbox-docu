@@ -22,12 +22,12 @@ This is also indicated by the RMSE comparison between the sensors. While S2 and 
 An exemplary calibration of sensor S3 for the variable air temperature would look like this: 
 
 <div class="row">
-<div class="column">
-<img src="images/calibration_curve.png" width="100%"/>
-</div>
-<div class="colum">
-<img src="images/calibrated.png" width="100%"/>
-</div>
+	<div class="column">
+		<img src="images/calibration_curve.png" width="100%"/>
+	</div>
+	<div class="column">
+		<img src="images/calibrated.png" width="100%"/>
+	</div>
 </div>
 
 
@@ -52,10 +52,14 @@ Again, while S2 and S4 only show a RMSE of about 0.5%, S1 and S3 show an RMSE of
 <h3>Illuminance</h3>
 Since we started our measurements in the afternoon and ended it around 9 am the next morning, most of the measurements of illuminance are equal or close to 0 lx. However, during the illuminated hours the sensors show a great level of agreement though the standard deviation is higher in the morning hours compared to the evening. S1 and S3 however, seem to have produced some significant outliers. The data at hand though is not enough to evaluate this assumption. Another measurement campaign during daylight would be needed to generate further insights of the differences between the sensors.
 <p>
-<span class="image main"><img src="../images/lux_plot.png" /></span>
+<span class="image main"><img src="images/lux_plot.png" /></span>
 </p>
 <h3>Audio Records</h3>
-Audio File with birds & some basic explanation and link to automated bird species classification
+For a future automated bird species identifitcation the sensorboxes were also equipped with microphones. They record 30 seconds of audio every 30 minutes when all the other data are collected as well. As an example you can listen here to an audio record from 6 am.
+<p>
+<audio controls="controls">
+	<source src="images/audio_sample.wav" type="audio/wav">
+</audio>
 
 <h3>Camera Shots</h3>
 Sample picture(s) and some basic explanation and link to automated classification of forest images

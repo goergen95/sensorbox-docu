@@ -15,12 +15,12 @@
 <p><span>This is also indicated by the RMSE comparison between the sensors. While S2 and S4 only show an RMSE of 0.06°C, S3 has an RMSE of about 0.36°C to S2 and S4 and even 0.52°C to S1. The RMSE between S1 and S2 and S4 is comparatively low with only 0.17°C. This analysis shows that S3 most probably should be replaced if RMSE below 0.5°C is desired. Another option could be to calculate a calibration curve for the specific sensor since the correlation coefficients to the over sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration function.</span></p>
 <p><span>An exemplary calibration of sensor S3 for the variable air temperature would look like this: </span></p>
 <div class="row">
-<div class="column">
-<img src="images/calibration_curve.png" width="100%" onerror="this.style.display = 'none';">
-</div>
-<div class="colum">
-<img src="images/calibrated.png" width="100%" onerror="this.style.display = 'none';">
-</div>
+	<div class="column">
+		<img src="images/calibration_curve.png" width="100%" onerror="this.style.display = 'none';">
+	</div>
+	<div class="column">
+		<img src="images/calibrated.png" width="100%" onerror="this.style.display = 'none';">
+	</div>
 </div>
 <h3>Humidity</h3>
 <p><span>The measurement of the relative air humidity shows a similar pattern of sensor differences like the temperature. The first three hours of the measurement, the level of agreement between the sensor is higher than after 5 pm. However, compared to the temperature measurements, even within the first three hours the standard deviation of the mean is with approximately +-2.5% substantially larger than the standard deviation of the temperature. The standard deviation of the measurements increases over time and reaches a level of +- 5%.</span></p>
@@ -38,9 +38,13 @@
 <h3>Illuminance</h3>
 <p><span>Since we started our measurements in the afternoon and ended it around 9 am the next morning, most of the measurements of illuminance are equal or close to 0 lx. However, during the illuminated hours the sensors show a great level of agreement though the standard deviation is higher in the morning hours compared to the evening. S1 and S3 however, seem to have produced some significant outliers. The data at hand though is not enough to evaluate this assumption. Another measurement campaign during daylight would be needed to generate further insights of the differences between the sensors.</span></p>
 <p>
-<span class="image main"><img src="../images/lux_plot.png" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/lux_plot.png" onerror="this.style.display = 'none';"></span>
 </p>
 <h3>Audio Records</h3>
-<p><span>Audio File with birds &amp; some basic explanation and link to automated bird species classification</span></p>
+<p><span>For a future automated bird species identifitcation the sensorboxes were also equipped with microphones. They record 30 seconds of audio every 30 minutes when all the other data are collected as well. As an example you can listen here to an audio record from 6 am.</span></p>
+<p>
+<audio controls="controls" onerror="this.style.display = 'none';">
+	<source src="images/audio_sample.wav" type="audio/wav">
+</audio></p>
 <h3>Camera Shots</h3>
 <p><span>Sample picture(s) and some basic explanation and link to automated classification of forest images</span></p>
