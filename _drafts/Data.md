@@ -19,6 +19,18 @@ The sensors show a greater level of agreement at the beginning of the measuremen
 
 This is also indicated by the RMSE comparison between the sensors. While S2 and S4 only show an RMSE of 0.06°C, S3 has an RMSE of about 0.36°C to S2 and S4 and even 0.52°C to S1. The RMSE between S1 and S2 and S4 is comparatively low with only 0.17°C. This analysis shows that S3 most probably should be replaced if RMSE below 0.5°C is desired. Another option could be to calculate a calibration curve for the specific sensor since the correlation coefficients to the over sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration function.
 
+An exemplary calibtarion for the sensor S3 for the variable air temperature would look like this:
+<div class="row">
+	<div class="column">
+			<img src="images/calibration_curve.png" width="100%"/>
+		</div>
+		<div class="column">
+			<img src="images/calibrated.png" width="100%"/>
+		</div>
+	</div>
+</div>
+
+
 <h3>Humidity</h3>
 The measurement of the relative air humidity shows a similar pattern of sensor differences like the temperature. The first three hours of the measurement, the level of agreement between the sensor is higher than after 5 pm. However, compared to the temperature measurements, even within the first three hours the standard deviation of the mean is with approximately +-2.5% substantially larger than the standard deviation of the temperature. The standard deviation of the measurements increases over time and reaches a level of +- 5%.
 <p>
