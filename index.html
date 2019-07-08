@@ -310,7 +310,7 @@
 				</ul>
 			</article>
 			​
-			<!-- Software -->
+			<!-- Data -->
 			<article id="software">
 				<h2>Software</h2>
 				<hr/>
@@ -434,9 +434,7 @@
 <p><span>In a simple test run of our sensorboxes we placed all of them next to each other overnight. In total, we placed six boxes. One box showed issues in saving the data to disk, so we could not include it&#39;s results in the analysis. Another box did not collect temperature and humidity data, so we only have 4 boxes to compare the measurements for these two variables.  The illuminance sensor worked for all boxes, but since we made our test run overnight, there are not as many observations to compare.</span></p>
 <h3>Temperature</h3>
 <p><span>The following plot shows the measurement of four different sensorboxes for the variable air temperature. The specific measurements are indicated by dots, the blue line indicates the mean of all measurements at a specific time step and the grey ribbon indicates the standard deviation from the mean value.</span></p>
-<p>
-<span class="image main"><img src="../images/temperature_plot.png" onerror="this.style.display = 'none';"></span>
-</p>
+<p><span class="image main"><img src="images/temperature_plot.png" onerror="this.style.display = 'none';"></span></p>
 <p><span>The sensors show a greater level of agreement at the beginning of the measurement sequence. After three hours and with temperatures below 14 °C the differences between the measured temperature increases. While S2 and S4 generally are closer to the mean value, S3 measures constantly higher values while S1 measures lower values compared to the mean.</span></p>
 <p><strong><span>RMSE between temperature measurements</span></strong></p>
 <figure><table>
@@ -445,20 +443,10 @@
 <tbody><tr><td><strong><span>S1</span></strong></td><td><span>0</span></td><td><span>0.17</span></td><td><span>0.52</span></td><td><span>0.17</span></td></tr><tr><td><strong><span>S2</span></strong></td><td><span>0.17</span></td><td><span>0</span></td><td><span>0.36</span></td><td><span>0.06</span></td></tr><tr><td><strong><span>S3</span></strong></td><td><span>0.52</span></td><td><span>0.36</span></td><td><span>0</span></td><td><span>0.37</span></td></tr><tr><td><strong><span>S4</span></strong></td><td><span>0.17</span></td><td><span>0.06</span></td><td><span>0.37</span></td><td><span>0</span></td></tr></tbody>
 </table></figure>
 <p><span>This is also indicated by the RMSE comparison between the sensors. While S2 and S4 only show an RMSE of 0.06°C, S3 has an RMSE of about 0.36°C to S2 and S4 and even 0.52°C to S1. The RMSE between S1 and S2 and S4 is comparatively low with only 0.17°C. This analysis shows that S3 most probably should be replaced if RMSE below 0.5°C is desired. Another option could be to calculate a calibration curve for the specific sensor since the correlation coefficients to the over sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration function.</span></p>
-<p><span>An exemplary calibtarion for the sensor S3 for the variable air temperature would look like this:</span></p>
-<div class="row">
-	<div class="column">
-			<img src="images/calibration_curve.png" width="100%" onerror="this.style.display = 'none';">
-		</div>
-		<div class="column">
-			<img src="images/calibrated.png" width="100%" onerror="this.style.display = 'none';">
-		</div>
-	</div>
-<p></div></p>
 <h3>Humidity</h3>
 <p><span>The measurement of the relative air humidity shows a similar pattern of sensor differences like the temperature. The first three hours of the measurement, the level of agreement between the sensor is higher than after 5 pm. However, compared to the temperature measurements, even within the first three hours the standard deviation of the mean is with approximately +-2.5% substantially larger than the standard deviation of the temperature. The standard deviation of the measurements increases over time and reaches a level of +- 5%.</span></p>
 <p>
-<span class="image main"><img src="../images/humidity_plot.png" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/humidity_plot.png" onerror="this.style.display = 'none';"></span>
 </p>
 <p><span>A similar pattern in the differences between the sensors compared to the temperature measurements can be observed. S2 and S4 measurements are very similar and close to the mean, even though towards the end of the measurement period their differences increase. S1 constantly measures higher relative humidity values while S3 constantly measures lower relative humidity values. This pattern is opposed to the pattern in temperature which makes a case because with lower temperatures and constant humidity the relative humidity increases.</span></p>
 <p><strong><span>RMSE between relative humidity measurements</span></strong></p>
@@ -471,7 +459,7 @@
 <h3>Illuminance</h3>
 <p><span>Since we started our measurements in the afternoon and ended it around 9 am the next morning, most of the measurements of illuminance are equal or close to 0 lx. However, during the illuminated hours the sensors show a great level of agreement though the standard deviation is higher in the morning hours compared to the evening. S1 and S3 however, seem to have produced some significant outliers. The data at hand though is not enough to evaluate this assumption. Another measurement campaign during daylight would be needed to generate further insights of the differences between the sensors.</span></p>
 <p>
-<span class="image main"><img src="../images/lux_plot.png" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/lux_plot.png" onerror="this.style.display = 'none';"></span>
 </p>
 <h3>Audio Records</h3>
 <p><span>Audio File with birds &amp; some basic explanation and link to automated bird species classification</span></p>
