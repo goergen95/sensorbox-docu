@@ -4,8 +4,9 @@ In a simple test run of our sensorboxes we placed all of them next to each other
 <h3>Temperature</h3>
 The following plot shows the measurement of four different sensorboxes for the variable air temperature. The specific measurements are indicated by dots, the blue line indicates the mean of all measurements at a specific time step and the grey ribbon indicates the standard deviation from the mean value.
 <p>
-<span class="image main"><img src="../images/temperature_plot.png" /></span>
+<span class="image main"><img src="images/temperature_plot.png" /></span>
 </p>
+
 The sensors show a greater level of agreement at the beginning of the measurement sequence. After three hours and with temperatures below 14 °C the differences between the measured temperature increases. While S2 and S4 generally are closer to the mean value, S3 measures constantly higher values while S1 measures lower values compared to the mean.
 
 **RMSE between temperature measurements**
@@ -34,8 +35,9 @@ An exemplary calibration of sensor S3 for the variable air temperature would loo
 <h3>Humidity</h3>
 The measurement of the relative air humidity shows a similar pattern of sensor differences like the temperature. The first three hours of the measurement, the level of agreement between the sensor is higher than after 5 pm. However, compared to the temperature measurements, even within the first three hours the standard deviation of the mean is with approximately +-2.5% substantially larger than the standard deviation of the temperature. The standard deviation of the measurements increases over time and reaches a level of +- 5%.
 <p>
-<span class="image main"><img src="../images/humidity_plot.png" /></span>
+<span class="image main"><img src="images/humidity_plot.png" /></span>
 </p>
+
 A similar pattern in the differences between the sensors compared to the temperature measurements can be observed. S2 and S4 measurements are very similar and close to the mean, even though towards the end of the measurement period their differences increase. S1 constantly measures higher relative humidity values while S3 constantly measures lower relative humidity values. This pattern is opposed to the pattern in temperature which makes a case because with lower temperatures and constant humidity the relative humidity increases.
 
 **RMSE between relative humidity measurements**
