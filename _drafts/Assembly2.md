@@ -1,3 +1,54 @@
+# Construction materials
+
+Here you will find the needed construction materials.
+
+
+
+### Materials
+
+- 1x Hinge set for containment box
+- 1x Cooler set for Raspberry Pi
+- 1x Breadboard for Jumper-cables
+- 1x Pin header with 2 pin
+- 2x Coverslip 25x25mm
+- 2x Cable tie sockets
+- 1x 100cm rope (2mm width)
+- 1x 30cm rope (2mm width)
+
+
+
+### 3D-Parts
+
+- 1x Camera mounting platform 
+- 1x LMST-cover 
+- 2x LMST-lamella 
+- 1y LMST-bottom
+- 1x Raspberry ground mounting plate
+- 1x Camera mount
+- 1x Sensorphalanx
+
+
+
+### Screws
+
+- 4x M4x12 screws
+- 4x C2,9x13 screws
+- 6x M4x16 raised countersunk-head screws
+- 6x M4 safety nut
+- 6x M4 washers
+
+
+
+### Cables
+
+- Xx Jumper-cable M-F red
+- Xx Jumper-cable M-F black
+- 1x 30cm camera cable
+
+
+
+
+
 # Assembly
 
 Full part catalog for 1x Moon v1.1
@@ -44,18 +95,24 @@ Screws
 - 6x M4 safety nut
 - 6x M4 washers
 
+
+
 Jumper-cables
 
-- 1x Jumpercable M-F red
-- 1x Jumpercable M-F black
 
-- 1x 30cm camera cable 
-- 3x Jumper-cables female/female in blue, yellow, violet 
-- 3x Jumper-cables male/female in blue, yellow, violet 
-- 8x Jumper-cables male/female in white, brown, black, red
-- 4x Jumper-cables female/female in red, black, yellow, blue
-- 4x Jumper-cable male/female 2x red, 2x black
-- 2x Jumper-cable female/female 1x orange, 1x green
+
+- 7x ff blue
+- 7x ff yellow
+- 3x ff violet
+- 4x ff red 
+- 4x ff black
+- 1x ff orange
+- 1x ff green
+- 
+- 11x mf red
+- 11x mf black
+- 3x mf in blue, yellow, violet 
+- 8x mf in white, brown
 
 
 
