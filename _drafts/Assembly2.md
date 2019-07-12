@@ -3,56 +3,34 @@
 Full part catalog for 1x Moon v1.1
 
 - 1x Containment box 
-
 - 1x Hinge Set
-
 - 2x Cable tie sockets
-
 - 1x Raspberry Pie 3 Model B V.2.1
-
 - 1x Cooler set for Raspberry Pie
-
 - 1x Board for jumper cables
-
 - 1x Powerbank with USB power cable
-
 - 1x Wireless charger
-
 - 6x Rolls 
-
-- 1x Raspberry mount 3D printed part
-
 - 1x Temperature sensor
-
 - 1x Lux-sensor
-
-- 2x Coverslip 25x25mm
-
-- 1x MST Cover (3d Part)
-
-- 3x MST Lamella (3d Part)
-
-- 1x Raspberry ground mounting platform 3D printed part)
-
 - 1x Microphone expensive or cheap
-
 - (1x Soundcard for expensive microphone only)
-
 - (1x Soundcable for expensive microphone only)
-
 - 1x Raspberry RGB Camera V.2.1
-
-- 1x 30cm camera cable
-
-- 1x Camera mounting platform (3d printed part)
-
 - 1x Real-time clock
-
 - 2x Hall-sensor
 
-- 1x Pin header with 4 pin
+Materials
 
-  
+- 1x Pin header with 4 pin
+- 2x Coverslip 25x25mm
+
+3d parts
+
+- 1x Camera mounting platform 
+- 1x MST Cover 
+- 3x MST Lamella 
+- 1x Raspberry ground mounting platform 3D printed part)
 
 Screws
 
@@ -66,6 +44,7 @@ Jumpercables
 
 - Xx jumpercable M-F red
 - Xx jumpercable M-F black
+- 1x 30cm camera cable
 
 
 
@@ -117,7 +96,7 @@ Use the four M4x12 screws to attach the Raspberry Pie mounting plate to the cont
 
 Take one +/- part from the Breadboard and paste it on the bottom side of the Raspberry Pie mounting plate and connect it with the jumper-cables: red for (+) and black for (-).
 
-Paste Duallock-tape on the inner side of the cover using template """X""""  and on the backside of  the Powerbank. Attach the wireless charger on the Powerbank and connect the USB-power-cable to the Raspberry Pie. Put the Powerbank on the inner side of the containment box cover.
+Connect the USB-power-cable to the Raspberry Pie. Put the Powerbank on the inner side of the containment box cover.
 
 <img src="images/pi_mount_rdy.jpg" alt="" />
 
