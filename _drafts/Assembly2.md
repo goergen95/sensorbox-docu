@@ -49,7 +49,7 @@ Jumper-cables
 - 1x Jumpercable M-F red
 - 1x Jumpercable M-F black
 
-- 1x 30cm camera cable
+- 1x 30cm camera cable 
 - 3x Jumper-cables female/female in blue, yellow, violet 
 - 3x Jumper-cables male/female in blue, yellow, violet 
 - 8x Jumper-cables male/female in white, brown, black, red
