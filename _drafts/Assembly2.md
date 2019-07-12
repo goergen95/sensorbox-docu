@@ -4,10 +4,7 @@ Full part catalog for 1x Moon v1.1
 
 - 1x Containment box 
 - 1x Hinge Set
-- 2x Cable tie sockets
 - 1x Raspberry Pie 3 Model B V.2.1
-- 1x Cooler set for Raspberry Pie
-- 1x Board for jumper cables
 - 1x Powerbank with USB power cable
 - 1x Wireless charger
 - 6x Rolls 
@@ -22,15 +19,22 @@ Full part catalog for 1x Moon v1.1
 
 Materials
 
-- 1x Pin header with 4 pin
+- 1x Pin header with 2 pin
 - 2x Coverslip 25x25mm
+- 2x Cable tie sockets
+- 100 cm rope (2mm width)
+- 30 cm rope (2mm width)
+- 1x Breadboard for jumper cables
+- 1x Cooler set for Raspberry Pie
 
 3d parts
 
-- 1x Camera mounting platform 
-- 1x MST Cover 
-- 3x MST Lamella 
-- 1x Raspberry ground mounting platform 3D printed part)
+- 1x Camera-mount
+- 1x LMST-cover 
+- 3x LMST-lamella 
+- 1x LMST-bottom 
+- 1x Raspberry Pie mounting plate
+- 1x Sensorphalanx
 
 Screws
 
@@ -40,11 +44,18 @@ Screws
 - 6x M4 safety nut
 - 6x M4 washers
 
-Jumpercables
+Jumper-cables
 
-- Xx jumpercable M-F red
-- Xx jumpercable M-F black
+- 1x Jumpercable M-F red
+- 1x Jumpercable M-F black
+
 - 1x 30cm camera cable
+- 3x Jumper-cables female/female in blue, yellow, violet 
+- 3x Jumper-cables male/female in blue, yellow, violet 
+- 8x Jumper-cables male/female in white, brown, black, red
+- 4x Jumper-cables female/female in red, black, yellow, blue
+- 4x Jumper-cable male/female 2x red, 2x black
+- 2x Jumper-cable female/female 1x orange, 1x green
 
 
 
@@ -65,6 +76,7 @@ Jumpercables
 - 6x Rolls 
 - 1x Raspberry Pie mounting plate (3D Part)
 - 100 cm rope (2mm width)
+- 30 cm rope (2mm width)
 
 
 
@@ -73,8 +85,8 @@ Jumpercables
 - 6x M4x16 raised countersunk-head screws
 - 6x M4 safty nut
 - 6x M4 washers
-- 1x Jumpercable M-F red
-- 1x Jumpercable M-F black
+- 1x Jumper-cable male/female in red
+- 1x Jumper-cable male/female in black
 
 ### 1.1 Drilling holes and attachments
 
@@ -107,9 +119,9 @@ Connect the USB-power-cable to the Raspberry Pie. Put the Powerbank on the inner
 - 1x Temperature sensor
 - 1x Lux-sensor
 - 1x Cover-slip 25x25mm
-- 1x MST-cover (3d Part)
-- 4x MST-lamella (3d Part)
-- 1x MST-bottom (3d Part)
+- 1x LMST-cover (3d Part)
+- 3x LMST-lamella (3d Part)
+- 1x LMST-bottom (3d Part)
 - 3x Jumper-cables female/female in blue, yellow, violet 
 - 3x Jumper-cables male/female in blue, yellow, violet 
 - 8x Jumper-cables male/female in white, brown, black, red
