@@ -114,8 +114,6 @@ Depending on your local retailer available for about 25 €
 
 
 
-
-
 # Sensors
 
 Here you will find some information on the different sensors we used in the implementation of the Sensorbox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.
