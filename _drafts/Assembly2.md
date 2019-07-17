@@ -19,13 +19,12 @@ Here you will find the needed construction materials.
 
 ### 3D-Parts
 
-- 1x Camera mounting platform 
-- 1x LMST-cover 
-- 2x LMST-lamella 
-- 1y LMST-bottom
-- 1x Raspberry ground mounting plate
+- 1x Radiation shield top
+- 3x Radiation shield middle 
+- 1x Radiation shield bottom
+- 1x Raspberry pie mounting plate
 - 1x Camera mount
-- 1x Sensorphalanx
+- 1x Sensor-phalanx depend on desired microphone
 
 
 
@@ -80,12 +79,12 @@ Materials
 
 3d parts
 
-- 1x Camera-mount
-- 1x LMST-cover 
-- 3x LMST-lamella 
-- 1x LMST-bottom 
-- 1x Raspberry Pie mounting plate
-- 1x Sensorphalanx
+- 1x Radiation shield top
+- 3x Radiation shield middle 
+- 1x Radiation shield bottom
+- 1x Raspberry pie mounting plate
+- 1x Camera mount
+- 1x Sensor-phalanx depend on desired microphone
 
 Screws
 
@@ -131,7 +130,7 @@ Jumper-cables
 - 1x Powerbank with USB power cable
 - 1x Wireless charger
 - 6x Rolls 
-- 1x Raspberry Pie mounting plate (3D Part)
+- 1x Raspberry Pie mounting plate
 - 100 cm rope (2mm width)
 - 30 cm rope (2mm width)
 
@@ -171,14 +170,14 @@ Connect the USB-power-cable to the Raspberry Pie. Put the Powerbank on the inner
 
 ## 2. Sensor preparation
 
-### 2.1 Lux-Microclimate-Sensor-Tower (LMST) (bis V1.1)
+### 2.1 Lux-Microclimate-Sensor-Tower (LMST)
 
 - 1x Temperature sensor
 - 1x Lux-sensor
 - 1x Cover-slip 25x25mm
-- 1x LMST-cover (3d Part)
-- 3x LMST-lamella (3d Part)
-- 1x LMST-bottom (3d Part)
+- 1x Radiation shield top
+- 3x Radiation shield middle 
+- 1x Radiation shield bottom
 - 3x Jumper-cables female/female in blue, yellow, violet 
 - 3x Jumper-cables male/female in blue, yellow, violet 
 - 8x Jumper-cables male/female in white, brown, black, red
@@ -189,11 +188,11 @@ Alternatively the jumper-cables can be connected by soldering to improve durabil
 
 Connect the lengthened jumper-cables to the Lux- and Temperature-sensor.
 
-Insert the Lux-Sensor in the mount of the MST-cover and paste the cover-slip on the mounted Lux-sensor . Ensure that the glue (glue-gun) is sealing the space between the cover-slip and the mount. Cut some grooves in the cooled off glue to ensure that water can drain.
+Insert the Lux-Sensor in the mount of the Radiation shield top and paste the cover-slip on the mounted Lux-sensor . Ensure that the glue (glue-gun) is sealing the space between the cover-slip and the mount. Cut some grooves in the cooled off glue to ensure that water can drain.
 
-Connect all MST-lamellas to the MST cover and lead the jumper cables through the holes.
+Connect all Radiation shield middle parts to the Radiation shield top part and lead the jumper cables through the holes.
 
-Paste the Temperature-sensor on the inner side of the mount plate in the MST-bottom and connect it to the MST-lamellas while leading the cables trough the holes.
+Paste the Temperature-sensor on the inner side of the mount plate in the Radiation shield bottom part and connect it to the Radiation shield while leading the cables trough the holes.
 
 <img src="images/lmst.jpg" alt="" />
 
@@ -203,7 +202,7 @@ Paste the Temperature-sensor on the inner side of the mount plate in the MST-bot
 
 - 1x Raspberry Pie camera module v.1.2
 - 1x 30cm camera-cable
-- 1x Camera-mount (3d part)
+- 1x Camera-mount
 - 1x Cover-slip 25x25mm
 
 First connect the 30cm camera-cable to the Raspberry Pie camera module and put it into the Camera-mount. Then close the cap on the backside and paste the cover-slip on the front. Ensure that the glue (glue-gun) is sealing the space between the cover-slip and the Camera-mount. Finally cut some grooves in the cooled off glue to ensure that water can drain if the camera is adjusted horizontally.
@@ -236,7 +235,7 @@ Connect the jumper-cables and adjust the sensitivity by turning the adjusting-sc
 
 ## 3. Sensor installation and sealing
 
-- 1x Sensor-phalanx depend on desired microphone (3d part)
+- 1x Sensor-phalanx depend on desired microphone
 - 1x LMST (prebuild sensor)
 - 1x Mircophone expensiv or cheap version
 - 1x Soundcard for expensive microphone only
