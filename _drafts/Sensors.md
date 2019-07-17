@@ -62,7 +62,7 @@ Available for approximately 50€ depending on your local retailer
 
 ### Containment box
 
-<img src="images/box.jpg" alt="" />
+<img src="images/box_only.png" alt="" />
 
 
 
