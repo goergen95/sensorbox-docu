@@ -1,264 +1,102 @@
-# Construction materials
+<h2 class="major"> Construction materials</h2>
+Here you will find the step-by-step information on the assembly of the sensor box.
+
+<h2 class="major">Preparing the containment box </h2>
+<h3> materials </h3>
+- Containment box
+- Hinge set
+- Cable-tie sockets
+- Raspberry Pie Model 3
+- heat sinks
+- breadboard 
+- powerbank with an USB power-cable
+- wireless charging pat
+- 6 rolls 
+- 3d-printed mounting plate
+- 100 cm of rope (approx. 2mm width)
+- 30 cm rope (approx. 2mm width)
+- 4 times 4x12mm screws
+- 4 times 2.9x13mm screws
+- 6 times 4x16mm countersunk-head screws
+- 6 times 4mm safety nut
+- 6 times 4mm washers
+- black and red jumper cables (50cm)
+
+<h3>Attaching hinges and prepare cable and roll entries</h3>
+First, we drilled holes in the containment box to attach the hinges between the box and lid. We used a 5mm drill bit which fits well into the indentations at the side of the box. After that, we used a 6mm drill to slightly expand the holes. Then, we attached the hinges with the provided screws from the hinge set. After attaching the hinges, we prepared the topside of the box by drilling holes for the sensor and microphone cables. To correctly place the entry holes for the cables we prepared a [printable template](images/Schablone_Sensorhalterung.pdf). Then we drilled holes which are used to attach rolls to the containment box using another [template](images/Schablone_Führungsrollen.pdf). Here, we used a 3,5 mm drill bit which fits very well with the rolls we purchased. 
+
+We drilled another two holes for the suspension rope which ensures the stability of the box while being mounted in the cable car. Here, we used a 4mm drill and another printable template. We inserted two ropes of 100cm in length in both holes put a knot on the inner end and sealed it by cautiously using a lighter to melt some of the plastic. We made sure that the length of the rope outside of the box is at least 80 cm. On the inside, we attached two cable tie sockets and connected them with the 30 cm rope. (NEEDS CLARIFICATION AND IMAGES - NO ONE NOT FAMILIAR WITH THE PROCESS UNDERSTANDS THIS!!!)
+
+Last we used the six 4x16mm countersunk-head screws to attach the rolls to the box. We used the washers to seal off the entry holes and the safety nuts to ensure the firmness of the rolls from the inside. Additionally, we put instant glue under the washers and safety nuts and then gave the screws and nuts one last thrust to ensure the box is waterproof. 
+
+<h3> Installing the Raspberry Pi and  the power supply</h3>
+We used four 4x12 mm screws to attach the 3d-printed microcontroller mounting plate cautiously to the containment box. The screws must not pierce through the back of the box.  Before attaching the microcontroller to the socket we pasted the heat sinks on the processor units of the Raspberry Pi. Then we put the Raspberry Pie on the mounting plate with the USB-ports pointing to the right side and fixated it with four 2,9x13mm screws. From a simple breadboard we took one energy rack and placed it on the bottom side of the microcontroller mounting plate. Then we put the powerbank on the inner side of the containment box right where the 3d-printed mounting plate shows a free space of the size of the powerbank. We did not connect the USB-power-cable to the Raspberry Pie just yet, since we first attached all the missing sensors.
+<p>
+<span class="image main"><img src="images/pi_mount_rdy.jpg" /></span>
+</p>
+
+<h2 class="major">Attaching the sensors</h2>
+<h3>The Light-Microclimate-Sensor-Tower (LMST)</h3>
+- temperature and humidity sensor
+- lux-sensor
+- cover glass pane 25x25mm
+- 3d-printed parts for the radiation shield
+- enough jumper cables to connect the sensors
+
+We recommend to use jumper cables of 50cm in length to connect the temperature/humidity and the lux sensor since they are placed outside of the box and the distance from the sensors to the microcontroller is approximately that length. For the color coding of the the jumper cables we chose red for energy supply, black for grounding and we specified different colors for the data cables of the sensors as it can be seen in the <a href="#fritzing">fritzing scheme</a> below. It is very important to stick to a determined color scheme to ease a quick trouble-shooting in the field and in the workshop.
+
+<div id="fritzing" >
+	<p>
+		<span class="image main"><img src="images/frizzing.PNG" /></span>
+	</p>
+</div>
+The lux sensor is inserted to its mount on the top of the radiation shield and a fine cover pane of glass is placed on top of it. We used a simple glue gun to fix the cover pane ensuring that the space between the pane and the plastic mount is covered fully with glue. Eventually, some grooves are cut in the cooled glue  to ensure that water from rain and condensation can drain. Then we connected the remaining parts of the radiation shield with the top part holding the lux sensor. After that we attached the temperature/humidity sensor to the base of the radiation shield and finally connect it to the remaining parts while leading the cables inside the box.
+<p>
+<span class="image main"><img src="images/lmst.jpg" /></span>
+</p>
+<h3>Attaching the camera</h3>
+- Raspberry Pie camera module v.1.2
+- 30cm camera-cable
+- 3d printed camera mount
+- cover glass pane 25x25mm
+
+At first, we connected the camera cable to the camera module and then put it into the 3d-printed camera mount. We closed the cap on the backside of the mount and then pasted the cover pane on the front fixing it by using a glue gun. Here, we also made sure that the glue covers the whole area between the camera mount and the cover pane. Finally we cut some grooves in the cool glue just to ensure that rain and condensation water can drain.
+<p>
+<span class="image main"><img src="images/cam_rdy2.jpg" /></span>
+</p>
+
+
+<h3>Placing the real-time-clock (RTC)</h3>
+- Real-time-clock
+- jumper-cables 
+- pin-header with 2 pins
+
+The real-time clock is placed in the rectangular free space on the 3d-printed mounting plate. Since the angle between the circuit's contacts and the incoming jumpers would be to great, we soldered a pin-header to the contacts. This way we were able to connect the jumper cables as indicated in the <a href="#fritzing">fritzing scheme</a>.
+<p>
+<span class="image main"><img src="images/RTC_rdy.jpg" /></span>
+</p>
+
+
+<h3>Attaching the hall sensors</h3>
+- 2 hall sensors
+- jumper cables
+
+We connected the jumper cables as indicated by the <a href="#fritzing">fritzing scheme</a>. Before fixing the hall sensor to the box, the sensitivity of the sensors needs to be adjusted. This is achieved by turning the adjusting-screw of the potentiometer approximately 15-times clock-wise until one can sense a slight click sound. Once the hall sensor is supplied with energy, we can use a magnet to test the functionality of the sensor: One of the lamps should start glowing when a magnetic field is within the sensor range. However, to save energy consumption we decided to disconnect these lamps from the energy supply by using the solding machine. The hall sensors are then glued on the inside of right-hand side of the box right below the screws of the outer rolls. For the software controlling the movement of the box to work correctly it is very important the the orientation of the hall sensors within the box is right. The one controlling the upper limit (green jumper in this case) is connected to GPIO21 while the one controlling the lower limit (orange jumper) is connected to GPIO22.
+<p>
+<span class="image main"><img src="images/inst_hall.jpg" /></span>
+</p>
+
+<h3>Attaching the microphones and final assembly of the sensor tower </h3>
+- microphones
+- sound cables
+- 3d-printed sensor tower
+
+We inserted the both versions of the microphones into slightly different versions of the 3d-printed sensor tower and fixed it with glue. The more expensive microphone needs an additional connections to a soundcard before the sound cable can be connected to the audio entry on the Raspberry Pie. Next, we attached the previously prepared camera module to the sensor tower and made sure that the cable enters the box through the slit from the template and connected it to the microcontroller. Then the LMST is fixed to the rest of the sensor tower carefully making sure all jumper cables of the sensors are led inside the box. The LMST can be fixed to the rest of the sensor tower by gently turning them against each other to close the bayonet catch.
+Finally, all the cables in the inside are connected to the microcontroller as indicated in the <a href="#fritzing">fritzing scheme</a>. We also made sure to tie loose jumper cables together and fixated them by using cable-tie sockets and some wire. 
+
+At the end, we made sure to seal all spaces between the sensor tower and the containment box either with silicon or glue. We also applied an additional layer of silicon to every other potential entry point of water or vapor like the screws of the wheels or the cable entries. 
+<p>
+<span class="image main"><img src="images/final.jpg" /></span>
+</p>
 
-Here you will find the needed construction materials.
-
-
-
-### Materials
-
-- 1x Hinge set for containment box
-- 1x Cooler set for Raspberry Pi
-- 1x Breadboard for Jumper-cables
-- 1x Pin header with 2 pin
-- 2x Coverslip 25x25mm
-- 2x Cable tie sockets
-- 1x 100cm rope (2mm width)
-- 1x 30cm rope (2mm width)
-
-
-
-### 3D-Parts
-
-- 1x Radiation shield top
-- 3x Radiation shield middle 
-- 1x Radiation shield bottom
-- 1x Raspberry pie mounting plate
-- 1x Camera mount
-- 1x Sensor-phalanx depend on desired microphone
-
-
-
-### Screws
-
-- 4x M4x12 screws
-- 4x C2,9x13 screws
-- 6x M4x16 raised countersunk-head screws
-- 6x M4 safety nut
-- 6x M4 washers
-
-
-
-### Cables
-
-- Xx Jumper-cable M-F red
-- Xx Jumper-cable M-F black
-- 1x 30cm camera cable
-
-
-
-
-
-# Assembly
-
-Full part catalog for 1x Moon v1.1
-
-- 1x Containment box 
-- 1x Hinge Set
-- 1x Raspberry Pie 3 Model B V.2.1
-- 1x Powerbank with USB power cable
-- 1x Wireless charger
-- 6x Rolls 
-- 1x Temperature sensor
-- 1x Lux-sensor
-- 1x Microphone expensive or cheap
-- (1x Soundcard for expensive microphone only)
-- (1x Soundcable for expensive microphone only)
-- 1x Raspberry RGB Camera V.2.1
-- 1x Real-time clock
-- 2x Hall-sensor
-
-Materials
-
-- 1x Pin header with 2 pin
-- 2x Coverslip 25x25mm
-- 2x Cable tie sockets
-- 100 cm rope (2mm width)
-- 30 cm rope (2mm width)
-- 1x Breadboard for jumper cables
-- 1x Cooler set for Raspberry Pie
-
-3d parts
-
-- 1x Radiation shield top
-- 3x Radiation shield middle 
-- 1x Radiation shield bottom
-- 1x Raspberry pie mounting plate
-- 1x Camera mount
-- 1x Sensor-phalanx depend on desired microphone
-
-Screws
-
-- 4x M4x12 screws
-- 4x C2,9x13 screws
-- 6x M4x16 raised countersunk-head screws
-- 6x M4 safety nut
-- 6x M4 washers
-
-
-
-Jumper-cables
-
-
-
-- 7x ff blue
-- 7x ff yellow
-- 3x ff violet
-- 4x ff red 
-- 4x ff black
-- 1x ff orange
-- 1x ff green
-- 
-- 11x mf red
-- 11x mf black
-- 3x mf in blue, yellow, violet 
-- 8x mf in white, brown
-
-
-
-
-
-## 1. Containment box preparation
-
-
-
-- 1x Containment box
-- 1x Hinge-set
-- 2x Cable tie sockets
-- 1x Raspberry Pie
-- 1x Heat sink set for Raspberry Pie
-- 1x Breadboard for jumper cables
-- 1x Powerbank with USB power cable
-- 1x Wireless charger
-- 6x Rolls 
-- 1x Raspberry Pie mounting plate
-- 100 cm rope (2mm width)
-- 30 cm rope (2mm width)
-
-
-
-- 4x M4x12 screws
-- 4x C2,9x13 screws
-- 6x M4x16 raised countersunk-head screws
-- 6x M4 safty nut
-- 6x M4 washers
-- 1x Jumper-cable male/female in red
-- 1x Jumper-cable male/female in black
-
-### 1.1 Drilling holes and attachments
-
-First drill the holes for the hinges with the template from the hinge set at the backside of the containment box. Use a 5mm drill which fit in template and than use a 6mm drill to expand the holes. Install the hinges with the given screws included in the set. Then drill the holes for the sensors on the front of the containment box with template """X""". Further drill the holes with 3,5 mm drill for the rolls on the sides using template """X""" .
-
-At least drill the holes for the suspension cable with 4mm drill and template """X"""" . Insert the rope in both holes and and fix the ropes with glue. The rope should be at least 80 cm long outside the containment box.  Make sure the glue seals off the drill holes completely. 
-
-Paste the two cable tie sockets in the inner left side of the containment box and connect them with the 30 cm rope. Fix the rope with double knot. 
-
-### 1.2 Attach Rolls
-
-Use the six M4x16 raised countersunk-head screws with washers from inside the containment box to attach the six rolls and secure them with the six safety nuts from outside. Use instant glue under the washers and safety nuts and finally tighten the screws and nuts to ensure water-resistance.
-
-
-
-### 1.3 Install Raspy Pi and power supply
-
-Use the four M4x12 screws to attach the Raspberry Pie mounting plate to the containment box. Then paste the heat sinks on the Raspberry Pie. Further put the Raspberry Pie on the sockets of the Raspberry Pie mounting plate with the USB-ports pointing to the right side and fix it with the four C2,9x13 screws.
-
-Take one +/- part from the Breadboard and paste it on the bottom side of the Raspberry Pie mounting plate and connect it with the jumper-cables: red for (+) and black for (-).
-
-Connect the USB-power-cable to the Raspberry Pie. Put the Powerbank on the inner side of the containment box cover.
-
-<img src="images/pi_mount_rdy.jpg" alt="" />
-
-## 2. Sensor preparation
-
-### 2.1 Lux-Microclimate-Sensor-Tower (LMST)
-
-- 1x Temperature sensor
-- 1x Lux-sensor
-- 1x Cover-slip 25x25mm
-- 1x Radiation shield top
-- 3x Radiation shield middle 
-- 1x Radiation shield bottom
-- 3x Jumper-cables female/female in blue, yellow, violet 
-- 3x Jumper-cables male/female in blue, yellow, violet 
-- 8x Jumper-cables male/female in white, brown, black, red
-
-First the jumper-cables need to be lengthened. Therefore connect the jumper-cables of  each color with female to male.
-
-Alternatively the jumper-cables can be connected by soldering to improve durability. Here heat-shrink tubings are recommended to seal the cables form wetness. 
-
-Connect the lengthened jumper-cables to the Lux- and Temperature-sensor.
-
-Insert the Lux-Sensor in the mount of the Radiation shield top and paste the cover-slip on the mounted Lux-sensor . Ensure that the glue (glue-gun) is sealing the space between the cover-slip and the mount. Cut some grooves in the cooled off glue to ensure that water can drain.
-
-Connect all Radiation shield middle parts to the Radiation shield top part and lead the jumper cables through the holes.
-
-Paste the Temperature-sensor on the inner side of the mount plate in the Radiation shield bottom part and connect it to the Radiation shield while leading the cables trough the holes.
-
-<img src="images/lmst.jpg" alt="" />
-
-
-
-### 2.2 Camera (CAM)
-
-- 1x Raspberry Pie camera module v.1.2
-- 1x 30cm camera-cable
-- 1x Camera-mount
-- 1x Cover-slip 25x25mm
-
-First connect the 30cm camera-cable to the Raspberry Pie camera module and put it into the Camera-mount. Then close the cap on the backside and paste the cover-slip on the front. Ensure that the glue (glue-gun) is sealing the space between the cover-slip and the Camera-mount. Finally cut some grooves in the cooled off glue to ensure that water can drain if the camera is adjusted horizontally.
-
-<img src="images/cam_rdy2.jpg" alt="" />
-
-### 2.3 Real-time-clock (RTC)
-
-- 1x Real-time-clock
-- 4x Jumper-cables female/female in red, black, yellow, blue
-- 1x Pin-header with 2 pins
-
-Solder the Pin-header to the Real-time-clock and connect the jumper-cables.
-
-<img src="images/RTC_rdy.jpg" alt="" />
-
-### 2.4 Hall-sensors set
-
-- 2x Hall-sensor
-
-- 4x Jumper-cable male/female 2x red, 2x black
-
-- 2x Jumper-cable female/female 1x orange, 1x green
-
-Connect the jumper-cables and adjust the sensitivity by turning the adjusting-screw on top of the sensors. Use a magnet to test the reaction: The Hall-sensor's lamp should glow if it senses a magnetic field.
-
-<img src="images/hall_rdy.jpg" alt="" />
-
-
-
-## 3. Sensor installation and sealing
-
-- 1x Sensor-phalanx depend on desired microphone
-- 1x LMST (prebuild sensor)
-- 1x Mircophone expensiv or cheap version
-- 1x Soundcard for expensive microphone only
-- 1x Soundcable for expensive microphone only
-- 1x CAM (prebuild sensor)
-- 1x Containment box prepared
-- 1x Hall-sensor set
-
-First paste both Hall-sensors with glue (gluegun) on the right inner side of the containment box below the screws from the rolls. The one with green jumper-cable in front the one with orange jumper-cable in the back.  
-
-<img src="images/inst_hall.jpg" alt="" />
-
-Than paste the RTC in the mount on the Raspberry Pie mounting plate with the battery to the top. At least connect the jumper-cables from the Hall-sensors and RTC to the Raspberry Pie.
-
-Further insert the mircophone (both versions) trough the duct in the Sensor-phalanx and fix it with glue or some tape. For expensive microphone only: connect the soundcard and soundcable to the microphone. Then connect the microphone to the Raspberry Pie. Next attach the CAM to the Sensor-phalanx and insert the Camera-cable trough the opening and trough the cable canal. Insert all jumper-cables from the LMST trough the opening in the Sensor-phalanx and attach the LMST. Further fix it with glue.
-
-Insert all cables from the Sensor-phalanx trough the openings in the containment box and paste the Sensor-phalanx to the containment box. Close the bayonet-lock for the LMST by turning it.
-
-Connect all jumper-cables from the sensors to the Raspberry Pie. 
-
-<img src="images/frizzing.PNG" alt="" />
-
-Seal all space between the Sensor-phalanx and the containment box with silicon or glue. Further seal all openings from the inner side of the containment box leading to the sensors with silicon or glue.
-
-<img src="images/final.jpg" alt="" />
 
