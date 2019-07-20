@@ -374,7 +374,7 @@
 <h3> Installing the Raspberry Pi and  the power supply</h3>
 <p><span>We used four 4x12 mm screws to attach the 3d-printed microcontroller mounting plate cautiously to the containment box. The screws must not pierce through the back of the box.  Before attaching the microcontroller to the socket we pasted the heat sinks on the processor units of the Raspberry Pi. Then we put the it on the mounting plate with the USB-ports pointing to the right side and fixated it with four 2,9x13mm screws. From a simple breadboard we took only one energy rack and placed it on the bottom side of the mounting plate. Then we put the powerbank on the inner side of the containment box right where the mounting plate shows a free space of the size of the powerbank. We did not connect the USB-power-cable to the Raspberry Pi just yet, since we first attached all the missing sensors.</span></p>
 <p>
-<span class="image main"><img src="images/pi_mount_rdy.jpg" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/pi_mount_rdy.png" onerror="this.style.display = 'none';"></span>
 </p>
 <h2 class="major">Attaching the sensors</h2>
 <h3>The Light-Microclimate-Sensor-Tower (LMST)</h3>
@@ -394,7 +394,7 @@
 </div>
 <p><span>The lux sensor is inserted to its mount on the top of the radiation shield and a fine cover pane of glass is placed on top of it. We used a simple glue gun to fix the cover pane ensuring that the space between the pane and the plastic mount is covered fully with glue. Additionally, we cut some grooves in the cooled glue  to ensure that water from rain and condensation can drain. We connected the remaining parts of the radiation shield with the top part holding the lux sensor. After that we attached the temperature/humidity sensor to the base of the radiation shield and finally connect the base with the remaining parts of the radiation shield.</span></p>
 <p>
-<span class="image main"><img src="images/lmst.jpg" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/lmst.png" onerror="this.style.display = 'none';"></span>
 </p>
 <h3>Attaching the camera</h3>
 <ul>
@@ -406,7 +406,7 @@
 </ul>
 <p><span>At first, we connected the ribbon cable to the camera module and then put it into the 3d-printed camera mount. We closed the cap on the backside of the mount and placed the cover pane on the front fixing it by using a glue gun. Here, we also made sure that the glue covers the whole area between the camera mount and the cover pane. Finally we cut some grooves in the cool glue just to ensure that rain and condensation water can drain.</span></p>
 <p>
-<span class="image main"><img src="images/cam_rdy2.jpg" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/cam_rdy2.png" onerror="this.style.display = 'none';"></span>
 </p>
 <h3>Placing the real-time-clock (RTC)</h3>
 <ul>
@@ -417,7 +417,7 @@
 </ul>
 <p><span>The real-time clock is placed in the rectangular free space on the 3d-printed mounting plate. Because of the final orientation of the clock with the battery heads up, we would not be able to connect the jumpers to the contacts. So we soldered a pin-header to the SCL and SDA contacts. This way we were able to connect the jumper cables as indicated in the </span><a href="#fritzing"><span>fritzing scheme</span></a><span>.</span></p>
 <p>
-<span class="image main"><img src="images/RTC_rdy.jpg" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/RTC_rdy.png" onerror="this.style.display = 'none';"></span>
 </p>
 <h3>Attaching the hall sensors</h3>
 <ul>
@@ -427,7 +427,7 @@
 </ul>
 <p><span>We connected the jumper cables as indicated by the </span><a href="#fritzing"><span>fritzing scheme</span></a><span>. Before fixing the hall sensor to the box, the sensitivity of the sensors needs to be adjusted. This is achieved by turning the adjusting-screw of the potentiometer approximately 15-times clock-wise until one can hear a slight click sound. Once the hall sensor is supplied with energy, we can use a magnet to test the functionality of the sensor: one of the lamps should start glowing when a magnetic field is within the sensor range. However, to save energy consumption we decided to disconnect these lamps from the energy supply by using the solding machine. The hall sensors are then glued on the inside of right-hand side of the box right below right below the screws of the upper and lower rolls. For the software controlling the movement of the box to work correctly, it is very important that the hall sensors are oriented correctly inside the box. The one controlling the upper limit (green jumper in this case) is connected to GPIO21 while the one controlling the lower limit (orange jumper) is connected to GPIO22.</span></p>
 <p>
-<span class="image main"><img src="images/inst_hall.jpg" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/inst_hall.png" onerror="this.style.display = 'none';"></span>
 </p>
 <h3>Attaching the microphones and final assembly of the sensor tower </h3>
 <ul>
@@ -440,7 +440,7 @@
 <span>Finally, all the cables in the inside are connected to the microcontroller as indicated in the </span><a href="#fritzing"><span>fritzing scheme</span></a><span>. We also made sure to tie loose jumper cables together and fixated them by using cable-tie sockets and some wire. </span></p>
 <p><span>At the end, we made sure to seal all spaces between the sensor tower and the containment box either with silicon or glue. We also applied an additional layer of silicon to every other potential entry point of water or vapor like the the cable entries. </span></p>
 <p>
-<span class="image main"><img src="images/final.jpg" onerror="this.style.display = 'none';"></span>
+<span class="image main"><img src="images/final.png" onerror="this.style.display = 'none';"></span>
 </p>
 			</article>
 			​
