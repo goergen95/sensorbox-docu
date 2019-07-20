@@ -1,4 +1,4 @@
-# Hardware infrastructure
+# Hardware 
 
 ### Raspberry Pi
 
@@ -33,6 +33,8 @@ Available for approximately 30€ depending on your local retailer
 
 
 
+
+
 ### Powerbank
 
 <img src="images/bank.jpg" alt="" />
@@ -60,6 +62,8 @@ Available for approximately 50€ depending on your local retailer
 
 
 
+
+
 ### Containment box
 
 <img src="images/box_only.png" alt="" />
@@ -77,7 +81,7 @@ Dimensions:
 - Width: 180 mm
 - Length: 110 mm
 - Height: 90 mm
-- interior height: 75 mm
+- Interior height: 75 mm
 
 Material:
 
@@ -114,9 +118,15 @@ Depending on your local retailer available for about 25 €
 
 
 
+
+
+
+
 # Sensors
 
 Here you will find some information on the different sensors we used in the implementation of the Sensorbox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.
+
+
 
 ### Camera
 
@@ -132,10 +142,10 @@ Raspberry Pi Camera Module v2.1
 
 #### Technical product information:
 
-- sensor: Sony IMX219 8 Megapixel sensor
-- supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz 
-- ribbon cable for CSI-port : 30 cm
-- dimensions: 25x24x9 (mm, HxWxL)
+- Sensor: Sony IMX219 8 Megapixel sensor
+- Supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz 
+- Ribbon cable for CSI-port : 30 cm
+- Dimensions: 25x24x9 (mm, HxWxL)
 
 #### Manufacturer information:
 
@@ -146,6 +156,8 @@ Depending on your local retailer available for about 26 €
 #### Sensor usage:
 
 The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetational growth and animal wildlife detection.
+
+
 
 
 
@@ -163,11 +175,11 @@ RØDE - Smartlav+
 
 #### Technical product information:
 
-- microphone type: pressure gradient
-- transmission range: 20Hz to 20kHz
-- output impedance: 0Ω
-- sensitivity: -32.0dB re 1 Volt/Pascal (25.50mV @ 94 dB SPL) +/- 2 dB @ 1kHz
-- dimensions: 118x4.50x4.50 (mm; HxWxD)
+- Microphone type: pressure gradient
+- Transmission range: 20Hz to 20kHz
+- Output impedance: 0Ω
+- Sensitivity: -32.0dB re 1 Volt/Pascal (25.50mV @ 94 dB SPL) +/- 2 dB @ 1kHz
+- Dimensions: 118x4.50x4.50 (mm; HxWxD)
 
 #### Retailer information:
 
@@ -185,6 +197,8 @@ In the first stage of development two different models of microphones are tested
 
 
 
+
+
 ### Microphone - cheap version
 
 ------
@@ -197,11 +211,11 @@ Foxnovo SF-555
 
 #### Technical product information:
 
-- microphone type: condenser
-- transmission range: 50Hz to 16kHz
-- output impedance: <2.2Ω
-- sensitivity: -55.0dB  +/- 2 dB @ 1kHz
-- dimensions: 67x12x14 (mm; HxWxD)
+- Microphone type: condenser
+- Transmission range: 50Hz to 16kHz
+- Output impedance: <2.2Ω
+- Sensitivity: -55.0dB  +/- 2 dB @ 1kHz
+- Dimensions: 67x12x14 (mm; HxWxD)
 
 #### Retailer information:
 
@@ -217,6 +231,10 @@ In the first stage of development two different models of microphones are tested
 
 
 
+
+
+
+
 ### Temperature & Humidity Sensor
 
 ------
@@ -229,10 +247,10 @@ DHT22 (AM2302) temperature-humidity sensor
 
 #### Technical product information:
 
-- operating voltage: 3-5V
-- sensitivity humidity: 0-100% ± 2-5% 
-- sensitivity temperature: -40-80°C ±0.5°C
-- dimensions: 15.1x25x7.7 (mm, HxBxD)
+- Operating voltage: 3-5V
+- Sensitivity humidity: 0-100% ± 2-5% 
+- Sensitivity temperature: -40-80°C ±0.5°C
+- Dimensions: 15.1x25x7.7 (mm, HxBxD)
 
 #### Manufacturer information:
 
@@ -243,6 +261,8 @@ Depending on your local retailer available for about 10 €
 #### Sensor usage:
 
 The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modelling.
+
+
 
 
 
@@ -260,10 +280,10 @@ Adafruit TSL2591 High Dynamic Range Digital Light Sensor
 
 #### Technical product information:
 
-- sensitivity: 188 uLux sensitivity, up to 88,000 Lux input measurements.
-- temperature range: -30 to 80 °C
-- operating voltage: 3.3-5V 
-- dimensions: 19x16x1(mm, HxBxD)
+- Sensitivity: 188 uLux sensitivity, up to 88,000 Lux input measurements.
+- Temperature range: -30 to 80 °C
+- Operating voltage: 3.3-5V 
+- Dimensions: 19x16x1(mm, HxBxD)
 
 #### Retailer information:
 
@@ -274,6 +294,10 @@ Depending on your local retailer available for about 6 €
 #### Sensor usage:
 
 The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is faced upwards and takes measurements at different heights. It is planned to use to data to model forest structural parameters in conjunction with aerial images collected by UAVs. 
+
+
+
+
 
 
 
@@ -302,6 +326,10 @@ Available for approximately [3€](<https://www.reichelt.de/entwicklerboards-mag
 #### Sensor usage:
 
 The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the SensorBox reaches the correct level of measurement.
+
+
+
+
 
 
 
