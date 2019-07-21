@@ -615,12 +615,90 @@ input, select, textarea {
 			display: none;
 		}
 /* zoomin */
-.zoomin img { height: 80%; width: 80%;
-    -webkit-transition: all 2s ease;
-    -moz-transition: all 2s ease;
-    -ms-transition: all 2s ease;
-    transition: all 2s ease; }
+.zoomin {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+	.image:before {
+			pointer-events: none;
+			background-image: url("../../images/overlay.png");
+			background-color: rgba(19, 21, 25, 0.5);
+			border-radius: 4px;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+	.zoomin img { height: 80%; width: 80%;
+    	-webkit-transition: all 2s ease;
+    	-moz-transition: all 2s ease;
+    	-ms-transition: all 2s ease;
+    	transition: all 2s ease; }
+    
     .zoomin img:hover { width: 1024px; height: 768px; } 
+    
+    .zoomin.left, .zoomin.right {
+			max-width: 40%;
+		}
+	
+			.zoomin.left img, .zoomin.right img {
+				width: 100%;
+			}
+	
+		.zoomin.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+	
+		.zoomin.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+	
+		.zoomin.fit {
+			display: block;
+			margin: 0 0 2rem 0;
+			width: 100%;
+		}
+	
+			.zoomin.fit img {
+				width: 100%;
+			}
+	
+		.zoomin.main {
+			display: block;
+			margin: 2.5rem 0;
+			width: 100%;
+		}
+	
+			.zoomin.main img {
+				width: 100%;
+			}
+	
+		@media screen and (max-width: 736px) {
+	
+			.zoomin.main {
+				margin: 2rem 0;
+			}
+	
+		}
+	
+		@media screen and (max-width: 480px) {
+	
+			.zoomin.main {
+				margin: 1.5rem 0;
+			}
+	
+		}
 
 
 
