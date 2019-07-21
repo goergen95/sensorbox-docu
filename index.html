@@ -13,19 +13,7 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	<style>
-		.column {
-			float: left;
-			width: 50%;
-			padding: 5px;
-		}
 
-		.row::after {
-			content: "";
-			clear: both;
-			display: table;
-		}
-	</style>
 </head>
 
 <body class="is-preload">
@@ -575,7 +563,9 @@
 				<p><span>The following plot shows the measurement of four different sensorboxes for the variable air temperature. The specific measurements are indicated by dots, the blue line indicates the mean of all measurements at a specific time step
 						and the grey ribbon indicates the standard deviation from the mean value.</span></p>
 				<p>
-					<span class="image main"><img src="images/temperature_plot.png" onerror="this.style.display = 'none';"></span>
+<div class="zoomin"> 
+     <img src="images/temperature_plot.png" id="img" title="Temperature plot" /> 
+  </div>
 				</p>
 				<p><span>The sensors show a greater level of agreement at the beginning of the measurement sequence. After three hours and with temperatures below 14 °C the differences between the measured temperature increases. While S2 and S4 generally are
 						closer to the mean value, S3 measures constantly higher values while S1 measures lower values compared to the mean.</span></p>
@@ -628,20 +618,22 @@
 						sensors are around 0.99, indicating that the measurement of temperature differences works properly. Only the assignment to specific temperature values does not work correctly which could be compensated for by applying a calibration
 						function.</span></p>
 				<p><span>An exemplary calibration of sensor S3 for the variable air temperature would look like this: </span></p>
-				<div class="row">
-					<div class="column">
-						<img src="images/calibration_curve.png" width="100%" onerror="this.style.display = 'none';">
-					</div>
-					<div class="column">
-						<img src="images/calibrated.png" width="100%" onerror="this.style.display = 'none';">
-					</div>
-				</div>
+
+						<div class="zoomin"> 
+	 <img src="images/calibration_curve.png" id="img" title="calibration curve" /> 
+  </div>
+						<div class="zoomin"> 
+     <img src="images/temperature_plot.png" id="img" title="calibrated sensor measurments" /> 
+  </div>
+
 				<h3>Humidity</h3>
 				<p><span>The measurement of the relative air humidity shows a similar pattern of sensor differences like the temperature. The first three hours of the measurement, the level of agreement between the sensor is higher than after 5 pm. However,
 						compared to the temperature measurements, even within the first three hours the standard deviation of the mean is with approximately +-2.5% substantially larger than the standard deviation of the temperature. The standard deviation of the
 						measurements increases over time and reaches a level of +- 5%.</span></p>
 				<p>
-					<span class="image main"><img src="images/humidity_plot.png" onerror="this.style.display = 'none';"></span>
+				<div class="zoomin"> 
+     <img src="images/humidity_plot.png" id="img" title="calibrated sensor measurments" /> 
+  </div>
 				</p>
 				<p><span>A similar pattern in the differences between the sensors compared to the temperature measurements can be observed. S2 and S4 measurements are very similar and close to the mean, even though towards the end of the measurement period
 						their differences increase. S1 constantly measures higher relative humidity values while S3 constantly measures lower relative humidity values. This pattern is opposed to the pattern in temperature which makes a case because with lower
@@ -697,7 +689,9 @@
 						agreement though the standard deviation is higher in the morning hours compared to the evening. S1 and S3 however, seem to have produced some significant outliers. The data at hand though is not enough to evaluate this assumption. Another
 						measurement campaign during daylight would be needed to generate further insights of the differences between the sensors.</span></p>
 				<p>
-					<span class="image main"><img src="images/lux_plot.png" onerror="this.style.display = 'none';"></span>
+<div class="zoomin"> 
+     <img src="images/lux_plot.png" id="img" title="calibrated sensor measurments" /> 
+ </div>
 				</p>
 				<h3>Audio Records</h3>
 				<p><span>For a future automated bird species identifitcation the sensorboxes were also equipped with microphones. They record 30 seconds of audio every 30 minutes when all the other data are collected as well. As an example you can listen
