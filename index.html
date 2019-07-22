@@ -90,7 +90,7 @@
 				<p><a href='https://www.raspberrypi.org/products/camera-module-v2/'>Raspberry Pi foundation</a></p>
 				<p>Depending on your local retailer available for about 26 €</p>
 				<h4>Sensor usage:</h4>
-				<p>The camera is used to monitor the canopy from below crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetation growth
+				<p>The camera is used to monitor the canopy from below the crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetation growth
 					and animal wildlife detection.</p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>Link to camera class definition at the sensorproxy-repository</a></p>
@@ -158,7 +158,7 @@
 				<p><a href='https://www.adafruit.com/product/385'>Adafruit</a></p>
 				<p>Depending on your local retailer for about 10 €</p>
 				<h4>Sensor usage:</h4>
-				<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modeling.</p>
+				<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modeling below the crown surface.</p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#13'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
 				<p>&nbsp;</p>
@@ -180,7 +180,7 @@
 				<p>Depending on your local retailer available for about 6 €</p>
 				<h4>Sensor usage:</h4>
 				<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is
-					faced upwards and takes measurements at different heights. It is planned to use to data to model forest structural parameters in conjunction with aerial images collected by UAVs. </p>
+					faced upwards and takes measurements at different heights. The idea is to use this data to model some forest structural parameters to achiveve a spatially comprehensive dataset in conjunction with aerial images collected by UAVs. </p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#43'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
 				<p>&nbsp;</p>
@@ -199,8 +199,8 @@
 				<p><a href="http://sensorkit.en.joy-it.net/index.php?title=KY-024_Linear_magnetic_Hall_Sensor#Technical_data_.2F_Short_description">SensorKit X40</a>
 					Available for approximately <a href="https://www.reichelt.de/entwicklerboards-magnetischer-hallsensor-debo-sens-hall-p239090.html">3€</a> depending on your local retailer.</p>
 				<h4>Sensor usage:</h4>
-				<p>The hall sensor are responsible to control the lift system. The attached magnets at the upper and lower end of the lift build a magnetic field which is measured by the hall sensors. The engine powering the cable car is stopped when the
-					SensorBox reaches the correct level of measurement.</p>
+				<p>The hall sensors are responsible to control the movement of the lift system. By attaching magnets at the upper and lower end of the lift we can build a magnetic field which is measured by the hall sensors. The engine powering the lift can be stopped when the
+					SensorBox reaches the upper or lower limit. Similarily, the sensor box can be stopped at different heights to take measurments.</p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/541eac35379bc2d4dc3b24b8412218af6f142d63/sensorproxy/lift.py#38'>Link to the lift class configuration with hall sensors for indicating upper and lower level</a></p>
 				<p>&nbsp;</p>
@@ -231,8 +231,10 @@
 					Available for approximately <a href="https://eckstein-shop.de/DS3231-RTC-Modul-LIR2032">4€</a>
 					depending on your local reatailer.
 				</p>
+				<h4>Sensor usage:</h4>
+				<p>The real-time clocke ensures that the data collected by different SensorBoxes are saved to disk with the correct time-stamp associated with each measurment. A battery is attached to the clock which ensures that even in the case of power shortages or other system breakdowns the right time-stamp is available when the system reboots.</p>
+				
 				<h1 class="major">Hardware</h1>
-	
 			<h3>Raspberry Pi</h3>
 			<hr />
 			<p><span class="image main"><img src="images/pt.png" alt="" /></span></p>
@@ -253,6 +255,8 @@
 			<h4 id="retailer-information-">Retailer information:</h4>
 			<p><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi foundation</a></p>
 			<p>available for approximately 30&#x20AC; depending on your local retailer</p>
+			<h4>Usage:</h4>
+				<p>The Raspberry Pi microcontroller is the heart piece of the SensorBox. Here, the software for the different sensors is stored and executed. The data collected is temporary stored here as well, before it is send to a base station.</p>
 	
 			<h3 id="powerbank">Powerbank</h3>
 			<hr />
@@ -271,6 +275,27 @@
 			<h4 id="retailer-information-">Retailer information:</h4>
 			<p><a href="https://www.easyacc.com/de/670-easyacc-26000mah-power-bank.html">Easyacc</a></p>
 			<p>Available for approximately 50&#x20AC; depending on your local retailer</p>
+			<h4>Usage:</h4>
+				<p>The powerbank is the source of energy for the microcontroller and the sensors. The microcontroller, though in sleep-mode between the measurements, needs a steady power supply while the sensors are only powered during their respective measurements. Especially in remote areas, power supply is a critical issue for selfcontained sensor units. </p>
+				
+						<h3 id="recharage pad">Wireless Recharge Pad</h3>
+			<hr />
+			<p><span class="image main"><img src="images/charger.png" alt="" /></span></p>
+			<h4 id="manufacturer-product-description-">Product name::</h4>
+			<p>Universal Wireless Charger Receiver Module</p>
+			<h4 id="technical-product-information-">Product name:</h4>
+			<ul>
+				<li>Input: 5V</li>
+				<li>Output: 1000ma</li>
+				<li>Interface: micro-USB</li>
+				<li>Dimensions: 70x46x1.2mm (WxLxH)</li>
+				<li>Weight: 454g</li>
+			</ul>
+			<h4 id="retailer-information-">Retailer information:</h4>
+			<p><a href="https://www.ebay.de/itm/Universal-QI-Wireless-Charging-Charger-Receiver-Module-for-Micro-USB-Cell-Phone/122771068016?_trkparms=aid%3D222007%26algo%3DSIM.MBE%26ao%3D2%26asc%3D20160908110712%26meid%3D05fa0c4d88044a5082e7b47380cabba0%26pid%3D100677%26rk%3D9%26rkt%3D30%26sd%3D382521224429%26itm%3D122771068016%26pg%3D2385738&_trksid=p2385738.c100677.m4598">envrionmental2000</a></p>
+			<p>Available for approximately 1.3&#x20AC; depending on your local retailer</p>
+			<h4>Usage:</h4>
+				<p>The wireless charger pad is used to re-power the powerbank at the ground stations during night, when no mearuments are taken and the SensorBox rests at the ground. The energy is supposed to be provided either by solar panels recharging simple car batteries or the car batteries will need manual changes. However, the use of the a wireless charging technology allows the SensorBox to recharge autonomously without further need of human action.</p>
 	
 			<h3 id="containment-box">Containment box</h3>
 			<hr />
@@ -310,6 +335,8 @@
 			<h4 id="retailer-information-">Retailer information:</h4>
 			<p><a href="https://at.rs-online.com/web/p/universalgehause/0832605/"> RS Components Handelsgesellschaft</a></p>
 			<p>Depending on your local retailer available for about 25 &#x20AC;</p>
+			<h4>Usage:</h4>
+				<p>The contaiment box contains the microcontroller and all environmental sensors are attached to it. The box need to be waterproof to secure the electronics inside. It also should habe a long living cycle, because we do not want the structural integrity of our SensorBox to deteriorate very quickly. At the same time, it was important that only non-harmful materials to the environment are used.</p>
 			</article>
 	
 			<!-- Assembly -->
