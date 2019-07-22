@@ -1,0 +1,17 @@
+### Assembly als Bauplan
+
+# zuerst komplette Teileliste mit anzahl für einen Mond/Sensorbox
+-> zur bestellung und vorbeireitung
+# pro Untergruppe link zur jeweiligen subpage
+
+# Bauplan für einzelne schritte mit jeweiliger teileliste.
+-> erleichtert einzelne schritte (zusammenlegen aller nötigen teile)
+
+### subpages beschreiben alle benötigten Teile inkl Retailer Informationen und Preis
+-> zur vollständien dokumentation sind alle teile beschrieben.
+-> in assemlby werden keine teile verbaut die nicht über eine subpage beschreiben werden.
+(ausnahme sind benötigte Werkzeuge zb Heißkleber pistole oder Kleber/Silikon)
+
+### "3d Parts" subpage mit bilder um zu sehen wie die teile aussehen sollen 
+und link zu zip mit den benötigten plänen (Ordner:3d_plans auch einzeln verfügbar)
+
