@@ -29,7 +29,7 @@
 			<div class="content">
 				<div class="inner">
 					<h1>SensorBox</h1>
-					<p>Documentation of a master's seminar to build a low-cost sensor box to monitor basic
+					<p>Documentation of a master's seminar to build a low-cost sensorbox to monitor basic
 						environmental variables in forest environments.</p>
 				</div>
 			</div>
@@ -40,7 +40,6 @@
 					<li><a href="#assembly">Assembly</a></li>
 					<li><a href="#software">Software</a></li>
 					<li><a href="#Data">Data</a></li>
-					<!--<li><a href="#elements">Elements</a></li>-->
 				</ul>
 			</nav>
 		</header>
@@ -51,28 +50,23 @@
 			<!-- Intro -->
 			<article id="intro">
 				<h2 class="major">Introduction</h2>
-				<p>The SensorBox was developed during a master&#39;s seminar at the University of Marburg. The idea of the SensorBox was to create a tool which enables the collection of some basic environmental variables along a vertical path in forest
-					structures. The box is part of a broader research effort to effectively monitor biotic and abiotic factors to draw benefits for biodiversity conversation and the sustainable management of ecosystem services. The innovation of the SensorBox
+				<p>The SensorBox was developed during a master&#39;s seminar at the University of Marburg. The idea of the SensorBox is to create a tool which enables the collection of basic environmental variables along a vertical pathway in forest
+					environments. The SensorBox itself is part of a broader research effort to effectively monitor biotic and abiotic factors in forest to draw benefits for biodiversity conversation and the sustainable management of ecosystems. The innovation of the SensorBox
 					lies in its cheap and reconstructable design as well as its ability to collect data in a 3D-space through the use of cable cars attached to individual trees in a forest. In the video below you can get the basic idea of the SensorBox moving
 					upwards and collecting data at specified height levels.</p>
 				<video height="40%" class="image main" controls="" onerror="this.style.display = 'none';">
 					<source src="images/intro_video.mp4" type="video/mp4" <="" video=""></video>
 	
-				<p>This webpage reports on the materials used and the way to assembly the SensorBoxes to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment.
-				</p>
-	
-				<p>The seminar is closely associated to the LOEWE research project <a href="https://www.uni-marburg.de/de/fb19/natur40">Natur 4.0</a> which aims at innovative data acquisition and processing techniques to developed a methodology to a spatial
-					and temporal comprehensive monitoring of landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned aerial vehicles (UAV), automatic rovers as well as low-invasive sensors placed on animals and humans moving through the landscape to be monitored. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental
-					variables.
+				<p>This webpage reports on the technical components and the assembly of the SensorBox which are needed to get a fully deployable sensor unit to measure variables such as temperature, humidity, light as well as visual and audio information on the environment. 
+				<p>
+	The seminar is closely associated to the LOEWE research project <a href="https://www.uni-marburg.de/de/fb19/natur40">Natur 4.0</a> which aims at innovative data acquisition and processing techniques to develop a methodology for a spatial and temporal comprehensive monitoring of forest landscapes and ecosystems. The basic tool-kit on the side of data acquisition consists of a spatially-dispersed network of environmental sensors, unmanned-aerial-vehicles (UAV), automatic rovers as well as low-invasive sensors placed on animals and humans moving through the landscape. A very central role comes to the SensorBoxes, which allow for a comprehensive, local-scale and continuous measurement of environmental variables in the vertical dimension.
 					</p>
 			</article>
 	
 			<!-- Sensors -->
 			<article id="sensors">
 				<h1 class="major">Sensors</h1>
-				<p>Here you will find some information on the different sensors we used in the implementation of the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors
-					were chosen due to their low prices but also because they measure the variables of interest to us accurately. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the
-					records of the cheaper microphone would prove well enough, costs could be reduced.</p>
+				<p>Here you will find some information on the different sensors we used builduing the SensorBox. Of course, other sensors for measuring the same or even other environmental variables could be used as well. The listed sensors were chosen due to their low price but also because they measure the variables of interest to us accurately enough. For the microphone we tested two different versions, one significantly more expensive than the other one. If the quality of the records of the cheaper microphone would prove well enough, costs could be reduced.</p>
 				<h3>Camera</h3>
 				<hr />
 				<p><span class="image main"><img src="images/cam.png" alt="" /></span></p>
@@ -83,14 +77,13 @@
 					<li>Sensor: Sony IMX219 8 Megapixel sensor</li>
 					<li>Supported formats: 1080p@30Hz, 720p@60Hz and 640x480p@60/90Hz </li>
 					<li>Ribbon cable for CSI-port : 30 cm</li>
-					<li>Dimensions: 25x24x9 (mm, HxBxD)</li>
+					<li>Dimensions: 25x24x9 (mm, HxWxD)</li>
 				</ul>
 				<h4>Manufacturer information:</h4>
 				<p><a href='https://www.raspberrypi.org/products/camera-module-v2/'>Raspberry Pi foundation</a></p>
 				<p>Depending on your local retailer available for about 26 €</p>
 				<h4>Sensor usage:</h4>
-				<p>The camera is used to monitor the canopy from below the crown surface. The collected data can be used to calculate the greenness-index to compare it with UAV generated aerial RGB-images. Further it can be used to monitor vegetation growth
-					and animal wildlife detection.</p>
+				<p>The camera is used to monitor the canopy from below the crown surface. The collected data can be used to calculate a greenness-index to compare it with UAV generated aerial RGB-images. It can be used to monitor vegetation growth and for animal wildlife detection as well.</p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/optical.py'>Link to camera class definition at the sensorproxy-repository</a></p>
 				<p>&nbsp;</p>
@@ -112,7 +105,7 @@
 				<p><a href='http://www.rode.com/microphones/smartlav'>RØDE Microphones</a></p>
 				<p>Available for approximately 50€</p>
 				<h4>Sensor usage:</h4>
-				<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
+				<p>The microphone is used to record the singing of birds. This data can then be used by machine-learning algorithms to identify individual bird species. Bird species are used as an important indicator for biodiversity in forest ecosystems and thus their monitoring is very important for biodiversity assessments.</p>
 				<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
@@ -135,7 +128,7 @@
 				<p><a href='https://www.amazon.de/Foxnovo-Portable-USB-2-0-Kondensator-Mikrofon-Chat/dp/B00XA01IQC'>Purchased at Amazon</a></p>
 				<p>Available for approximately 10€.</p>
 				<h4>Sensor usage:</h4>
-				<p>The microphone is used to record the singing of birds. This data can be used by a machine learning algorithm to identify bird species. Bird species are an important indicator for biodiversity in forest ecosystems.</p>
+				<p>The microphone is used to record the singing of birds. This data can then be used by machine-learning algorithms to identify individual bird species. Bird species are used as an important indicator for biodiversity in forest ecosystems and thus their monitoring is very important for biodiversity assessments.</p>
 				<p>In the first stage of development two different models of microphones are tested to evaluate if a cheaper microphone is also suitable for bird species identification.</p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/audio.py'>Link to audio class definition at the sensorproxy-repsoitory</a></p>
@@ -151,13 +144,13 @@
 					<li>Operating voltage: 3-5V</li>
 					<li>Sensitivity humidity: 0-100% ± 2-5% </li>
 					<li>Sensitivity temperature: -40-80°C ±0.5°C</li>
-					<li>Dimensions: 15.1x25x7.7 (mm, HxBxD)</li>
+					<li>Dimensions: 15.1x25x7.7 (mm, HxWxD)</li>
 				</ul>
 				<h4>Manufacturer information:</h4>
 				<p><a href='https://www.adafruit.com/product/385'>Adafruit</a></p>
 				<p>Depending on your local retailer for about 10 €</p>
 				<h4>Sensor usage:</h4>
-				<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows to collect the data in a vertical range for advanced climatic modeling below the crown surface.</p>
+				<p>The temperature and humidity sensor is used to measure micro-climatic data. The lift-system allows the collection of data in along a vertical pathway which can be used for advanced climatic modeling below the crown surface. The collection of this kind of data in a spatially comprehensive way allows to generate totallly new models and insights into the microclimate within forest environments.
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#13'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
 				<p>&nbsp;</p>
@@ -166,20 +159,19 @@
 				<hr />
 				<p><span class="image main"><img src="images/light.png" alt="" /></span></p>
 				<h4>Product name:</h4>
-				<p>Adafruit TSL2591 High Dynamic Range Digital Light Sensor</p>
+				<p>TSL2591 High Dynamic Range Digital Light Sensor</p>
 				<h4>Technical product information:</h4>
 				<ul>
 					<li>Sensitivity: 188 uLux sensitivity, up to 88,000 Lux input measurements.</li>
 					<li>Temperature range: -30 to 80 °C</li>
 					<li>Operating voltage: 3.3-5V </li>
-					<li>Dimensions: 19x16x1(mm, HxBxD)</li>
+					<li>Dimensions: 19x16x1(mm, HxWxD)</li>
 				</ul>
 				<h4>Retailer information:</h4>
 				<p><a href='https://www.adafruit.com/product/1980'>Adafruit</a></p>
 				<p>Depending on your local retailer available for about 6 €</p>
 				<h4>Sensor usage:</h4>
-				<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution at different height-levels. On the SensorBox it is
-					faced upwards and takes measurements at different heights. The idea is to use this data to model some forest structural parameters to achiveve a spatially comprehensive dataset in conjunction with aerial images collected by UAVs. </p>
+				<p>The digital light sensor gathers information about the light intensity in the visible an near infrared spectrum. The data can be used to model vegetation density and light distribution for different height-levels. The idea is to use this data to model forest structural parameters to achiveve a spatially comprehensive dataset in conjunction with aerial images collected by UAVs. </p>
 				<h4>Source code:</h4>
 				<p><a href='https://github.com/Nature40/pysensorproxy/blob/master/sensorproxy/sensors/environment.py#43'>Link to environmental sensor class definition at the sensorproxy-repository.</a></p>
 				<p>&nbsp;</p>
@@ -214,16 +206,16 @@
 					<li>Accuracy ±2ppm from 0°C to +40°C</li>
 					<li>Accuracy ±3.5ppm from -40°C to +85°C</li>
 					<li>Battery backup input for continuous timekeeping</li>
-					<li>Operating temperature ranges:</li>
-					<ul>
-						<li>Commercial: 0°C to +70°C</li>
-						<li>Industrial: -40°C to +85°C</li>
-					</ul>
 					<li>Leap year compensation valid up to 2100</li>
 					<li>Programmable square-wave output</li>
 					<li>400kHz I2C Interface</li>
 					<li>3.3V operation voltage</li>
 					<li>RST input/output</li>
+					<li>Operating temperature ranges:</li>
+					<ul>
+						<li>Commercial: 0°C to +70°C</li>
+						<li>Industrial: -40°C to +85°C</li>
+					</ul>
 				</ul>
 				<h4>Retailer information:</h4>
 				<p><a href="https://eckstein-shop.de/DS3231-RTC-Modul-LIR2032">Eckstein GmbH</a>
@@ -231,7 +223,7 @@
 					depending on your local reatailer.
 				</p>
 				<h4>Sensor usage:</h4>
-				<p>The real-time clocke ensures that the data collected by different SensorBoxes are saved to disk with the correct time-stamp associated with each measurment. A battery is attached to the clock which ensures that even in the case of power shortages or other system breakdowns the right time-stamp is available when the system reboots.</p>
+				<p>The real-time clocke ensures that the data collected by different SensorBoxes are saved to disk with the correct time-stamp associated with each measurment. A battery is attached to the clock to have the right time-stamp available even in the case of power shortages, system breakdowns or after rebooting the system.</p>
 				
 				<h1 class="major">Hardware</h1>
 			<h3>Raspberry Pi</h3>
@@ -255,7 +247,7 @@
 			<p><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi foundation</a></p>
 			<p>Available for approximately 30&#x20AC; depending on your local retailer</p>
 			<h4>Usage:</h4>
-				<p>The Raspberry Pi microcontroller is the heart piece of the SensorBox. Here, the software for the different sensors is stored and executed. The data collected is temporary stored here as well, before it is send to a base station.</p>
+				<p>The Raspberry Pi microcontroller is the heart piece of the SensorBox. Here, the software for the different sensors is stored and the programs are executed. The collected data is temporary stored here as well, before it is send to a base station. The microcontroller also sends out a WiFi-signal which can be used for a quick trouble-shooting and system diagnosis even in the field.</p>
 	
 			<h3 id="powerbank">Powerbank</h3>
 			<hr />
@@ -294,7 +286,7 @@
 			<p><a href="https://www.ebay.de/itm/Universal-QI-Wireless-Charging-Charger-Receiver-Module-for-Micro-USB-Cell-Phone/122771068016?_trkparms=aid%3D222007%26algo%3DSIM.MBE%26ao%3D2%26asc%3D20160908110712%26meid%3D05fa0c4d88044a5082e7b47380cabba0%26pid%3D100677%26rk%3D9%26rkt%3D30%26sd%3D382521224429%26itm%3D122771068016%26pg%3D2385738&_trksid=p2385738.c100677.m4598">envrionmental2000</a></p>
 			<p>Available for approximately 1.3&#x20AC; depending on your local retailer</p>
 			<h4>Usage:</h4>
-				<p>The wireless charger pad is used to re-power the powerbank at the ground stations during night, when no mearuments are taken and the SensorBox rests at the ground. The energy is supposed to be provided either by solar panels recharging simple car batteries or the car batteries will need manual changes. However, the use of the a wireless charging technology allows the SensorBox to recharge autonomously without further need of human action.</p>
+				<p>The wireless charger pad is used to re-power the powerbank at the ground station during night, when no measurements are taken and the SensorBox rests at the ground. The energy is supposed to be provided either by solar panels recharging simple car batteries or the car batteries have to be changed manually. However, the use of a wireless charging technology allows the SensorBox to recharge autonomously without further need of human action.</p>
 	
 			<h3 id="containment-box">Containment box</h3>
 			<hr />
@@ -335,13 +327,13 @@
 			<p><a href="https://at.rs-online.com/web/p/universalgehause/0832605/"> RS Components Handelsgesellschaft</a></p>
 			<p>Depending on your local retailer available for about 25 &#x20AC;</p>
 			<h4>Usage:</h4>
-				<p>The contaiment box contains the microcontroller and all environmental sensors are attached to it. The box need to be waterproof to secure the electronics inside. It also should habe a long living cycle, because we do not want the structural integrity of our SensorBox to deteriorate very quickly. At the same time, it was important that only non-harmful materials to the environment are used.</p>
+				<p>The contaiment box contains the microcontroller and all environmental sensors are attached to it. The box needs to be waterproof to secure the electronic elements inside. It also should have a long living cycle, because we do not want the structural integrity of our SensorBox to deteriorate very quickly. At the same time, it was important that only non-harmful materials to the environment are used to build the box so it is fully deployable in natural environments.</p>
 			</article>
 	
 			<!-- Assembly -->
 			<article id="assembly">
 				<h2 class="major"> Construction materials</h2>
-<p><span>Here you will find the step-by-step information on the assembly of the sensor box. Current versions of the designs for required 3D-printed parts can be found in a </span><a href='https://github.com/Nature40/Sensorboxes-Images/tree/master/printdesigns/version_1/gondola'><span>GitHub repository</span></a><span> of Natur4.0.</span></p>
+<p><span>Here you will find basic information on the process of assembling the SensorBox. Current versions of the designs for the required 3D-printed parts can be found in a </span><a href='https://github.com/Nature40/Sensorboxes-Images/tree/master/printdesigns/version_1/gondola'><span>GitHub repository of Natur4.0</span></a><span>.</span></p>
 <h2>Preparing the containment box </h2>
 <ul>
 <li><span>Containment box</span></li>
@@ -366,11 +358,11 @@
 
 </ul>
 <h3>Attaching hinges and preparing cable and roll entries</h3>
-<p><span>First, we drilled some holes in the containment box to attach the hinges between the box and the lid. We used a 5mm drill bit which fits well into the indentations at the side of the box. We used a 6mm drill bit to slightly expand the holes. Then, we attached the hinges with the supplied screws from the hinge set. After attaching the hinges, we prepared the topside of the box by drilling holes for the sensor tower with entries for the cables of the sensors, the camera and the microphone. To correctly place the entry holes for the cables we prepared a </span><a href='images/tower_template.PNG'><span>printable template</span></a><span>. Then we drilled holes which are used to attach the rolls to the containment box using another </span><a href='images/roll_template.PNG'><span>template</span></a><span>. Here, we used a 3,5 mm drill bit which fits very well with the rolls we purchased. </span></p>
+<p><span>First, we drilled some holes in the containment box to attach the hinges between the box and the lid. We used a 5mm drill bit which fits well into the indentations at the side of the box. We used a 6mm drill bit to slightly expand the holes. Then, we attached the hinges with the supplied screws from the hinge set. After attaching the hinges, we prepared the topside of the box by drilling holes for the sensor tower with entries for the cables of the sensors, the camera and the microphone. To correctly place the entry holes for the cables we prepared a </span><a href='images/tower_template.PNG'><span>printable template</span></a><span>. Then we drilled the holes which are used to attach the rolls to the containment box using another </span><a href='images/roll_template.PNG'><span>template</span></a><span>. Here, we used a 3,5 mm drill bit which fits very well with the rolls we purchased. </span></p>
 <p><span>We drilled another two holes for the suspension rope which ensures the stability of the box while being mounted in the cable car. Here, we used a 4mm drill. We inserted the rope of 100cm in length in both holes put a knot on the inner ends and sealed it by cautiously using a lighter to melt some of the plastic. We made sure that the length of the rope outside of the box is at least 80 cm. On the inside, we attached two cable tie sockets and connected them with the 30 cm rope. </span></p>
 <p><span>Last we used the six 4x16mm countersunk-head screws to attach the rolls to the box. We used the washers to seal off the entry holes and the safety nuts to ensure the firmness of the rolls. Additionally, we put instant glue under the washers and safety nuts and then gave the screws and nuts one last thrust to ensure the box is waterproof. </span></p>
 <h3> Installing the Raspberry Pi and  the power supply</h3>
-<p><span>We used four 4x12 mm screws to attach the 3D-printed microcontroller mounting plate cautiously to the containment box. The screws must not pierce through the back of the box.  Before attaching the microcontroller to the socket we pasted the heat sinks on the processor units of the Raspberry Pi. Then we put it on the mounting plate with the USB-ports pointing to the right side and fixated it with four 2,9x13mm screws. From a simple breadboard we took only one energy rack and placed it on the bottom side of the mounting plate. Then we put the powerbank on the inner side of the containment box right where the mounting plate shows a free space of the size of the powerbank. We did not connect the USB-power-cable to the Raspberry Pi just yet, since we first attached all the missing sensors.</span></p>
+<p><span>We used four 4x12 mm screws to attach the 3D-printed microcontroller mounting plate cautiously to the containment box. The screws must not pierce through the back of the box to ensure it remains water proof. Before attaching the microcontroller to the socket we pasted the heat sinks on the processor units of the Raspberry Pi. Then we put it on the mounting plate with the USB-ports pointing to the right side and fixated it with four 2,9x13mm screws. From a simple breadboard we took only one energy rack and placed it on the bottom side of the mounting plate. Then we put the powerbank on the inner side of the containment box right where the mounting plate shows a free space of the size of the powerbank. We did not connect the USB-power-cable to the Raspberry Pi just yet, since we first attached all the missing sensors.</span></p>
 <p>
 <span class="image main"><img src="images/pi_mount_rdy.png" onerror="this.style.display = 'none';"></span>
 </p>
@@ -722,7 +714,7 @@
 					</audio></p>
 				<h3>Camera Shots</h3>
 				
-				<p><span>During a first test run the SensorBox moving upwards and the attached camera taking pictures from below the crown surface with each meter. Further investigations will combine those pictures to calculate the greenness-index to compare it with UAV generated aerial RGB-images, as well as monitoring vegetation growth and animal wildlife detection.
+				<p><span>During a first test run while the SensorBox moving was upwards the attached camera was taking pictures from below the crown surface at each meter, which can be seen below. Further research will combine those pictures to calculate a greenness-index to compare it with UAV generated aerial RGB-images. By training image recognition models the images can be used as well to monitor vegetation growth and for animal wildlife detection.
 				  </span></p>
 
 <div class="row">
@@ -737,10 +729,12 @@
 
 
 
+
 		<!-- Footer -->
 		<footer id="footer">
-			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>. 
-			<li><a href="https://github.com/goergen95/sensorbox-docu" class="icon fa-github"><span class="label">Github</span></a></li></p>
+			<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.
+			<p>
+			<a href="https://github.com/goergen95/sensorbox-docu" class="icon fa-github"><span class="label">Github</span></a></p>
 	
 		</footer>
 	</div>
